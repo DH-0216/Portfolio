@@ -41,7 +41,7 @@ const Navbar = () => {
       transition={{ duration: 0.75, ease: "easeInOut" }}
       className={`fixed left-1/2 transform -translate-x-1/2 z-50 px-6 py-3 ${
         nav || isNotHomePage
-          ? "w-full bg-black/50 rounded-none"
+          ? "w-full bg-black/70 rounded-none"
           : "w-[90%] backdrop-blur-md border-2 border-white/10 rounded-xl"
       } shadow-md flex justify-between items-center`}
     >

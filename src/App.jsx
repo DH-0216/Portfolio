@@ -10,13 +10,11 @@ function App() {
     <>
       <div className="bg-hero h-screen bg-no-repeat">
         <NavBar />
+        <Home />
+        <About />
+        <Contact />
+        <Services />
       </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-      </Routes>
     </>
   );
 }

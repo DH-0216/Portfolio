@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luxurious+Roman&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+*{
+    font-family: "Montserrat";
+}
+
+.bg-hero {
+  background-image: url("src/assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}

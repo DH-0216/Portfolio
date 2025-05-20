@@ -19,7 +19,7 @@ const Home = () => {
         <div className=" sm:px-16 px-6 absolute inset-0 top-[180px] mx-10 flex flex-row items-start gap-5">
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-[#888888]" />
-            <div className="w-1 sm:h-80 h-40 violet-gradient" />
+            <div className="w-1 sm:h-80 h-40 gray-gradient" />
           </div>
           <div>
             <h1 className="font-black lg:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[80px] mt-2 text-white">
@@ -58,7 +58,7 @@ const Home = () => {
         </div>
       </header>
 
-      {/* RIGHT: 3D Model or Visual */}
+      {/* RIGHT: Hero Image */}
       <div className="flex justify-end items-center w-1/2 h-full absolute right-[150px] top-0">
         <img src={logo} alt="" className="md:w-1/2 w-full" />
       </div>

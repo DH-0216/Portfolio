@@ -15,7 +15,6 @@ const Navbar = () => {
   useEffect(() => {
     const changeValueOnScroll = () => {
       const scrollValue = window.scrollY;
-      console.log("Scroll Value:", scrollValue);
       setNav(scrollValue > 100);
     };
 
@@ -57,8 +56,7 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-auto h-12 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Dulaj Hashmika &nbsp;
-            <span className="sm:block hidden">|&nbsp; Web Developer</span>
+            Dulaj Hashmika
           </p>
         </Link>
 

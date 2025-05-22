@@ -19,13 +19,12 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   AutoTradingBot,
   SignalFusion,
   Pizza,
+  Library,
+  ChatBot,
 } from "../assets";
 
 export const navLinks = [
@@ -356,7 +355,7 @@ const works = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: ChatBot,
     source_code_link:
       "https://github.com/DH-0216/AI-Powered-Programming-ChatBot.git",
   },
@@ -407,7 +406,7 @@ const works = [
         color: "green-text-gradient",
       },
     ],
-    image: jobit,
+    image: Library,
     source_code_link:
       "https://github.com/DH-0216/Library-Management-System.git",
   },

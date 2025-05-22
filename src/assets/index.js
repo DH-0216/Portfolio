@@ -29,6 +29,8 @@ import tesla from "./company/tesla.png";
 import AutoTradingBot from "./auto-trading-bot.mp4";
 import SignalFusion from "./SignalFusion.png"
 import Pizza from "./pizza.png";
+import Library from "./Library.png";
+import ChatBot from "./ChatBot.png"
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -65,4 +67,6 @@ export {
   AutoTradingBot,
   SignalFusion,
   Pizza,
+  Library,
+  ChatBot,
 };

@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import TitleHeader from "./TitleHeader";
+import TitleHeader from "../components/TitleHeader";
 
 const Contact = () => {
   const formRef = useRef(null);

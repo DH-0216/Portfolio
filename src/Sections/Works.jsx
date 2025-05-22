@@ -1,9 +1,9 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import TitleHeader from "./TitleHeader";
+import TitleHeader from "../components/TitleHeader";
 import { github } from "../assets";
-import SectionWrapper from "./SectionWrapper";
+import SectionWrapper from "../components/SectionWrapper";
 import { projects } from "../utils";
 import { fadeIn, textVariant } from "../utils/motion";
 

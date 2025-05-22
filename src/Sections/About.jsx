@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeInUp } from "../utils/motion";
-import TitleHeader from "./TitleHeader";
+import TitleHeader from "../components/TitleHeader";
 
 const About = () => {
   return (

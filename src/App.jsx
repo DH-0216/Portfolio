@@ -1,12 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Services from "./components/Services";
-import Experience from "./components/Experience";
-import Works from "./components/Works";
-import Skills from "./components/Skills";
+import NavBar from "./Sections/NavBar";
+import Home from "./Sections/Home";
+import About from "./Sections/About";
+import Contact from "./Sections/Contact";
+import Services from "./Sections/Services";
+import Experience from "./Sections/Experience";
+import Works from "./Sections/Works";
+import Skills from "./Sections/Skills";
+import Footer from "./Sections/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Works />
       <Services />
       <Contact />
+      <Footer />
     </>
   );
 }

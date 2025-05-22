@@ -1,10 +1,11 @@
-import React from "react";
+import Reac, { useState, useRef } from "react";
+import { AnimatePresence } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import TitleHeader from "../components/TitleHeader";
 import { github } from "../assets";
 import SectionWrapper from "../components/SectionWrapper";
-import { projects } from "../utils";
+import { works } from "../utils";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -13,15 +14,35 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  video,
   source_code_link,
 }) => {
+  const [hovered, setHovered] = useState(false);
+  const videoRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+    if (videoRef.current) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.play();
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
+
   return (
     <div id="work">
       <motion.div
-        variants={fadeIn("up", "spring", index * 0.2, 0.75)} // reduce the stagger
+        variants={fadeIn("up", "spring", index * 0.2, 0.75)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.3 }} // animate only once
+        viewport={{ once: true, amount: 0.3 }}
       >
         <Tilt
           options={{
@@ -30,14 +51,40 @@ const ProjectCard = ({
             speed: 200,
           }}
           className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           <div className="relative w-full h-[230px]">
-            <img
-              src={image}
-              alt="project_image"
-              className="w-full h-full object-cover rounded-2xl"
-            />
-
+            {video ? (
+              hovered ? (
+                <video
+                  ref={videoRef}
+                  src={video}
+                  className="w-full h-full object-cover rounded-2xl"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  poster={image}
+                />
+              ) : (
+                <video
+                  ref={videoRef}
+                  src={video}
+                  className="w-full h-full object-cover rounded-2xl"
+                  poster={image}
+                  muted
+                  playsInline
+                  preload="metadata"
+                />
+              )
+            ) : (
+              <img
+                src={image}
+                alt="project_image"
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            )}
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
@@ -74,6 +121,10 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const displayedWorks = showAll ? works : works.slice(0, 3);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -94,10 +145,32 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        <AnimatePresence>
+          {displayedWorks.map((work, index) => (
+            <motion.div
+              key={work.name}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 30 }}
+              transition={{ duration: 0.4 }}
+              layout
+            >
+              <ProjectCard index={index} {...work} />
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
+
+      {works.length > 3 && (
+        <div className="w-full flex justify-center mt-8">
+          <button
+            onClick={() => setShowAll((prev) => !prev)}
+            className="px-6 py-2 text-white rounded-full shadow hover:bg-primary-dark transition bg-gray-700/40 border border-white/20 hover:border-white/30"
+          >
+            {showAll ? "See Less" : "See More"}
+          </button>
+        </div>
+      )}
     </>
   );
 };

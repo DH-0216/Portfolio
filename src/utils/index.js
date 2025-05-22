@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  AutoTradingBot,
+  SignalFusion,
+  Pizza,
 } from "../assets";
 
 export const navLinks = [
@@ -293,7 +296,7 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const works = [
   {
     name: "Pizza Delivery System",
     description:
@@ -316,37 +319,23 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: Pizza,
+    source_code_link:
+      "https://github.com/DH-0216/pizza-order-delivery-system.git",
   },
+
   {
-    name: "Library Management System",
+    name: "SignalFusion-Trading-Indicator",
     description:
-      "A web application that allows users to search for books, manage their library accounts, and track borrowed books, providing a user-friendly interface for library management.",
+      "A full-stack trading indicator that provides technical analysis, customizable alerts, and more features to enhance trading strategies.",
     tags: [
       {
-        name: "html",
+        name: "pinescript",
         color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "php",
-        color: "blue-text-gradient",
-      },  
-      {
-        name: "sql",
-        color: "green-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: SignalFusion,
+    source_code_link: "",
   },
   {
     name: "AI Powered Chatbot",
@@ -368,8 +357,60 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://github.com/DH-0216/AI-Powered-Programming-ChatBot.git",
+  },
+  {
+    name: "Auto Trading Bot",
+    description:
+      "An automated trading bot that reads trade signals sent by an indicator to a Telegram channel and executes trades based on those messages, providing hands-free trading directly from Telegram alerts.",
+    tags: [
+      {
+        name: "python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "telethon",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "exchange-api",
+        color: "pink-text-gradient",
+      },
+    ],
+    video: AutoTradingBot,
+    source_code_link: "",
+  },
+  {
+    name: "Library Management System",
+    description:
+      "A web application that allows users to search for books, manage their library accounts, and track borrowed books, providing a user-friendly interface for library management.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "green-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link:
+      "https://github.com/DH-0216/Library-Management-System.git",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects, words, expCards, expLogos, socialImgs };
+export { services, technologies, experiences, testimonials, works, words, expCards, expLogos, socialImgs };

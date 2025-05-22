@@ -14,7 +14,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const changeValueOnScroll = () => {
-      const scrollValue = document?.documentElement?.scrollTop || 0;
+      const scrollValue = window.scrollY;
+      console.log("Scroll Value:", scrollValue);
       setNav(scrollValue > 100);
     };
 
@@ -39,7 +40,7 @@ const Navbar = () => {
         opacity: 1,
       }}
       transition={{ duration: 0.75, ease: "easeInOut" }}
-      className={`fixed left-1/2 transform -translate-x-1/2 z-50 px-6 py-3 ${
+      className={`fixed left-1/2 transform -translate-x-1/2 z-80 px-6 py-3 ${
         nav || isNotHomePage
           ? "w-full bg-black/70 rounded-none"
           : "w-[90%] backdrop-blur-md border-2 border-white/10 rounded-xl"

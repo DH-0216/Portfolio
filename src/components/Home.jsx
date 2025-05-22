@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import logo from "../assets/logo.png";
-import { words } from "../constants";
+import { words } from "../utils/index";
 const Home = () => {
   useGSAP(() => {
     gsap.fromTo(

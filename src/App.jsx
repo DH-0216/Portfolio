@@ -13,12 +13,12 @@ function App() {
       <div className="bg-hero h-screen bg-no-repeat">
         <NavBar />
         <Home />
-        <About />
-        <Experience />
-        <Works />
-        <Services />
-        <Contact />
       </div>
+      <About />
+      <Experience />
+      <Works />
+      <Services />
+      <Contact />
     </>
   );
 }

@@ -1,11 +1,10 @@
 import React from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../utils/styles";
 import {github}  from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { projects } from "../utils";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -17,7 +16,12 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.3 }}
+    >
       <Tilt
         options={{
           max: 45,

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { AnimatePresence, motion } from "motion/react";
+import{navLinks} from "../utils/index";
 import logo from "../assets/logo.png";
 import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
@@ -23,13 +25,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", changeValueOnScroll);
     };
   }, []);
-
-  const navItems = [
-    { title: "Home", path: "/" },
-    { title: "About", path: "/about" },
-    { title: "Services", path: "/services" },
-    { title: "Contact", path: "/contact" },
-  ];
 
   return (
     <motion.nav
@@ -61,9 +56,9 @@ const Navbar = () => {
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navItems.map((item) => (
+          {navLinks.map((item) => (
             <li key={item.title}>
-              <Link
+              <HashLink
                 to={item.path}
                 className={`${
                   active === item.title ? "text-[#888888]" : "text-white"
@@ -74,7 +69,7 @@ const Navbar = () => {
                 }}
               >
                 {item.title}
-              </Link>
+              </HashLink>
             </li>
           ))}
         </ul>
@@ -100,7 +95,7 @@ const Navbar = () => {
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
-                  {navItems.map((item) => (
+                  {navLinks.map((item) => (
                     <li key={item.title}>
                       <Link
                         to={item.path}

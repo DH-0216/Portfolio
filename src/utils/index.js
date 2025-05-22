@@ -25,6 +25,29 @@ import {
   threejs,
 } from "../assets";
 
+export const navLinks = [
+
+  {
+    id: "home",
+    title: "Home",
+    path: "/",
+  },
+  {
+    id: "about",
+    title: "About",
+    path: "/#about",
+  },
+  {
+    id: "work",
+    title: "Work",
+    path: "/#work",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+    path: "/#contact",
+  },
+];
 
 const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
@@ -112,20 +135,7 @@ const socialImgs = [
     imgPath: "/images/linkedin.png",
   },
 ];
-export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-];
+
 
 const services = [
   {
@@ -285,9 +295,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Pizza Delivery System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A web application that allows users to order pizza online, track their orders in real-time, and manage their accounts, providing a seamless and convenient pizza delivery experience.",
     tags: [
       {
         name: "react",
@@ -301,46 +311,59 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "spring",
+        color: "blue-text-gradient",
+      },
     ],
     image: carrent,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Library Management System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A web application that allows users to search for books, manage their library accounts, and track borrowed books, providing a user-friendly interface for library management.",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "javascript",
         color: "pink-text-gradient",
+      },
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },  
+      {
+        name: "sql",
+        color: "green-text-gradient",
       },
     ],
     image: jobit,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "AI Powered Chatbot",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An AI-powered chatbot that provides instant customer support, answers frequently asked questions, and assists users in navigating the website, enhancing user experience and engagement.",
     tags: [
       {
-        name: "nextjs",
+        name: "python",
         color: "blue-text-gradient",
       },
+
       {
-        name: "supabase",
+        name: "flask",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tensorflow",
         color: "pink-text-gradient",
       },
     ],

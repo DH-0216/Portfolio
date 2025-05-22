@@ -5,45 +5,47 @@ import TitleHeader from "./TitleHeader";
 
 const About = () => {
   return (
-    <motion.div
-      variants={staggerContainer(0.15, 0)}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
-      className="relative overflow-hidden flex flex-col items-center justify-center pt-20 px-6 md:px-20  rounded-2xl shadow-2xl bg-black/70"
-    >
-      {/* Background Glow */}
-      <div className="absolute inset-0 flex justify-center items-center -z-10">
-        <div className="w-96 h-96 bg-[#888888] opacity-20 blur-[120px] rounded-full animate-pulse" />
-      </div>
-
-      {/* Text Content */}
-      <motion.p
-        variants={fadeInUp()}
-        className="text-white text-sm tracking-widest mb-2"
-      >
-        <TitleHeader
-          title="Transforming Ideas Into Scalable Solutions"
-          sub="💼 About Me"
-        />
-      </motion.p>
-
+    <section id="about">
       <motion.div
-        variants={fadeInUp()}
-        className="w-16 h-1 bg-[#888888] my-4 rounded-full"
-      />
-
-      <motion.p
-        variants={fadeInUp()}
-        className="mt-6 text-white text-[17px] max-w-3xl leading-[30px] text-center"
+        variants={staggerContainer(0.15, 0)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+        className="relative overflow-hidden flex flex-col items-center justify-center pt-20 px-6 md:px-20  rounded-2xl shadow-2xl bg-black/70"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
-    </motion.div>
+        {/* Background Glow */}
+        <div className="absolute inset-0 flex justify-center items-center -z-10">
+          <div className="w-96 h-96 bg-[#888888] opacity-20 blur-[120px] rounded-full animate-pulse" />
+        </div>
+
+        {/* Text Content */}
+        <motion.p
+          variants={fadeInUp()}
+          className="text-white text-sm tracking-widest mb-2"
+        >
+          <TitleHeader
+            title="Transforming Ideas Into Scalable Solutions"
+            sub="💼 About Me"
+          />
+        </motion.p>
+
+        <motion.div
+          variants={fadeInUp()}
+          className="w-16 h-1 bg-[#888888] my-4 rounded-full"
+        />
+
+        <motion.p
+          variants={fadeInUp()}
+          className="mt-6 text-white text-[17px] max-w-3xl leading-[30px] text-center"
+        >
+          I'm a skilled software developer with experience in TypeScript and
+          JavaScript, and expertise in frameworks like React, Node.js, and
+          Three.js. I'm a quick learner and collaborate closely with clients to
+          create efficient, scalable, and user-friendly solutions that solve
+          real-world problems. Let's work together to bring your ideas to life!
+        </motion.p>
+      </motion.div>
+    </section>
   );
 };
 

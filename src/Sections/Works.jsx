@@ -37,85 +37,75 @@ const ProjectCard = ({
   };
 
   return (
-
     <div id="work">
       <motion.div
         variants={fadeIn("up", "spring", index * 0.2, 0.75)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
-        
       >
-        <div onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}>
+        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <Tilt
-            tiltMaxAngleX={10}
-            tiltMaxAngleY={10}
-            transitionSpeed={1000}
-            scale={1.05}
-            glareEnable={true}
-            glareMaxOpacity={0.5}
-            glareColor="#ffffff"
-            glarePosition="all"
-            perspective={1000}
-            perspectiveOrigin="50% 50%"
-          className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-          
-        >
-          <div className="relative w-full h-[230px]">
-            {video ? (
-              <video
-                ref={videoRef}
-                src={video}
-                className="w-full h-full object-cover rounded-2xl"
-                poster={image || ""}
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                style={{ objectFit: "cover" }}
-              />
-            ) : (
-              <img
-                src={image}
-                alt="project_image"
-                className="w-full h-full object-cover rounded-2xl"
-              />
-            )}
-            {/* Only show overlay on hover */}
-            {hovered && (
-              <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-                {source_code_link && (
-                  <div
-                    onClick={() => window.open(source_code_link, "_blank")}
-                    className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                  >
-                    <img
-                      src={github}
-                      alt="source code"
-                      className="w-1/2 h-1/2 object-contain"
-                    />
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
+            options={{
+              max: 45,
+              scale: 1,
+              speed: 450,
+            }}
+            className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+          >
+            <div className="relative w-full h-[230px]">
+              {video ? (
+                <video
+                  ref={videoRef}
+                  src={video}
+                  className="w-full h-full object-cover rounded-2xl"
+                  poster={image || ""}
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  style={{ objectFit: "cover" }}
+                />
+              ) : (
+                <img
+                  src={image}
+                  alt="project_image"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              )}
+              {hovered && (
+                <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+                  {source_code_link && (
+                    <div
+                      onClick={() => window.open(source_code_link, "_blank")}
+                      className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src={github}
+                        alt="source code"
+                        className="w-1/2 h-1/2 object-contain"
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
 
-          <div className="mt-5">
-            <h3 className="text-white font-bold text-[24px]">{name}</h3>
-            <p className="mt-2 text-secondary text-[14px]">{description}</p>
-          </div>
+            <div className="mt-5">
+              <h3 className="text-white font-bold text-[24px]">{name}</h3>
+              <p className="mt-2 text-secondary text-[14px]">{description}</p>
+            </div>
 
-          <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <p
-                key={`${name}-${tag.name}`}
-                className={`text-[14px] ${tag.color}`}
-              >
-                #{tag.name}
-              </p>
-            ))}
-          </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {tags.map((tag) => (
+                <p
+                  key={`${name}-${tag.name}`}
+                  className={`text-[14px] ${tag.color}`}
+                >
+                  #{tag.name}
+                </p>
+              ))}
+            </div>
           </Tilt>
         </div>
       </motion.div>

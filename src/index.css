@@ -25,7 +25,7 @@ section {
 }
 
 .bg-hero {
-  background-image: url("src/assets/bg.jpg");
+  background-image: url("/public/images/bg.jpg");
   background-size: cover;
   background-position: center;
   top: 0 !important;

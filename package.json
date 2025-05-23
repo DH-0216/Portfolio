@@ -8,7 +8,6 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
-
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -19,9 +18,9 @@
     "motion": "^12.12.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-parallax-tilt": "^1.7.295",
     "react-router-dom": "^7.6.0",
     "react-router-hash-link": "^2.4.3",
-    "react-tilt": "^1.0.2",
     "tailwindcss": "^4.1.7"
   },
   "devDependencies": {

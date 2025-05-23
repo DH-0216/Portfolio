@@ -1,6 +1,6 @@
 import Reac, { useState, useRef } from "react";
 import { AnimatePresence } from "framer-motion";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import TitleHeader from "../components/TitleHeader";
 import { github } from "../assets";

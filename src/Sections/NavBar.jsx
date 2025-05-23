@@ -97,7 +97,7 @@ const Navbar = () => {
                 >
                   {navLinks.map((item) => (
                     <li key={item.title}>
-                      <Link
+                      <HashLink
                         to={item.path}
                         className={`${
                           active === item.title
@@ -110,7 +110,7 @@ const Navbar = () => {
                         }}
                       >
                         {item.title}
-                      </Link>
+                      </HashLink>
                     </li>
                   ))}
                 </motion.ul>

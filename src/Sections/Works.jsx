@@ -1,4 +1,4 @@
-import Reac, { useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { AnimatePresence } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
@@ -37,47 +37,44 @@ const ProjectCard = ({
   };
 
   return (
+
     <div id="work">
       <motion.div
         variants={fadeIn("up", "spring", index * 0.2, 0.75)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
+        
       >
-        <Tilt
-          options={{
-            max: 20,
-            scale: 1.05,
-            speed: 200,
-          }}
+        <div onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}>
+          <Tilt
+            tiltMaxAngleX={10}
+            tiltMaxAngleY={10}
+            transitionSpeed={1000}
+            scale={1.05}
+            glareEnable={true}
+            glareMaxOpacity={0.5}
+            glareColor="#ffffff"
+            glarePosition="all"
+            perspective={1000}
+            perspectiveOrigin="50% 50%"
           className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          
         >
           <div className="relative w-full h-[230px]">
             {video ? (
-              hovered ? (
-                <video
-                  ref={videoRef}
-                  src={video}
-                  className="w-full h-full object-cover rounded-2xl"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  poster={image}
-                />
-              ) : (
-                <video
-                  ref={videoRef}
-                  src={video}
-                  className="w-full h-full object-cover rounded-2xl"
-                  poster={image}
-                  muted
-                  playsInline
-                  preload="metadata"
-                />
-              )
+              <video
+                ref={videoRef}
+                src={video}
+                className="w-full h-full object-cover rounded-2xl"
+                poster={image || ""}
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                style={{ objectFit: "cover" }}
+              />
             ) : (
               <img
                 src={image}
@@ -85,18 +82,23 @@ const ProjectCard = ({
                 className="w-full h-full object-cover rounded-2xl"
               />
             )}
-            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-              <div
-                onClick={() => window.open(source_code_link, "_blank")}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-              >
-                <img
-                  src={github}
-                  alt="source code"
-                  className="w-1/2 h-1/2 object-contain"
-                />
+            {/* Only show overlay on hover */}
+            {hovered && (
+              <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+                {source_code_link && (
+                  <div
+                    onClick={() => window.open(source_code_link, "_blank")}
+                    className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                  >
+                    <img
+                      src={github}
+                      alt="source code"
+                      className="w-1/2 h-1/2 object-contain"
+                    />
+                  </div>
+                )}
               </div>
-            </div>
+            )}
           </div>
 
           <div className="mt-5">
@@ -114,7 +116,8 @@ const ProjectCard = ({
               </p>
             ))}
           </div>
-        </Tilt>
+          </Tilt>
+        </div>
       </motion.div>
     </div>
   );

@@ -19,7 +19,7 @@ const About = () => {
         </div>
 
         {/* Text Content */}
-        <motion.p
+        <motion.div
           variants={fadeInUp()}
           className="text-white text-sm tracking-widest mb-2"
         >
@@ -27,7 +27,7 @@ const About = () => {
             title="Transforming Ideas Into Scalable Solutions"
             sub="💼 About Me"
           />
-        </motion.p>
+        </motion.div>
 
         <motion.div
           variants={fadeInUp()}

@@ -14,13 +14,13 @@ const Skills = () => {
           </span>
         }
       />
-      <div className="flex flex-row flex-wrap justify-center items-center my-10 gap-5 p-5">
+      <div className="flex flex-row flex-wrap justify-center items-center my-10 gap-10 p-10">
         {skills.map((skill, idx) => (
           <img
             key={skill.alt + idx}
             src={skill.src}
             alt={skill.alt}
-            className={`size-12 ${skill.className || ""}`}
+            className={`size-18 ${skill.className || ""}`}
           />
         ))}
       </div>

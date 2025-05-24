@@ -3,6 +3,7 @@ import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
 import { motion } from "motion/react";
 import { staggerContainer, fadeInUp } from "../utils/motion";
+import { star } from "../assets";
 
 const Testimonials = () => {
   return (
@@ -10,7 +11,12 @@ const Testimonials = () => {
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="What People Say About Me?"
-          sub="⭐️ Customer feedback highlights"
+          sub={
+            <span className="flex items-center gap-1 justify-center">
+              <img src={star} alt="" className="size-6 inline-block" />
+              Customer feedback highlights
+            </span>
+          }
         />
 
         <div className="flex gap-6 mt-16 pb-4 no-scrollbar overflow-x-auto">

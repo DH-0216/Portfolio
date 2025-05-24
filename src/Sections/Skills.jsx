@@ -9,7 +9,7 @@ const Skills = () => {
         title="Tools that drive my work"
         sub={
           <span className="flex items-center gap-2 justify-center">
-            <img src={bulb} alt="bulb" className="w-5 h-5 inline-block" /> My
+            <img src={bulb} alt="bulb" className="size-5 inline-block" /> My
             Skills
           </span>
         }

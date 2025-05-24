@@ -42,6 +42,8 @@ import LifeLink from "./LifeLink.gif";
 import question from "./question.gif";
 import bulb from "./bulb.gif"
 import rocket from "./rocket.gif"
+import star from "./star.gif";
+import medal from "./medal.gif";
 
 
 export {
@@ -86,4 +88,6 @@ export {
   question,
   bulb,
   rocket,
+  star,
+  medal,
 };

@@ -26,7 +26,7 @@ const About = () => {
         >
           <TitleHeader
             title="Transforming Ideas Into Scalable Solutions"
-            sub={<span className="flex items-center gap-1 justify-center"><img src={WaveHello} alt="wave hello" className="w-6 h-6 inline-block" />About Me</span>}
+            sub={<span className="flex items-center gap-1 justify-center"><img src={WaveHello} alt="wave hello" className="size-6 inline-block" />About Me</span>}
           />
         </motion.div>
 

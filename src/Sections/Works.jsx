@@ -125,7 +125,7 @@ const Works = () => {
           title="Projects & Works"
           sub={
             <span className="flex items-center gap-2 justify-center">
-              <img src={coding} alt="coding" className="w-6 h-6 inline-block" />
+              <img src={coding} alt="coding" className="size-6 inline-block" />
               My works & projects
             </span>
           }

@@ -48,13 +48,13 @@ const Contact = () => {
               <img
                 src={question}
                 alt="question"
-                className="w-6 h-6 inline-block"
+                className="size-6 inline-block"
               />
               Have questions or ideas? Let’s talk!{" "}
               <img
                 src={rocket}
                 alt="question"
-                className="w-5 h-5 inline-block ml-1"
+                className="size-5 inline-block ml-1"
               />
             </span>
           }

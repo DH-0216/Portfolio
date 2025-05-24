@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { expCards } from "../utils/index";
 import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
+import { medal } from "../assets";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,7 +60,12 @@ const Experience = () => {
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
           title="Professional Work Experience"
-          sub="🏅 My Career Overview"
+          sub={
+            <span className="flex items-center gap-1 justify-center">
+              <img src={medal} alt="" className="size-6 inline-block" />
+              My Career Overview
+            </span>
+          }
         />
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">

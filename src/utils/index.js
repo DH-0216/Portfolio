@@ -21,7 +21,7 @@ import {
   shopify,
   threejs,
   AutoTradingBot,
-  SignalFusion,
+  TrendFusion,
   Pizza,
   Library,
   ChatBot,
@@ -270,28 +270,46 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Esther Howard",
+    mentions: "@estherhoward",
+    review:
+      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+    imgPath: "/images/client1.png",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Wade Warren",
+    mentions: "@wadewarren",
+    review:
+      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+    imgPath: "/images/client3.png",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "Guy Hawkins",
+    mentions: "@guyhawkins",
+    review:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    imgPath: "/images/client2.png",
+  },
+  {
+    name: "Marvin McKinney",
+    mentions: "@marvinmckinney",
+    review:
+      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+    imgPath: "/images/client5.png",
+  },
+  {
+    name: "Floyd Miles",
+    mentions: "@floydmiles",
+    review:
+      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+    imgPath: "/images/client4.png",
+  },
+  {
+    name: "Albert Flores",
+    mentions: "@albertflores",
+    review:
+      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+    imgPath: "/images/client6.png",
   },
 ];
 
@@ -324,7 +342,7 @@ const works = [
   },
 
   {
-    name: "SignalFusion-Trading-Indicator",
+    name: "TrendFusion-Trading-Indicator",
     description:
       "A full-stack trading indicator that provides technical analysis, customizable alerts, and more features to enhance trading strategies.",
     tags: [
@@ -333,7 +351,7 @@ const works = [
         color: "blue-text-gradient",
       },
     ],
-    image: SignalFusion,
+    image: TrendFusion,
     source_code_link: "",
   },
   {

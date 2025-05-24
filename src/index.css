@@ -25,7 +25,7 @@ section {
 }
 
 .bg-hero {
-  background-image: url("/public/images/bg.jpg");
+  background-image: url("/images/bg.jpg");
   background-size: cover;
   background-position: center;
   top: 0 !important;
@@ -43,6 +43,16 @@ section {
 
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
 }
 
 

@@ -67,6 +67,19 @@ const Experience = () => {
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
+                    <div className="flex items-center gap-1 mb-5">
+                      {Array.from({ length: 5 }, (_, i) => (
+                        <img
+                          key={i}
+                          src="/images/star.png"
+                          alt="star"
+                          className="size-5"
+                        />
+                      ))}
+                    </div>
+                    <div className="mb-5">
+                      <p className="text-white-50 text-lg">{card.review}</p>
+                    </div>
                     <div>
                       <img src={card.imgPath} alt="exp-img" />
                     </div>

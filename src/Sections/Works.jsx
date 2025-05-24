@@ -3,7 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import TitleHeader from "../components/TitleHeader";
-import { github } from "../assets";
+import { github, coding, Arrow } from "../assets";
 import SectionWrapper from "../components/SectionWrapper";
 import { works } from "../utils";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -121,7 +121,15 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <TitleHeader title="Projects & Works" sub="💼 My works & projects" />
+        <TitleHeader
+          title="Projects & Works"
+          sub={
+            <span className="flex items-center gap-2 justify-center">
+              <img src={coding} alt="coding" className="w-6 h-6 inline-block" />
+              My works & projects
+            </span>
+          }
+        />
       </motion.div>
 
       <div className="w-full flex justify-center items-center text-center mt-10">
@@ -158,9 +166,14 @@ const Works = () => {
         <div className="w-full flex justify-center mt-8">
           <button
             onClick={() => setShowAll((prev) => !prev)}
-            className="px-6 py-2 text-white rounded-full shadow hover:bg-primary-dark transition bg-gray-700/40 border border-white/20 hover:border-white/30"
+            className="px-6 py-2 text-white rounded-full shadow hover:bg-primary-dark transition  bg-gray-700/40 border border-white/20 hover:border-white/30"
           >
-            {showAll ? "See Less" : "See More"}
+            {showAll ? "See Less" : "See More"} &nbsp;
+            <img
+              src={Arrow}
+              alt="arrow"
+              className={`w-8 h-8 inline-block transition-transform duration-300 ${showAll ? "rotate-180" : ""}`}
+            />
           </button>
         </div>
       )}

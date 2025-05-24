@@ -13,7 +13,7 @@ const Testimonials = () => {
           sub="⭐️ Customer feedback highlights"
         />
 
-        <div className="flex gap-6 mt-16 pb-4 no-scrollbar overflow-x-auto">
+        <div className="flex gap-6 mt-16 pb-4 no-scrollbar overflow-x-auto overflow-visible">
           {testimonials.map((testimonial, index) => (
             <motion.div
               variants={staggerContainer(0.15, 0)}

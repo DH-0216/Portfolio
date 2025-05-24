@@ -34,6 +34,9 @@ import ChatBot from "./ChatBot.png"
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import coding from "./coding.gif";
+import WaveHello from "./Wave Hello.gif";
+import Arrow from "./arrow.gif";
 
 export {
   logo,
@@ -69,4 +72,7 @@ export {
   Pizza,
   Library,
   ChatBot,
+  coding,
+  WaveHello,
+  Arrow,
 };

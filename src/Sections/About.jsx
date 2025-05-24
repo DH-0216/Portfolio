@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeInUp } from "../utils/motion";
 import TitleHeader from "../components/TitleHeader";
+import {WaveHello} from "../assets"; // Adjust the path as necessary
 
 const About = () => {
   return (
@@ -25,7 +26,7 @@ const About = () => {
         >
           <TitleHeader
             title="Transforming Ideas Into Scalable Solutions"
-            sub="💼 About Me"
+            sub={<span className="flex items-center gap-1 justify-center"><img src={WaveHello} alt="wave hello" className="w-6 h-6 inline-block" />About Me</span>}
           />
         </motion.div>
 

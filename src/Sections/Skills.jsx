@@ -34,7 +34,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: idx * 0.1 }}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.3, transition: { duration: 0.5 } }}
           />
         ))}
       </div>

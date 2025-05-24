@@ -313,6 +313,83 @@ const testimonials = [
   },
 ];
 
+const skills = [
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+    alt: "c",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+    alt: "cplusplus",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
+    alt: "csharp",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+    alt: "python",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+    alt: "java",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg",
+    alt: "dart",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg",
+    alt: "flutter",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+    alt: "html5",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+    alt: "css3",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+    alt: "tailwind",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+    alt: "javascript",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+    alt: "react",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
+    alt: "php",
+  },
+  {
+    src: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
+    alt: "spring",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+    alt: "express",
+    className: "bg-white rounded-full p-1",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+    alt: "mongodb",
+  },
+  {
+    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+    alt: "mysql",
+  },
+  {
+    src: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg",
+    alt: "arduino",
+  },
+  // Removed duplicate react icon
+];
+
 const works = [
   {
     name: "Pizza Delivery System",
@@ -430,4 +507,4 @@ const works = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, works, words, expCards, expLogos, socialImgs };
+export { services, technologies, experiences, testimonials, skills, works, words, expCards, expLogos, socialImgs };

@@ -37,6 +37,12 @@ import tripguide from "./tripguide.png";
 import coding from "./coding.gif";
 import WaveHello from "./Wave Hello.gif";
 import Arrow from "./arrow.gif";
+import about_me from "./about_me.gif";
+import LifeLink from "./LifeLink.gif";
+import question from "./question.gif";
+import bulb from "./bulb.gif"
+import rocket from "./rocket.gif"
+
 
 export {
   logo,
@@ -75,4 +81,9 @@ export {
   coding,
   WaveHello,
   Arrow,
+  about_me,
+  LifeLink,
+  question,
+  bulb,
+  rocket,
 };

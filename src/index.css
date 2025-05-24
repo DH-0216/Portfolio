@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luxurious+Roman&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-* {
-  font-family: "Montserrat";
+
+:root {
+  --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
 }
 
 html,
@@ -41,9 +42,11 @@ section {
   );
 }
 
-:root {
-  --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
+.navbar-text{
+  font-family: "Montserrat";
 }
+
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {

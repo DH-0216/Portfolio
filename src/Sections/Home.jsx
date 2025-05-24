@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import logo from "../assets/logo.png";
 import { words } from "../utils/index";
+import { about_me ,logo } from "../assets";
 const Home = () => {
   useGSAP(() => {
     gsap.fromTo(
@@ -59,8 +59,8 @@ const Home = () => {
       </header>
 
       {/* RIGHT: Hero Image */}
-      <div className="flex justify-end items-center w-1/2 h-full absolute right-[150px] top-0">
-        <img src={logo} alt="" className="md:w-1/2 w-full" />
+      <div className="flex justify-end items-center w-1/2 h-full absolute right-[150px] top-10">
+        <img src={about_me} alt="" className="md:w-1/2 w-full" />
       </div>
     </div>
   );

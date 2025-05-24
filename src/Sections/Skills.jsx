@@ -1,12 +1,18 @@
 import React from 'react'
 import TitleHeader from '../components/TitleHeader';
+import { bulb } from '../assets';
 
 const Skills = () => {
   return (
     <div className="mt-20 mx-10">
       <TitleHeader
         title="Tools that drive my work"
-        sub="💡 My Skills"
+        sub={
+          <span className="flex items-center gap-2 justify-center">
+            <img src={bulb} alt="bulb" className="w-5 h-5 inline-block" /> My
+            Skills
+          </span>
+        }
       />
       <div className="flex flex-wrap justify-center items-center my-10 gap-5 p-5">
         <a

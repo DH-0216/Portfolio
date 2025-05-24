@@ -13,7 +13,7 @@ const Testimonials = () => {
           sub="⭐️ Customer feedback highlights"
         />
 
-        <div className="flex gap-6 mt-16 pb-4 no-scrollbar overflow-x-auto overflow-visible">
+        <div className="flex gap-6 mt-16 pb-4 no-scrollbar overflow-x-auto">
           {testimonials.map((testimonial, index) => (
             <motion.div
               variants={staggerContainer(0.15, 0)}
@@ -21,7 +21,7 @@ const Testimonials = () => {
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
               key={index}
-              className="flex-shrink-0 w-[300px] h-[320px] max-w-[90vw] flex hover:h-full"
+              className="flex-shrink-0 w-[300px] h-[320px] max-w-[90vw] flex hover:h-auto"
             >
               <GlowCard card={testimonial} index={index}>
                 <div className="">

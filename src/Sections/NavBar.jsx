@@ -38,7 +38,7 @@ const Navbar = () => {
         nav || isNotHomePage
           ? "w-full bg-black/70 rounded-none"
           : "w-[90%] backdrop-blur-md border-2 border-white/10 rounded-xl"
-      } shadow-md flex justify-between items-center`}
+      } shadow-md flex justify-between items-center navbar-text`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link

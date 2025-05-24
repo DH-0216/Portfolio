@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import TitleHeader from "../components/TitleHeader";
+import { LifeLink, question, rocket } from "../assets";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -42,7 +43,21 @@ const Contact = () => {
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
-          sub="💬 Have questions or ideas? Let’s talk! 🚀"
+          sub={
+            <span className="flex items-center gap-1 justify-center">
+              <img
+                src={question}
+                alt="question"
+                className="w-6 h-6 inline-block"
+              />
+              Have questions or ideas? Let’s talk!{" "}
+              <img
+                src={rocket}
+                alt="question"
+                className="w-5 h-5 inline-block ml-1"
+              />
+            </span>
+          }
         />
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
@@ -106,8 +121,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <p></p>
+            <div className="w-full h-full hover:cursor-grab rounded-3xl overflow-hidden mx-50">
+              <img src={LifeLink} alt="" />
             </div>
           </div>
         </div>

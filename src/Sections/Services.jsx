@@ -1,10 +1,8 @@
-import React from 'react'
 import TitleHeader from '../components/TitleHeader'
 import { motion } from 'motion/react';
 import { staggerContainer } from '../utils/motion';
 import { services } from '../utils';
 import { Service } from '../assets';
-import GlowCard from '../components/GlowCard';
 
 const Services = () => {
   return (
@@ -19,13 +17,13 @@ const Services = () => {
           <TitleHeader
             title="Services I Offer"
             sub={
-              <span className="flex items-center gap-2 justify-center text-sky-400 font-semibold">
+              <span className="flex items-center gap-2 justify-center">
                 <motion.img
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
                   src={Service}
                   alt=""
-                  className="w-7 h-7 inline-block drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
+                  className="size-6 inline-block drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
                 />
                 Services
               </span>
@@ -45,7 +43,7 @@ const Services = () => {
                 transition={{ duration: 0.3, ease: "easeOut" }}
                 key={index}
                 style={{ perspective: 1000 }}
-                className="relative flex-shrink-0 w-[340px] h-[360px] max-w-[90vw]"
+                className="relative flex-shrink-0 w-[340px] min-h-[360px] max-w-[90vw]"
               >
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-slate-900/50 to-slate-900/50 backdrop-blur-xl shadow-lg border border-sky-500/20 group-hover:border-sky-400/50 transform preserve-3d" />
                 

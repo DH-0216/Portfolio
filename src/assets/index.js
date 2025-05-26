@@ -45,8 +45,20 @@ import rocket from "./rocket.gif";
 import star from "./star.gif";
 import medal from "./medal.gif";
 import Ecommerce_App from "./Ecommerce_App.jpg";
-import Arduino_System from "./Arduino.png";
+import Arduino from "./tech/arduino.svg";
 import Service from "./Service.gif";
+import C from "./tech/c.svg";
+import Cpp from "./tech/cpp.svg";
+import Csharp from "./tech/csharp.svg";
+import Python from "./tech/python.svg";
+import Java from "./tech/java.svg";
+import Dart from "./tech/dart.svg";
+import Flutter from "./tech/flutter.svg";
+import Express from "./tech/express.svg";
+import MySql from "./tech/mysql.svg";
+import Spring from "./tech/springio.svg";
+import PHP from "./tech/php.svg";
+
 
 export {
   logo,
@@ -93,6 +105,17 @@ export {
   star,
   medal,
   Ecommerce_App,
-  Arduino_System,
+  Arduino,
   Service,
+  C,
+  Cpp,
+  Csharp,
+  Python,
+  Java,
+  Dart,
+  Flutter,
+  Express,
+  MySql,
+  Spring,
+  PHP,
 };

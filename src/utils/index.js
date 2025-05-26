@@ -25,8 +25,19 @@ import {
   Pizza,
   Library,
   ChatBot,
-  Arduino_System,
+  Arduino,
   Ecommerce_App,
+  C,
+  Cpp,
+  Csharp,
+  Python,
+  Java,
+  Dart,
+  Flutter,
+  Express,
+  MySql,
+  Spring,
+  PHP,
 } from "../assets";
 
 const navLinks = [
@@ -123,31 +134,31 @@ const expLogos = [
 
 const skills = [
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+    src: C,
     alt: "c",
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+    src: Cpp,
     alt: "cplusplus",
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
+    src: Csharp,
     alt: "csharp",
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+    src: Python,
     alt: "python",
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+    src: Java,
     alt: "java",
   },
   {
-    src: "https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg",
+    src: Dart,
     alt: "dart",
   },
   {
-    src: "https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg",
+    src: Flutter,
     alt: "flutter",
   },
   {
@@ -191,15 +202,15 @@ const skills = [
     alt: "git"
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
+    src: PHP,
     alt: "php",
   },
   {
-    src: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
+    src: Spring,
     alt: "spring",
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+    src: Express,
     alt: "express",
     className: "bg-white rounded-full p-1",
   },
@@ -208,11 +219,11 @@ const skills = [
     alt: "mongodb",
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+    src: MySql,
     alt: "mysql",
   },
   {
-    src: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg",
+    src: Arduino,
     alt: "arduino",
   },
   
@@ -347,7 +358,7 @@ const works = [
         color: "pink-text-gradient",
       },
     ],
-    image: Arduino_System,
+    image: Arduino,
     source_code_link:
       "https://github.com/DH-0216/Arduino-Home-Security-Systems-Project.git",
   },
@@ -371,22 +382,50 @@ const services = [
   {
     title: "Web Developer",
     img: web,
-    description: "Building responsive and user-friendly websites."
+    description:
+      "Designing and developing responsive, high-performance websites using modern frameworks and best practices. Ensuring cross-browser compatibility, accessibility, and seamless user experiences.",
   },
   {
     title: "React Native Developer",
     img: mobile,
-    description: "Building cross-platform mobile applications using React Native."
+    description:
+      "Building robust, cross-platform mobile applications with React Native. Integrating APIs, optimizing performance, and delivering intuitive interfaces for both iOS and Android devices.",
   },
   {
     title: "Backend Developer",
     img: backend,
-    description: "Developing server-side logic and APIs."
+    description:
+      "Developing scalable server-side applications, RESTful APIs, and database architectures. Implementing authentication, security, and data management solutions for reliable backend systems.",
   },
   {
     title: "Content Creator",
     img: creator,
-    description: "Creating engaging content for various platforms."
+    description:
+      "Producing engaging technical content, tutorials, and documentation for web and mobile platforms. Enhancing brand presence through blogs, videos, and social media.",
+  },
+  {
+    title: "UI/UX Designer",
+    img: figma,
+    description:
+      "Crafting user-centric designs and wireframes using Figma and other design tools. Focusing on usability, visual appeal, and seamless interaction flows.",
+  },
+  {
+    title: "DevOps Engineer",
+    img: docker,
+    description:
+      "Automating deployment pipelines, managing cloud infrastructure, and ensuring continuous integration and delivery using Docker and related DevOps tools.",
+  },
+  {
+    title: "API Integration Specialist",
+    img: nodejs,
+    description:
+      "Integrating third-party APIs and services into web and mobile applications. Ensuring secure, efficient, and reliable data exchange between systems.",
+  },
+  {
+    title: "IoT Solutions Developer",
+    img: Arduino,
+    description:
+      "Designing and implementing IoT solutions using Arduino and microcontrollers. Developing firmware, sensor integrations, and real-time monitoring systems.",
   },
 ];
 

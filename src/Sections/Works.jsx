@@ -42,7 +42,7 @@ const ProjectCard = ({
         variants={fadeIn("up", "spring", index * 0.2, 0.75)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0 }}
       >
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <Tilt

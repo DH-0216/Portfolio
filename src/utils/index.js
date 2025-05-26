@@ -38,6 +38,7 @@ import {
   MySql,
   Spring,
   PHP,
+  github,
 } from "../assets";
 
 const navLinks = [
@@ -474,22 +475,36 @@ const testimonials = [
   },
 ];
 
-const socialImgs = [
+const social = [
   {
     name: "insta",
-    imgPath: "/images/insta.png",
+    img: "/images/insta.png",
+    link: "",
   },
   {
     name: "fb",
-    imgPath: "/images/fb.png",
+    img: "/images/fb.png",
+    link: "",
   },
   {
     name: "x",
-    imgPath: "/images/x.png",
+    img: "/images/x.png",
+    link: "",
   },
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    img: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/dulaj-hashmika/",
+  },
+  {
+    name: "github",
+    img: github,
+    link: "https://github.com/DH-0216",
+  },
+  {
+    name: "whatsapp",
+    img: "/images/whatsapp.png",
+    link: "https://wa.me/1234567890",
   },
 ];
 
@@ -502,5 +517,5 @@ export {
   works,
   services,
   testimonials,
-  socialImgs,
+  social,
 };

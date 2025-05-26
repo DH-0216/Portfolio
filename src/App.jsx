@@ -23,8 +23,10 @@ function App() {
       <Works />
       <Services />
       <Testimonials />
-      <Contact />
-      <Footer />
+      <div className="bg-gradient-to-t from-black via-gray-900 to-transparent">
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 }

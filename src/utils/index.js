@@ -370,19 +370,23 @@ const works = [
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    img: web,
+    description: "Building responsive and user-friendly websites."
   },
   {
     title: "React Native Developer",
-    icon: mobile,
+    img: mobile,
+    description: "Building cross-platform mobile applications using React Native."
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    img: backend,
+    description: "Developing server-side logic and APIs."
   },
   {
     title: "Content Creator",
-    icon: creator,
+    img: creator,
+    description: "Creating engaging content for various platforms."
   },
 ];
 

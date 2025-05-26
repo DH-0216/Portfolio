@@ -27,10 +27,10 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import AutoTradingBot from "./auto-trading-bot.mp4";
-import TrendFusion from "./TrendFusion.png"
+import TrendFusion from "./TrendFusion.png";
 import Pizza from "./Pizza.png";
 import Library from "./Library.png";
-import ChatBot from "./ChatBot.png"
+import ChatBot from "./ChatBot.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -40,13 +40,13 @@ import Arrow from "./arrow.gif";
 import about_me from "./about_me.gif";
 import LifeLink from "./LifeLink.gif";
 import question from "./question.gif";
-import bulb from "./bulb.gif"
-import rocket from "./rocket.gif"
+import bulb from "./bulb.gif";
+import rocket from "./rocket.gif";
 import star from "./star.gif";
 import medal from "./medal.gif";
 import Ecommerce_App from "./Ecommerce_App.jpg";
 import Arduino_System from "./Arduino.png";
-
+import Service from "./Service.gif";
 
 export {
   logo,
@@ -94,4 +94,5 @@ export {
   medal,
   Ecommerce_App,
   Arduino_System,
+  Service,
 };

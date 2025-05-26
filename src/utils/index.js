@@ -500,11 +500,13 @@ const social = [
     name: "github",
     img: github,
     link: "https://github.com/DH-0216",
+    className: "w-7 h-7", 
   },
   {
     name: "whatsapp",
     img: "/images/whatsapp.png",
     link: "https://wa.me/1234567890",
+    className: "w-8 h-8",
   },
 ];
 

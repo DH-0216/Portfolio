@@ -45,7 +45,7 @@ const Services = () => {
                 style={{ perspective: 1000 }}
                 className="relative flex-shrink-0 w-[340px] min-h-[360px] max-w-[90vw]"
               >
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-slate-900/50 to-slate-900/50 backdrop-blur-xl shadow-lg border border-sky-500/20 group-hover:border-sky-400/50 transform preserve-3d" />
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-slate-900/50 to-slate-900/50 backdrop-blur-xl shadow-lg border border-sky-600/20 group-hover:border-sky-400/50 transform preserve-3d" />
                 
                 <div className="relative z-10 flex flex-col items-center gap-6 p-8 w-full h-full">
                   <motion.div
@@ -61,7 +61,7 @@ const Services = () => {
                   </motion.div>
                   
                   <div className="text-center space-y-4">
-                    <h3 className="font-bold text-xl text-sky-300 tracking-wide">
+                    <h3 className="font-bold text-xl text-white">
                       {service.title}
                     </h3>
                     <p className="text-slate-300/90 text-sm leading-relaxed">
@@ -72,7 +72,7 @@ const Services = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="mt-auto px-6 py-2 rounded-lg bg-sky-500/10 hover:bg-sky-500/20 text-sky-300 text-sm font-medium transition-colors duration-200"
+                    className="mt-auto px-6 py-2 rounded-lg bg-sky-200/10 hover:bg-sky-500/20 text-white text-sm font-medium transition-colors duration-200"
                   >
                     Learn More
                   </motion.button>

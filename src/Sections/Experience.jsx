@@ -5,6 +5,7 @@ import { expCards } from "../utils/index";
 import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
 import { medal } from "../assets";
+import { motion } from "motion/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -62,7 +63,13 @@ const Experience = () => {
           title="Professional Work Experience"
           sub={
             <span className="flex items-center gap-1 justify-center">
-              <img src={medal} alt="" className="size-6 inline-block" />
+              <motion.img
+                whileHover={{ rotate: 360 }}
+                transition={{ duration: 0.6 }}
+                src={medal}
+                alt=""
+                className="size-6 inline-block drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
+              />
               My Career Overview
             </span>
           }

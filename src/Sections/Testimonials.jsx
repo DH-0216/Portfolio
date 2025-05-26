@@ -7,13 +7,13 @@ import { star } from "../assets";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="relative py-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+    <section id="testimonials" className="relative py-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 ">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="relative z-10"
+          className="relative z-10 "
         >
           <TitleHeader
             title="What People Say About Me?"
@@ -27,22 +27,28 @@ const Testimonials = () => {
         </motion.div>
 
         <div className="relative mt-16">
-          <div className="flex gap-6 overflow-x-auto no-scrollbar py-10">
+          <div className="flex gap-6 overflow-x-auto no-scrollbar py-10 ">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 variants={staggerContainer(0.15, 0)}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{
+                  scale: 1.05,
+                  height: "auto",
+                  transition: {
+                    duration: 0.3,
+                  },
+                }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 key={index}
                 style={{ perspective: 1000 }}
-                className="relative flex-shrink-0 w-[300px] h-[320px] max-w-[90vw]"
+                className="relative flex-shrink-0 w-[300px] h-[240px] max-w-[90vw] overflow-hidden rounded-2xl"
               >
                 <GlowCard card={testimonial} index={index}>
-                  <div className="">
-                    <div className="flex justify-between gap-10">
+                  <div className="transition-all duration-300">
+                    <div className="flex justify-between gap-10 h-auto">
                       <div className="flex gap-3">
                         <div>
                           <img
@@ -53,7 +59,9 @@ const Testimonials = () => {
                         </div>
                         <div className="text-[12px]">
                           <p className="font-bold">{testimonial.name}</p>
-                          <p className="text-white-50">{testimonial.mentions}</p>
+                          <p className="text-white-50">
+                            {testimonial.mentions}
+                          </p>
                         </div>
                       </div>
                       <div className="flex items-center mb-5">
@@ -67,7 +75,7 @@ const Testimonials = () => {
                         ))}
                       </div>
                     </div>
-                    <div className="mt-10 ">  
+                    <div className="mt-10 ">
                       <p>{testimonial.review}</p>
                     </div>
                   </div>

@@ -452,13 +452,7 @@ const testimonials = [
       "Collaborating with Dulaj was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Dulaj's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Dulaj is the ideal partner.",
     imgPath: "/images/client2.png",
   },
-  {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Dulaj was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
-  },
+
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
@@ -472,6 +466,13 @@ const testimonials = [
     review:
       "Dulaj was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
     imgPath: "/images/client6.png",
+  },
+  {
+    name: "Marvin McKinney",
+    mentions: "@marvinmckinney",
+    review:
+      "Dulaj was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+    imgPath: "/images/client5.png",
   },
 ];
 

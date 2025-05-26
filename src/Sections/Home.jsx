@@ -22,7 +22,7 @@ const Home = () => {
             <div className="w-1 sm:h-80 h-40 gray-gradient" />
           </div>
           <div>
-            <h1 className="font-black lg:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[80px] mt-2 text-white">
+            <h1 className="font-black lg:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[80px] mt-2 text-[#F8F8FF]">
               Hi, I'm <span className="text-[#888888]">Dulaj Hashmika</span>
             </h1>
             <p className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-5">
@@ -30,7 +30,7 @@ const Home = () => {
               experiences and applications.
             </p>
 
-            <div className="hero-text text-white mt-15">
+            <div className="hero-text text-[#F8F8FF] mt-15">
               <h1>
                 Shaping
                 <span className="slide">

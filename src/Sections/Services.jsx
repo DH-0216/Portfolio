@@ -6,7 +6,7 @@ import { Service } from '../assets';
 
 const Services = () => {
   return (
-    <div className="relative py-20">
+    <div className="relative py-10">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -32,7 +32,7 @@ const Services = () => {
         </motion.div>
 
         <div className="relative mt-16">
-          <div className="flex space-x-8 overflow-x-auto no-scrollbar py-10">
+          <div className="flex space-x-8 overflow-x-auto no-scrollbar py-5">
             {services.map((service, index) => (
               <motion.div
                 variants={staggerContainer(0.15, 0)}
@@ -61,7 +61,7 @@ const Services = () => {
                   </motion.div>
                   
                   <div className="text-center space-y-4">
-                    <h3 className="font-bold text-xl text-white">
+                    <h3 className="font-bold text-xl text-[#F8F8FF]">
                       {service.title}
                     </h3>
                     <p className="text-slate-300/90 text-sm leading-relaxed">
@@ -72,7 +72,7 @@ const Services = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="mt-auto px-6 py-2 rounded-lg bg-sky-200/10 hover:bg-sky-500/20 text-white text-sm font-medium transition-colors duration-200"
+                    className="mt-auto px-6 py-2 rounded-lg bg-sky-200/10 hover:bg-sky-500/20 text-[#F8F8FF] text-sm font-medium transition-colors duration-200"
                   >
                     Learn More
                   </motion.button>

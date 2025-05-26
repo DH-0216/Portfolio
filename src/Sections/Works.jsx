@@ -92,7 +92,7 @@ const ProjectCard = ({
             </div>
 
             <div className="mt-5">
-              <h3 className="text-white font-bold text-[24px]">{name}</h3>
+              <h3 className="text-[#F8F8FF] font-bold text-[24px]">{name}</h3>
               <p className="mt-2 text-secondary text-[14px]">{description}</p>
             </div>
 
@@ -166,7 +166,7 @@ const Works = () => {
         <div className="w-full flex justify-center mt-8">
           <button
             onClick={() => setShowAll((prev) => !prev)}
-            className="px-6 py-2 text-white rounded-full shadow hover:bg-primary-dark transition  bg-gray-700/40 border border-white/20 hover:border-white/30"
+            className="px-6 py-2 text-[#F8F8FF] rounded-full shadow hover:bg-primary-dark transition  bg-gray-700/40 border border-white/20 hover:border-white/30"
           >
             {showAll ? "See Less" : "See More"} &nbsp;
             <img

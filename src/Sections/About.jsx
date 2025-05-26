@@ -22,7 +22,7 @@ const About = () => {
         {/* Text Content */}
         <motion.div
           variants={fadeInUp()}
-          className="text-white text-sm tracking-widest mb-2"
+          className="text-[#F8F8FF] text-sm tracking-widest mb-2"
         >
           <TitleHeader
             title="Transforming Ideas Into Scalable Solutions"
@@ -37,7 +37,7 @@ const About = () => {
 
         <motion.p
           variants={fadeInUp()}
-          className="mt-6 text-white text-[17px] max-w-3xl leading-[30px] text-center"
+          className="mt-6 text-[#F8F8FF] text-[17px] max-w-3xl leading-[30px] text-center"
         >
           I'm a skilled software developer with experience in TypeScript and
           JavaScript, and expertise in frameworks like React, Node.js, and

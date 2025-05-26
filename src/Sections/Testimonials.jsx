@@ -7,7 +7,7 @@ import { star } from "../assets";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="relative py-10">
+    <section id="testimonials" className="relative py-15">
       <div className="max-w-7xl mx-auto px-4 md:px-8 ">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -27,7 +27,7 @@ const Testimonials = () => {
         </motion.div>
 
         <div className="relative mt-16">
-          <div className="flex gap-6 overflow-x-auto no-scrollbar py-10 ">
+          <div className="flex gap-6 overflow-x-auto no-scrollbar py-5 ">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 variants={staggerContainer(0.15, 0)}
@@ -44,7 +44,7 @@ const Testimonials = () => {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 key={index}
                 style={{ perspective: 1000 }}
-                className="relative flex-shrink-0 w-[300px] h-[240px] max-w-[90vw] overflow-hidden rounded-2xl"
+                className="relative flex-shrink-0 w-[300px] min-h-[240px] max-w-[90vw] overflow-hidden rounded-2xl"
               >
                 <GlowCard card={testimonial} index={index}>
                   <div className="transition-all duration-300">
@@ -59,7 +59,7 @@ const Testimonials = () => {
                         </div>
                         <div className="text-[12px]">
                           <p className="font-bold">{testimonial.name}</p>
-                          <p className="text-white-50">
+                          <p className="text-[#F8F8FF]/90">
                             {testimonial.mentions}
                           </p>
                         </div>
@@ -76,7 +76,7 @@ const Testimonials = () => {
                       </div>
                     </div>
                     <div className="mt-10 ">
-                      <p>{testimonial.review}</p>
+                      <p className="text-slate-300/90 text-sm">{testimonial.review}</p>
                     </div>
                   </div>
                 </GlowCard>

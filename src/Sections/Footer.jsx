@@ -31,7 +31,7 @@ const Footer = () => {
           Built with <span className="text-blue-400 font-medium">React</span> &amp; <span className="text-teal-400 font-medium">Tailwind CSS</span>
         </p>
         <p className="text-xs text-gray-400">
-          Contact: <a href="mailto:dulajhashmia075@email.com" className="underline hover:text-white">dulajhashmia075@email.com</a>
+          Contact: <a href="mailto:dulajhashmia075@email.com" className="underline hover:text-[#F8F8FF]">dulajhashmia075@email.com</a>
         </p>
       </div>
     </footer>

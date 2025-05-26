@@ -19,7 +19,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -44,6 +44,8 @@ import bulb from "./bulb.gif"
 import rocket from "./rocket.gif"
 import star from "./star.gif";
 import medal from "./medal.gif";
+import Ecommerce_App from "./Ecommerce_App.jpg";
+import Arduino_System from "./Arduino.png";
 
 
 export {
@@ -90,4 +92,6 @@ export {
   rocket,
   star,
   medal,
+  Ecommerce_App,
+  Arduino_System,
 };

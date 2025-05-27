@@ -49,7 +49,7 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex flex-col items-center md:items-center gap-5 pt-5 md:pt-10">
-            <h3 className="text-sm font-bold text-white">Follow Me On</h3>
+            <h3 className="text-sm font-bold text-white">Reach Me On</h3>
             <div className="flex flex-wrap justify-center gap-4">
               {social.map((item) => (
                 <a

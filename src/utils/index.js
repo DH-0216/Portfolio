@@ -1,3 +1,4 @@
+import { color } from "motion";
 import {
   mobile,
   backend,
@@ -42,7 +43,6 @@ import {
 } from "../assets";
 
 const navLinks = [
-
   {
     id: "home",
     title: "Home",
@@ -184,11 +184,11 @@ const skills = [
   },
   {
     src: redux,
-    alt: "redux"
+    alt: "redux",
   },
   {
     src: threejs,
-    alt: "threejs"
+    alt: "threejs",
   },
   {
     src: nodejs,
@@ -200,7 +200,7 @@ const skills = [
   },
   {
     src: git,
-    alt: "git"
+    alt: "git",
   },
   {
     src: PHP,
@@ -227,7 +227,6 @@ const skills = [
     src: Arduino,
     alt: "arduino",
   },
-  
 ];
 
 const works = [
@@ -241,16 +240,24 @@ const works = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
         name: "tailwind",
         color: "pink-text-gradient",
       },
       {
+        name: "bootstrap",
+        color: "purple-text-gradient",
+      },
+      {
         name: "spring",
         color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "purple-text-gradient",
       },
     ],
     image: Pizza,
@@ -287,6 +294,10 @@ const works = [
         name: "flask",
         color: "green-text-gradient",
       },
+      {
+        name: "PyQt6",
+        color: "purple-text-gradient"
+      }
     ],
     image: ChatBot,
     source_code_link:
@@ -505,7 +516,7 @@ const social = [
     name: "github",
     img: github,
     link: "https://github.com/DH-0216",
-    className: "w-7 h-7", 
+    className: "w-7 h-7",
   },
   {
     name: "whatsapp",

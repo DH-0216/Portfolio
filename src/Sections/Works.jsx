@@ -8,7 +8,7 @@ import SectionWrapper from "../components/SectionWrapper";
 import { works } from "../utils";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({
+const WorkCard = ({
   index,
   name,
   description,
@@ -173,7 +173,7 @@ const Works = () => {
               transition={{ duration: 0.4 }}
               layout
             >
-              <ProjectCard index={index} {...work} />
+              <WorkCard index={index} {...work} />
             </motion.div>
           ))}
         </AnimatePresence>

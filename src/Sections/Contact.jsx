@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="flex-center">
+    <section id="contact" className="flex-center md:mt-20">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
@@ -128,7 +128,7 @@ const Contact = () => {
               <img
                 src={LifeLink}
                 alt=""
-                className="w-auto h-60 sm:h-60 md:h-80 xl:h-full"
+                className="w-auto h-60 sm:h-60 md:h-80 xl:h-100"
               />
             </div>
           </div>

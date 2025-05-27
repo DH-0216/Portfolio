@@ -60,7 +60,7 @@ const Home = () => {
 
       {/* RIGHT: Hero Image */}
       <div className="flex justify-end items-center w-1/2 h-full absolute right-[150px] top-10">
-        <img src={about_me} alt="" className="md:w-1/2 w-full" />
+        <img src={about_me} alt="" className="w-auto sm:w-1/4 md:w-1/2 " />
       </div>
     </div>
   );

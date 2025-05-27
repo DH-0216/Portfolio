@@ -58,6 +58,7 @@ import Express from "./tech/express.svg";
 import MySql from "./tech/mysql.svg";
 import Spring from "./tech/springio.svg";
 import PHP from "./tech/php.svg";
+import external_link from "./external-link.png";
 
 
 export {
@@ -118,4 +119,5 @@ export {
   MySql,
   Spring,
   PHP,
+  external_link,
 };

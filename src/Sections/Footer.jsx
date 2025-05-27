@@ -3,7 +3,7 @@ import { social } from "../utils";
 
 const Footer = () => {
   return (
-    <footer className="w-full text-gray-300 px-6 sm:px-10 ">
+    <footer className="w-full text-gray-300 px-6 sm:px-10 mt-5 md:mt-10 ">
       <div className="max-w-6xl mx-auto flex flex-col gap-5 md:gap-16  align-items-center py-10">
         {/* Top section */}
         <div className="flex flex-col md:flex-row md:justify-between items-center md:items-start gap-2 md:gap-10">
@@ -40,7 +40,7 @@ const Footer = () => {
               </a>
             </p>
             <p className="text-sm text-gray-400">
-              Phone: <span className="hover:text-white">+94 77 123 4567</span>
+              Phone: <span className="hover:text-white">+94 78 434 0852</span>
             </p>
             <p className="text-sm text-gray-400">
               Location: Colombo, Sri Lanka

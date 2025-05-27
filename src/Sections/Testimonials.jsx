@@ -7,7 +7,7 @@ import { star } from "../assets";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="relative py-15">
+    <section id="testimonials" className="relative py-10">
       <div className="max-w-7xl mx-auto px-4 md:px-8 ">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -44,7 +44,7 @@ const Testimonials = () => {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 key={index}
                 style={{ perspective: 1000 }}
-                className="relative flex-shrink-0 w-[300px] min-h-[240px] max-w-[90vw] overflow-hidden rounded-2xl"
+                className="relative flex-shrink-0 w-[300px] h-[240px] max-w-[90vw] overflow-hidden rounded-2xl"
               >
                 <GlowCard card={testimonial} index={index}>
                   <div className="transition-all duration-300">

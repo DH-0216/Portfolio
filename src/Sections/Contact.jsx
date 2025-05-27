@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="flex-center ">
+    <section id="contact" className="flex-center">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
@@ -59,9 +59,9 @@ const Contact = () => {
             </span>
           }
         />
-        <div className="grid-12-cols mt-16">
-          <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 mt-16">
+          <div className="xl:col-span-5 col-span-1">
+            <div className="flex-center card-border rounded-xl p-5 sm:p-8 md:p-10">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
@@ -77,6 +77,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="What’s your good name?"
                     required
+                    className="w-full mt-1 px-3 py-2 rounded border focus:outline-none"
                   />
                 </div>
 
@@ -90,6 +91,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="What’s your email address?"
                     required
+                    className="w-full mt-1 px-3 py-2 rounded border focus:outline-none"
                   />
                 </div>
 
@@ -103,10 +105,11 @@ const Contact = () => {
                     placeholder="How can I help you?"
                     rows="5"
                     required
+                    className="w-full mt-1 px-3 py-2 rounded border focus:outline-none"
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" className="w-full">
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
@@ -120,9 +123,13 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="xl:col-span-7 min-h-96">
-            <div className="w-full h-full hover:cursor-grab rounded-3xl overflow-hidden mx-50">
-              <img src={LifeLink} alt="" />
+          <div className="xl:col-span-7 col-span-1 min-h-60 mt-8 xl:mt-0 flex items-center justify-center">
+            <div className="w-full h-full hover:cursor-grab rounded-3xl overflow-hidden mx-auto max-w-md sm:max-w-lg md:max-w-xl xl:max-w-full justify-center flex items-center">
+              <img
+                src={LifeLink}
+                alt=""
+                className="w-auto h-60 sm:h-60 md:h-80 xl:h-full"
+              />
             </div>
           </div>
         </div>

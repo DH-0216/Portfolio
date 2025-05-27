@@ -34,7 +34,7 @@ const Navbar = () => {
         opacity: 1,
       }}
       transition={{ duration: 0.75, ease: "easeInOut" }}
-      className={`fixed left-1/2 transform -translate-x-1/2 z-80 px-6 py-3 ${
+      className={`fixed left-1/2 transform -translate-x-1/2 z-80 px-4 sm:px-6 py-2 sm:py-3 ${
         nav || isNotHomePage
           ? "w-full bg-gradient-to-r from-black/90 via-[#050d1a]/90  to-[#101a2b]/90 rounded-none"
           : "w-[90%] backdrop-blur-md border-2 border-white/10 rounded-xl"
@@ -49,7 +49,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-auto h-12 object-contain" />
+          <img 
+            src={logo} 
+            alt="logo" 
+            className="w-auto h-6 sm:h-8 md:h-10 object-contain transition-all duration-300" 
+          />
           
         </Link>
 

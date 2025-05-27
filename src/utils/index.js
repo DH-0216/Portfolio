@@ -256,7 +256,7 @@ const works = [
     image: Pizza,
     source_code_link:
       "https://github.com/DH-0216/pizza-order-delivery-system.git",
-    url: "https://"
+    url: "https://",
   },
 
   {
@@ -271,6 +271,7 @@ const works = [
     ],
     image: TrendFusion,
     source_code_link: "",
+    url: "https://",
   },
   {
     name: "AI Powered Chatbot",
@@ -311,6 +312,7 @@ const works = [
     ],
     video: AutoTradingBot,
     source_code_link: "",
+    url: "https://",
   },
   {
     name: "Library Management System",
@@ -341,6 +343,7 @@ const works = [
     image: Library,
     source_code_link:
       "https://github.com/DH-0216/Library-Management-System.git",
+    url: "https://",
   },
   {
     name: "Arduino Home Security System",

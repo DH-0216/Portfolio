@@ -17,6 +17,7 @@ const WorkCard = ({
   video,
   url,
   source_code_link,
+  forceShow = false,
 }) => {
   const [hovered, setHovered] = useState(false);
   const videoRef = useRef(null);
@@ -42,8 +43,9 @@ const WorkCard = ({
       <motion.div
         variants={fadeIn("up", "spring", index * 0.2, 0.75)}
         initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0 }}
+        animate={forceShow ? "show" : undefined}
+        whileInView={forceShow ? undefined : "show"}
+        viewport={forceShow ? undefined : { once: true, amount: 0 }}
       >
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <Tilt
@@ -173,7 +175,7 @@ const Works = () => {
               transition={{ duration: 0.4 }}
               layout
             >
-              <WorkCard index={index} {...work} />
+              <WorkCard index={index} {...work} forceShow={showAll} />
             </motion.div>
           ))}
         </AnimatePresence>
@@ -182,8 +184,24 @@ const Works = () => {
       {works.length > 3 && (
         <div className="w-full flex justify-center mt-6 sm:mt-8 px-4 sm:px-0">
           <button
-            onClick={() => setShowAll((prev) => !prev)}
-            className="px-6 py-2 text-[#F8F8FF] rounded-full shadow hover:bg-primary-dark transition  bg-gray-700/40 border border-white/20 hover:border-white/30"
+            onClick={() => {
+              setShowAll((prev) => {
+                const newValue = !prev;
+
+                // Scroll to bottom after showing all
+                if (!prev) {
+                  setTimeout(() => {
+                    window.scrollBy({
+                      top: 300, // adjust as needed to bring new cards into view
+                      behavior: "smooth",
+                    });
+                  }, 100); // slight delay to allow layout update
+                }
+
+                return newValue;
+              });
+            }}
+            className="px-6 py-2 text-[#F8F8FF] rounded-full shadow hover:bg-primary-dark transition bg-gray-700/40 border border-white/20 hover:border-white/30"
           >
             {showAll ? "See Less" : "See More"} &nbsp;
             <img

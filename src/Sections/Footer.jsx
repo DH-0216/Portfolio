@@ -12,7 +12,7 @@ const Footer = () => {
             <img
               src={logo}
               alt="Logo"
-              className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+              className="h-10 sm:h-12 md:h-12 w-auto object-contain"
             />
             <p className="text-lg font-semibold tracking-wide">
               Dulaj Hashmika

@@ -13,10 +13,10 @@ const Home = () => {
   });
 
   return (
-    <div className="relative z-10  md:h-dvh h-[180vh] flex xl:items-center items-start justify-center">
+    <div className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-between p-4 ">
       {/* LEFT: Hero Content */}
       <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-        <div className=" sm:px-16 px-6 absolute inset-0 top-[180px] mx-10 flex flex-row items-start gap-5">
+        <div className=" sm:px-16 px-6 absolute inset-0 top-[120px] md:top-[180px] mx-10 flex flex-row items-start gap-5">
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-[#888888]" />
             <div className="w-1 sm:h-80 h-40 gray-gradient" />
@@ -30,7 +30,7 @@ const Home = () => {
               experiences and applications.
             </p>
 
-            <div className="hero-text text-[#F8F8FF] mt-15">
+            <div className="hero-text text-[#F8F8FF] mt-10 md:mt-15">
               <h1>
                 Shaping
                 <span className="slide">
@@ -59,8 +59,12 @@ const Home = () => {
       </header>
 
       {/* RIGHT: Hero Image */}
-      <div className="flex justify-end items-center w-1/2 h-full absolute right-[150px] top-10">
-        <img src={about_me} alt="" className="w-auto sm:w-1/4 md:w-1/2 " />
+      <div className=" relative w-full md:w-1/2 flex justify-center md:justify-start top-[-60px] md:top-[-60px] lg:top-10">
+        <img
+          src={about_me}
+          alt="about me"
+          className="w-[180px] sm:w-[280px] md:w-[240px] lg:w-[400px] object-contain "
+        />
       </div>
     </div>
   );

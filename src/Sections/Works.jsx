@@ -3,10 +3,8 @@ import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 import TitleHeader from "../components/TitleHeader";
 import { github, coding, Arrow, external_link } from "../assets";
-import SectionWrapper from "../components/SectionWrapper";
 import { works } from "../utils";
 import { fadeIn, textVariant } from "../utils/motion";
-import Scene3D from "../components/Scene3D";
 
 const WorkCard = ({
   index,
@@ -135,14 +133,7 @@ const Works = () => {
   const displayedWorks = showAll ? works : works.slice(0, 3);
 
   return (
-    <div
-      id="work"
-      className="relative min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 overflow-hidden"
-    >
-      <div className="absolute inset-0">
-        <Scene3D />
-      </div>
-
+    <div id="work" className="relative min-h-screen  overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
 
       {/* Content */}
@@ -216,7 +207,7 @@ const Works = () => {
                   return newValue;
                 });
               }}
-              className="px-6 py-2 text-[#F8F8FF] rounded-full  hover:bg-primary-dark transition bg-gray-700/40   border-0 font-semibold shadow-[0_0_0_1px_theme(colors.cyan.500)] hover:shadow-[0_0_0_1px_theme(colors.cyan.600)] hover:scale-105"
+              className="px-6 py-2 text-[#F8F8FF] rounded-full  hover:bg-primary-dark transition bg-gray-700/40   border-0 font-semibold shadow-[0_0_0_1px_theme(colors.cyan.500)] hover:shadow-[0_0_0_1px_theme(colors.cyan.600)] hover:scale-105 "
             >
               {showAll ? "See Less" : "See More"} &nbsp;
               <img

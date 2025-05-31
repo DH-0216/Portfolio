@@ -49,30 +49,17 @@ const Scene3D = () => {
     const particles = new THREE.Points(particleGeometry, particleMaterial);
     scene.add(particles);
 
-    // Create wireframe sphere
-    const sphereGeometry = new THREE.SphereGeometry(0.8, 16, 16);
-    const sphereMaterial = new THREE.MeshBasicMaterial({
-      color: 0x4ecdc4,
-      wireframe: true,
-      transparent: true,
-      opacity: 0.3,
-    });
-    const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-    sphere.position.set(3, -1, 0);
-    scene.add(sphere);
-
-    camera.position.z = 5;
+    
 
     // Animation loop
     let animationId;
     const animate = () => {
       animationId = requestAnimationFrame(animate);
 
-      particles.rotation.x += 0.001;
-      particles.rotation.y += 0.002;
+      particles.rotation.x += 0.0002;
+      particles.rotation.y += 0.0004;
 
-      sphere.rotation.x += 0.005;
-      sphere.rotation.y += 0.008;
+      
 
       renderer.render(scene, camera);
     };

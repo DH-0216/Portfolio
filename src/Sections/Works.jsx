@@ -93,8 +93,8 @@ const WorkCard = ({
             </p>
           </div>
 
-          <div className="mt-4 flex items-center gap-2">
-            <div className="max-w-3/4 flex flex-wrap gap-2">
+          <div className="mt-5 flex items-center gap-2">
+            <div className="max-w-3/4 flex flex-wrap gap-1">
               {tags.map((tag) => (
                 <p
                   key={`${name}-${tag.name}`}

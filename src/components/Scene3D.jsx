@@ -56,8 +56,8 @@ const Scene3D = () => {
     const animate = () => {
       animationId = requestAnimationFrame(animate);
 
-      particles.rotation.x += 0.0002;
-      particles.rotation.y += 0.0004;
+      particles.rotation.x += 0.0004;
+      particles.rotation.y += 0.0008;
 
       
 

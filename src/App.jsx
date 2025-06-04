@@ -21,7 +21,7 @@ function App() {
 
       {/* Your UI content with higher z-index */}
       <div style={{ position: "relative", zIndex: 10 }}>
-        <div className="bg-hero h-screen bg-no-repeat">
+        <div className="">
           <NavBar />
           <Home />
         </div>

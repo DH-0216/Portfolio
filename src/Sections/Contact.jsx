@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import TitleHeader from "../components/TitleHeader";
-import { LifeLink, question, rocket } from "../assets";
+import { question, rocket } from "../assets";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
+    setLoading(true);
 
     try {
       await emailjs.sendForm(
@@ -28,19 +28,20 @@ const Contact = () => {
         formRef.current,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
-
-      // Reset form and stop loading
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      console.error("EmailJS Error:", error);
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false);
     }
   };
 
   return (
-    <section id="contact" className="flex-center md:mt-20">
-      <div className="w-[90%] h-full md:px-10 px-5">
+    <section
+      id="contact"
+      className="w-full h-screen flex items-center justify-center px-5"
+    >
+      <div className="w-full max-w-6xl">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
           sub={
@@ -53,15 +54,16 @@ const Contact = () => {
               Have questions or ideas? Let’s talk!{" "}
               <img
                 src={rocket}
-                alt="question"
+                alt="rocket"
                 className="size-5 inline-block ml-1"
               />
             </span>
           }
         />
-        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 mt-16">
-          <div className="xl:col-span-5 col-span-1">
-            <div className="flex-center card-border rounded-xl p-5 sm:p-8 md:p-10">
+
+        <div className="flex justify-center mt-16">
+          <div className="w-full max-w-xl">
+            <div className="flex-center bg-black/50 backdrop-blur-md card-border rounded-xl p-5 sm:p-8 md:p-10">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
@@ -121,15 +123,6 @@ const Contact = () => {
                   </div>
                 </button>
               </form>
-            </div>
-          </div>
-          <div className="xl:col-span-7 col-span-1 min-h-60 mt-8 xl:mt-0 flex items-center justify-center">
-            <div className="w-full h-full hover:cursor-grab rounded-3xl overflow-hidden mx-auto max-w-md sm:max-w-lg md:max-w-xl xl:max-w-full justify-center flex items-center">
-              <img
-                src={LifeLink}
-                alt=""
-                className="w-auto h-60 sm:h-60 md:h-80 xl:h-100"
-              />
             </div>
           </div>
         </div>

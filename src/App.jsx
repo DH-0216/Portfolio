@@ -1,4 +1,3 @@
-import { Routes, Route } from "react-router-dom";
 import NavBar from "./Sections/NavBar";
 import Home from "./Sections/Home";
 import About from "./Sections/About";
@@ -10,28 +9,43 @@ import Testimonials from "./Sections/Testimonials";
 import Skills from "./Sections/Skills";
 import Footer from "./Sections/Footer";
 import Scene3D from "./components/Scene3D";
+import ParticleBackground from "./components/ParticleBackground";
 
 function App() {
   return (
     <>
-      {/* 3D canvas fixed behind everything */}
+      {/* Global 3D background */}
       <div style={{ position: "fixed", inset: 0, zIndex: 0 }}>
         <Scene3D />
       </div>
 
-      {/* Your UI content with higher z-index */}
+      {/* All app content on top of 3D */}
       <div style={{ position: "relative", zIndex: 10 }}>
-        <div className="">
+        <div>
           <NavBar />
           <Home />
         </div>
+
         <About />
         <Experience />
         <Skills />
         <Works />
         <Services />
         <Testimonials />
-        <Contact />
+
+        {/* Contact section with ParticleBackground */}
+        <div className="relative min-h-screen">
+          {/* Particles behind contact */}
+          <div className="absolute inset-0 z-0">
+            <ParticleBackground count={50} />
+          </div>
+
+          {/* Contact section content */}
+          <div className="relative z-10">
+            <Contact />
+          </div>
+        </div>
+
         <Footer />
       </div>
     </>

@@ -26,8 +26,9 @@ const Testimonials = () => {
           />
         </motion.div>
 
-        <div className="relative mt-16">
-          <div className="flex gap-6 overflow-x-auto no-scrollbar py-5 ">
+        <div className="relative mt-16 overflow-hidden">
+          <div className="flex gap-6 py-5 animate-marquee hover:pause-marquee">
+            {/* First set of testimonials */}
             {testimonials.map((testimonial, index) => (
               <motion.div
                 variants={staggerContainer(0.15, 0)}
@@ -76,7 +77,67 @@ const Testimonials = () => {
                       </div>
                     </div>
                     <div className="mt-10 ">
-                      <p className="text-slate-300/90 text-sm">{testimonial.review}</p>
+                      <p className="text-slate-300/90 text-sm">
+                        {testimonial.review}
+                      </p>
+                    </div>
+                  </div>
+                </GlowCard>
+              </motion.div>
+            ))}
+
+            {/* Duplicate set for seamless loop */}
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                variants={staggerContainer(0.15, 0)}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                whileHover={{
+                  scale: 1.05,
+                  height: "auto",
+                  transition: {
+                    duration: 0.3,
+                  },
+                }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                key={`duplicate-${index}`}
+                style={{ perspective: 1000 }}
+                className="relative flex-shrink-0 w-[300px] h-[240px] max-w-[90vw] overflow-hidden rounded-2xl"
+              >
+                <GlowCard card={testimonial} index={index}>
+                  <div className="transition-all duration-300">
+                    <div className="flex justify-between gap-10 h-auto">
+                      <div className="flex gap-3">
+                        <div>
+                          <img
+                            src={testimonial.imgPath}
+                            alt=""
+                            className="size-8"
+                          />
+                        </div>
+                        <div className="text-[12px]">
+                          <p className="font-bold">{testimonial.name}</p>
+                          <p className="text-[#F8F8FF]/90">
+                            {testimonial.mentions}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-center mb-5">
+                        {Array.from({ length: 5 }, (_, i) => (
+                          <img
+                            key={i}
+                            src="/images/gold-star.png"
+                            alt="star"
+                            className="size-3"
+                          />
+                        ))}
+                      </div>
+                    </div>
+                    <div className="mt-10 ">
+                      <p className="text-slate-300/90 text-sm">
+                        {testimonial.review}
+                      </p>
                     </div>
                   </div>
                 </GlowCard>
@@ -85,6 +146,25 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .animate-marquee {
+          animation: marquee 30s linear infinite;
+        }
+
+        .hover\\:pause-marquee:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
     </section>
   );
 };

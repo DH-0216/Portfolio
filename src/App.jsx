@@ -11,42 +11,61 @@ import Skills from "./Sections/Skills";
 import Footer from "./Sections/Footer";
 import Scene3D from "./components/Scene3D";
 import ParticleBackground from "./components/ParticleBackground";
+import Home3D from "./components/Home3D";
 
 function App() {
   const [showScene3D, setShowScene3D] = useState(true);
+  const [showHome3D, setShowHome3D] = useState(false);
+  const [showParticles, setShowParticles] = useState(false);
+
+  const homeRef = useRef(null);
   const contactRef = useRef(null);
 
   useEffect(() => {
     const onScroll = () => {
-      if (!contactRef.current) return;
+      const homeInView = isInViewport(homeRef);
+      const contactInView = isInViewport(contactRef);
 
-      const rect = contactRef.current.getBoundingClientRect();
-      // If top of contact section is near viewport top (e.g., visible)
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        setShowScene3D(false);
-      } else {
-        setShowScene3D(true);
-      }
+      setShowHome3D(homeInView);
+      setShowParticles(contactInView);
+      setShowScene3D(!homeInView && !contactInView);
+    };
+
+    const isInViewport = (ref) => {
+      if (!ref.current) return false;
+      const rect = ref.current.getBoundingClientRect();
+      return rect.top < window.innerHeight && rect.bottom > 0;
     };
 
     window.addEventListener("scroll", onScroll);
-    onScroll(); // call initially
+    onScroll(); // trigger on load
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <>
-      {/* Conditionally render Scene3D background */}
+      {/* Global 3D Background */}
       {showScene3D && (
         <div style={{ position: "fixed", inset: 0, zIndex: 0 }}>
           <Scene3D />
         </div>
       )}
 
+      {/* Home-specific 3D Background */}
+      {showHome3D && (
+        <div style={{ position: "fixed", inset: 0, zIndex: 0 }}>
+          <Home3D />
+        </div>
+      )}
+
       <div style={{ position: "relative", zIndex: 10 }}>
         <NavBar />
-        <Home />
+
+        <div ref={homeRef}>
+          <Home />
+        </div>
+
         <About />
         <Experience />
         <Skills />
@@ -55,9 +74,13 @@ function App() {
         <Testimonials />
 
         <div ref={contactRef} className="relative min-h-screen">
-          <div className="absolute inset-0 z-0">
-            <ParticleBackground count={50} />
-          </div>
+          {/* Contact-specific Particle Background */}
+          {showParticles && (
+            <div className="absolute inset-0 z-0">
+              <ParticleBackground count={50} />
+            </div>
+          )}
+
           <div className="relative z-10">
             <Contact />
           </div>

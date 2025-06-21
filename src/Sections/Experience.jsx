@@ -1,140 +1,85 @@
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { expCards } from "../utils/index";
-import TitleHeader from "../components/TitleHeader";
-import GlowCard from "../components/GlowCard";
-import { medal } from "../assets";
-import { motion } from "motion/react";
+import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
 
-gsap.registerPlugin(ScrollTrigger);
+import "react-vertical-timeline-component/style.min.css";
+import { experiences } from "../utils/index";
+import { textVariant } from "../utils/motion";
+import GlowCard from "../components/GlowCard"; // <-- Add this import
+
+const ExperienceCard = ({ experience, index }) => {
+  return (
+    <VerticalTimelineElement
+      contentStyle={{
+        background: "transparent", // Changed from "#1d1836"
+        color: "#fff",
+        boxShadow: "none",
+        padding: 0,
+      }}
+      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      date={experience.date}
+      iconStyle={{ background: experience.iconBg }}
+      icon={
+        <div className="flex justify-center items-center w-full h-full">
+          <img
+            src={experience.icon}
+            alt={experience.company_name}
+            className="w-[60%] h-[60%] object-contain"
+          />
+        </div>
+      }
+    >
+      <GlowCard card={experience} index={index}>
+        <div>
+          <h3 className="text-white text-[24px] font-bold">
+            {experience.title}
+          </h3>
+          <p
+            className="text-secondary text-[16px] font-semibold"
+            style={{ margin: 0 }}
+          >
+            {experience.company_name}
+          </p>
+        </div>
+
+        <ul className="mt-5 list-disc ml-5 space-y-2">
+          {experience.points.map((point, idx) => (
+            <li
+              key={`experience-point-${idx}`}
+              className="text-white-100 text-[14px] pl-1 tracking-wider"
+            >
+              {point}
+            </li>
+          ))}
+        </ul>
+      </GlowCard>
+    </VerticalTimelineElement>
+  );
+};
 
 const Experience = () => {
-  useGSAP(() => {
-    gsap.utils.toArray(".timeline-card").forEach((card) => {
-      gsap.from(card, {
-        xPercent: -100,
-        opacity: 0,
-        transformOrigin: "left left",
-        duration: 1,
-        ease: "power2.inOut",
-        scrollTrigger: {
-          trigger: card,
-          start: "top 80%",
-        },
-      });
-    });
-    gsap.to(".timeline", {
-      transformOrigin: "bottom bottom",
-      ease: "power1.inOut",
-      scrollTrigger: {
-        trigger: ".timeline",
-        start: "top center",
-        end: "70% center",
-        onUpdate: (self) => {
-          gsap.to(".timeline", {
-            scaleY: 1 - self.progress,
-          });
-        },
-      },
-    });
-
-    gsap.utils.toArray(".expText").forEach((text) => {
-      gsap.from(text, {
-        opacity: 0,
-        xPercent: 0,
-        duration: 1,
-        ease: "power2.inOut",
-        scrollTrigger: {
-          trigger: text,
-          start: "top 60%",
-        },
-      });
-    }, "<");
-  }, []);
-
   return (
-    <section
-      id="experience"
-      className="flex-center section-padding xl:px-0 bg-black/70"
-    >
-      <div className="w-full h-full md:px-20 px-5">
-        <TitleHeader
-          title="Professional Work Experience"
-          sub={
-            <span className="flex items-center gap-1 justify-center">
-              <motion.img
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.6 }}
-                src={medal}
-                alt=""
-                className="size-6 inline-block drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
-              />
-              My Career Overview
-            </span>
-          }
-        />
-        <div className="mt-32 relative">
-          <div className="relative z-50 xl:space-y-32 space-y-10">
-            {expCards.map((card) => (
-              <div key={card.title} className="exp-card-wrapper">
-                <div className="xl:w-2/6">
-                  <GlowCard card={card}>
-                    <div className="flex items-center gap-1 mb-5">
-                      {Array.from({ length: 5 }, (_, i) => (
-                        <img
-                          key={i}
-                          src="/images/star.png"
-                          alt="star"
-                          className="size-5"
-                        />
-                      ))}
-                    </div>
-                    <div className="mb-5">
-                      <p className="text-[#F8F8FF]-50 text-lg">{card.review}</p>
-                    </div>
-                    <div>
-                      <img src={card.imgPath} alt="exp-img" />
-                    </div>
-                  </GlowCard>
-                </div>
-                <div className="xl:w-4/6">
-                  <div className="flex items-start">
-                    <div className="timeline-wrapper">
-                      <div className="timeline" />
-                      <div className="gradient-line w-1 h-full" />
-                    </div>
-                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                      <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" />
-                      </div>
-                      <div>
-                        <h1 className="font-semibold text-3xl">{card.title}</h1>
-                        <p className="my-5 text-[#F8F8FF]-50">
-                          🗓️&nbsp;{card.date}
-                        </p>
-                        <p className="text-[#839CB5] italic">
-                          Responsibilities
-                        </p>
-                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-[#F8F8FF]-50">
-                          {card.responsibilities.map(
-                            (responsibility, index) => (
-                              <li key={index} className="text-lg">
-                                {responsibility}
-                              </li>
-                            )
-                          )}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+    <>
+      <motion.div variants={textVariant()}>
+        <p className=" text-center">What I have done so far</p>
+        <h2 className="text-center">Work Experience.</h2>
+      </motion.div>
+
+      <div className="mt-20 flex flex-col">
+        <VerticalTimeline>
+          {experiences.map((experience, index) => (
+            <ExperienceCard
+              key={`experience-${index}`}
+              experience={experience}
+              index={index}
+            />
+          ))}
+        </VerticalTimeline>
       </div>
-    </section>
+    </>
   );
 };
 

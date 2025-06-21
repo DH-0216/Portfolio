@@ -76,7 +76,7 @@ function App() {
         <div ref={contactRef} className="relative min-h-screen">
           {/* Contact-specific Particle Background */}
           {showParticles && (
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0" style={{ opacity: 0.5 }}>
               <ParticleBackground count={50} />
             </div>
           )}

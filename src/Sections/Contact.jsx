@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full h-screen flex items-center justify-center px-5"
+      className="w-full h-screen flex items-center justify-center px-5 mt-20"
     >
       <div className="w-full max-w-6xl">
         <TitleHeader

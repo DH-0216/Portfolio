@@ -7,7 +7,7 @@ import { star } from "../assets";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="relative py-10">
+    <section id="testimonials" className="relative mt-24">
       <div className="max-w-[90%] mx-auto px-4 md:px-8 ">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

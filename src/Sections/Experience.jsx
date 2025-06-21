@@ -4,10 +4,10 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
+import { medal } from "../assets"; 
 import "react-vertical-timeline-component/style.min.css";
 import { experiences } from "../utils/index";
-import { textVariant } from "../utils/motion";
+import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard"; // <-- Add this import
 
 const ExperienceCard = ({ experience, index }) => {
@@ -62,11 +62,22 @@ const ExperienceCard = ({ experience, index }) => {
 
 const Experience = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className=" text-center">What I have done so far</p>
-        <h2 className="text-center">Work Experience.</h2>
-      </motion.div>
+    <section id="experience" className="relative mt-32">
+      <TitleHeader
+        title="What I have done so far"
+        sub={
+          <span className="flex items-center gap-1 justify-center">
+            <motion.img
+              whileHover={{ rotate: 360 }}
+              transition={{ duration: 0.6 }}
+              src={medal}
+              alt=""
+              className="size-6 inline-block drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
+            />
+            My Career Overview
+          </span>
+        }
+      />
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
@@ -79,7 +90,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </section>
   );
 };
 

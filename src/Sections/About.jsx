@@ -26,7 +26,16 @@ const About = () => {
         >
           <TitleHeader
             title="Transforming Ideas Into Scalable Solutions"
-            sub={<span className="flex items-center gap-1 justify-center"><img src={WaveHello} alt="wave hello" className="size-6 inline-block" />About Me</span>}
+            sub={
+              <span className="flex items-center gap-1 justify-center">
+                <img
+                  src={WaveHello}
+                  alt="wave hello"
+                  className="size-6 inline-block"
+                />
+                About Me
+              </span>
+            }
           />
         </motion.div>
 
@@ -35,9 +44,17 @@ const About = () => {
           className="w-16 h-1 bg-[#888888] my-4 rounded-full"
         />
 
+        <motion.h2
+          variants={fadeInUp()}
+          className="text-2xl font-bold text-[#F8F8FF] mt-16"
+        >
+          Hi, I'm Dulaj{" "}
+          <span className="text-[#888888]">| Software Developer</span>
+        </motion.h2>
+
         <motion.p
           variants={fadeInUp()}
-          className="mt-6 text-[#F8F8FF] text-[17px] max-w-3xl leading-[30px] text-center"
+          className="mt-10 text-[#F8F8FF] text-[17px] max-w-3xl leading-[30px] text-center"
         >
           I'm a skilled software developer with experience in TypeScript and
           JavaScript, and expertise in frameworks like React, Node.js, and
@@ -45,6 +62,13 @@ const About = () => {
           create efficient, scalable, and user-friendly solutions that solve
           real-world problems. Let's work together to bring your ideas to life!
         </motion.p>
+        <motion.a
+          variants={fadeInUp()}
+          href="#contact"
+          className="mt-14 inline-block bg-white/80 text-black font-semibold px-6 py-2 rounded-full shadow hover:bg-white transition"
+        >
+          Let's Connect
+        </motion.a>
       </motion.div>
     </section>
   );

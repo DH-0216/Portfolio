@@ -12,10 +12,19 @@ const Home = () => {
   });
 
   return (
-    <div className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-between p-4">
-      {/* LEFT: Hero Content */}
+    <div className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-between p-4 overflow-hidden">
+      {/* Background Layer */}
+      <div
+        className="absolute inset-0 -z-50 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/bg.jpg')",
+          filter: "brightness(0.5)",
+        }}
+      ></div>
+
+      {/* Content Layer */}
       <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-        <div className=" sm:px-16 px-6 absolute inset-0 top-[120px] md:top-[180px] mx-10 flex flex-row items-start gap-5">
+        <div className="sm:px-16 px-6 absolute inset-0 top-[120px] md:top-[180px] mx-10 flex flex-row items-start gap-5">
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-[#888888]" />
             <div className="w-1 sm:h-80 h-40 gray-gradient" />
@@ -58,15 +67,16 @@ const Home = () => {
       </header>
 
       {/* RIGHT: Hero Image */}
-      <div className=" relative w-full md:w-1/2 flex justify-center md:justify-start top-[-60px] md:top-[-60px] lg:top-10">
+      <div className="relative w-full md:w-1/2 flex justify-center md:justify-start top-[-60px] md:top-[-60px] lg:top-10">
         <img
           src={about_me}
           alt="about me"
-          className="w-[180px] sm:w-[280px] md:w-[240px] lg:w-[400px] object-contain "
+          className="w-[180px] sm:w-[280px] md:w-[240px] lg:w-[400px] object-contain"
         />
       </div>
     </div>
   );
+
 };
 
 export default Home;

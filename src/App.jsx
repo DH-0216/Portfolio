@@ -14,9 +14,9 @@ function App() {
   return (
     <>
       <div style={{ position: "relative" }}>
-        <div className="absolute inset-0 z-0" style={{ opacity: 0.5 }}>
+        {/* <div className="absolute inset-0 z-0" style={{ opacity: 0.5 }}>
           <ParticleBackground count={50} />
-        </div>
+        </div> */}
         <div style={{ position: "relative", zIndex: 10 }}>
           <NavBar />
           <Home />

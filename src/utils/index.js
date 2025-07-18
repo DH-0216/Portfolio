@@ -79,10 +79,10 @@ const words = [
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    company_name: "",
+    icon:"",
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -92,10 +92,10 @@ const experiences = [
   },
   {
     title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    company_name: "",
+    icon: "",
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -105,10 +105,10 @@ const experiences = [
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "",
+    icon: "",
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -118,10 +118,10 @@ const experiences = [
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    company_name: "",
+    icon: "",
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -411,36 +411,6 @@ const services = [
     img: backend,
     description:
       "Developing scalable server-side applications, RESTful APIs, and database architectures. Implementing authentication, security, and data management solutions for reliable backend systems.",
-  },
-  {
-    title: "Content Creator",
-    img: creator,
-    description:
-      "Producing engaging technical content, tutorials, and documentation for web and mobile platforms. Enhancing brand presence through blogs, videos, and social media.",
-  },
-  {
-    title: "UI/UX Designer",
-    img: figma,
-    description:
-      "Crafting user-centric designs and wireframes using Figma and other design tools. Focusing on usability, visual appeal, and seamless interaction flows.",
-  },
-  {
-    title: "DevOps Engineer",
-    img: docker,
-    description:
-      "Automating deployment pipelines, managing cloud infrastructure, and ensuring continuous integration and delivery using Docker and related DevOps tools.",
-  },
-  {
-    title: "API Integration Specialist",
-    img: nodejs,
-    description:
-      "Integrating third-party APIs and services into web and mobile applications. Ensuring secure, efficient, and reliable data exchange between systems.",
-  },
-  {
-    title: "IoT Solutions Developer",
-    img: Arduino,
-    description:
-      "Designing and implementing IoT solutions using Arduino and microcontrollers. Developing firmware, sensor integrations, and real-time monitoring systems.",
   },
 ];
 

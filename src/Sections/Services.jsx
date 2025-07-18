@@ -1,12 +1,12 @@
-import TitleHeader from '../components/TitleHeader'
-import { motion } from 'motion/react';
-import { staggerContainer } from '../utils/motion';
-import { services } from '../utils';
-import { Service } from '../assets';
+import TitleHeader from "../components/TitleHeader";
+import { motion } from "motion/react";
+import { staggerContainer } from "../utils/motion";
+import { services } from "../utils";
+import { Service } from "../assets";
 
 const Services = () => {
   return (
-    <div className="relative mt-10">
+    <div className="relative mt-10 ">
       <div className="max-w-[90%] mx-auto px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -31,7 +31,7 @@ const Services = () => {
           />
         </motion.div>
 
-        <div className="relative mt-16">
+        <div className="relative mt-16 flex justify-center">
           <div className="flex space-x-8 overflow-x-auto no-scrollbar py-5">
             {services.map((service, index) => (
               <motion.div
@@ -46,7 +46,7 @@ const Services = () => {
                 className="relative flex-shrink-0 w-[340px] min-h-[360px] max-w-[90vw]"
               >
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-slate-900/50 to-slate-900/50 backdrop-blur-xl shadow-lg border border-sky-600/20 group-hover:border-sky-400/50 transform preserve-3d" />
-                
+
                 <div className="relative z-10 flex flex-col items-center gap-6 p-8 w-full h-full">
                   <motion.div
                     whileHover={{ scale: 1.1, rotate: 5 }}
@@ -59,7 +59,7 @@ const Services = () => {
                       className="w-20 h-20 rounded-xl object-cover filter drop-shadow-[0_0_8px_rgba(56,189,248,0.3)]"
                     />
                   </motion.div>
-                  
+
                   <div className="text-center space-y-4">
                     <h3 className="font-bold text-xl text-[#F8F8FF]">
                       {service.title}
@@ -84,6 +84,6 @@ const Services = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Services
+export default Services;

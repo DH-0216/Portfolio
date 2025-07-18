@@ -37,7 +37,7 @@ import tripguide from "./tripguide.png";
 import coding from "./coding.gif";
 import WaveHello from "./Wave Hello.gif";
 import Arrow from "./arrow.gif";
-import about_me from "./about_me.jpg";
+import about_me from "./about_me.png";
 import LifeLink from "./LifeLink.gif";
 import question from "./question.gif";
 import bulb from "./bulb.gif";

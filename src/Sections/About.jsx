@@ -62,13 +62,11 @@ const About = () => {
           create efficient, scalable, and user-friendly solutions that solve
           real-world problems. Let's work together to bring your ideas to life!
         </motion.p>
-        <motion.a
-          variants={fadeInUp()}
-          href="#contact"
-          className="mt-14 inline-block bg-white/80 text-black font-semibold px-6 py-2 rounded-full shadow hover:bg-white transition"
-        >
-          Let's Connect
-        </motion.a>
+        <div className="rainbow relative z-0 bg-white/15 overflow-hidden p-0.5 flex items-center justify-center rounded-full hover:scale-105 transition duration-300 active:scale-100 mt-10">
+          <button className="px-8 text-sm py-3 text-white rounded-full font-medium bg-gray-900/80 backdrop-blur">
+            <a href="#contact">Let's Connect</a>
+          </button>
+        </div>
       </motion.div>
     </section>
   );

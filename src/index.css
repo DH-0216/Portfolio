@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luxurious+Roman&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
 }
@@ -11,7 +10,7 @@ body {
   width: 100dvw;
   overflow-x: hidden;
   background-color: black;
-  color: #F8F8FF;
+  color: #f8f8ff;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
 }
@@ -22,7 +21,9 @@ section {
 
 .bg-tertiary {
   --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity)); /* #6B7280 - Tailwind's gray-500 */
+  background-color: rgb(
+    17 24 39 / var(--tw-bg-opacity)
+  ); /* #6B7280 - Tailwind's gray-500 */
 }
 
 .bg-hero {
@@ -30,7 +31,6 @@ section {
   background-size: cover;
   background-position: center;
   top: 0 !important;
-  
 }
 
 .gray-gradient {
@@ -43,11 +43,9 @@ section {
   );
 }
 
-.navbar-text{
+.navbar-text {
   font-family: "Montserrat";
 }
-
-
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
@@ -55,11 +53,31 @@ section {
 }
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
 
+.rainbow::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: 50% 30%;
+  filter: blur(6px);
+  background-image: linear-gradient(#fff);
+  animation: rotate 4s linear infinite;
+}
 
 @theme {
   --font-sans: "Mona Sans", sans-serif;
@@ -513,7 +531,6 @@ section {
   opacity: 1;
 }
 
-
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -581,7 +598,6 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .green-text-gradient {
   background: #11998e; /* fallback for old browsers */

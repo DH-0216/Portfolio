@@ -20,6 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
+import fullstack from "./full-stack-developer-icon-vector.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -120,4 +121,5 @@ export {
   Spring,
   PHP,
   external_link,
+  fullstack,
 };

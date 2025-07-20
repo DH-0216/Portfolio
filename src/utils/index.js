@@ -40,6 +40,7 @@ import {
   Spring,
   PHP,
   github,
+  fullstack,
 } from "../assets";
 
 const navLinks = [
@@ -80,7 +81,7 @@ const experiences = [
   {
     title: "Undergraduate Student",
     company_name: "University",
-    icon: "",
+    icon: reactjs,
     iconBg: "#383E56",
     date: "2023 - Present",
     points: [
@@ -92,8 +93,8 @@ const experiences = [
   },
   {
     title: "React.js Developer (Personal Projects)",
-    company_name: "",
-    icon: "",
+    company_name: "University",
+    icon: reactjs,
     iconBg: "#E6DEDD",
     date: "2024 - Present",
     points: [
@@ -105,8 +106,8 @@ const experiences = [
   },
   {
     title: "React Native Developer (Personal Projects)",
-    company_name: "",
-    icon: "",
+    company_name: "University",
+    icon: reactjs,
     iconBg: "#383E56",
     date: "2024 - Present",
     points: [
@@ -118,8 +119,8 @@ const experiences = [
   },
   {
     title: "Full Stack Developer (Personal Projects)",
-    company_name: "",
-    icon: "",
+    company_name: "University",
+    icon: fullstack,
     iconBg: "#E6DEDD",
     date: "2025 - Present",
     points: [

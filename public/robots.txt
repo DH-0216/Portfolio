@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dulajhashmika.vercel.app/sitemap.xml

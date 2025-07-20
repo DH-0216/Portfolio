@@ -43,7 +43,7 @@ const Contact = () => {
     >
       <div className="w-full max-w-6xl">
         <TitleHeader
-          title="Get in Touch – Let’s Connect"
+          title="Get in Touch – Let's Connect"
           sub={
             <span className="flex items-center gap-1 justify-center">
               <img
@@ -51,7 +51,7 @@ const Contact = () => {
                 alt="question"
                 className="size-6 inline-block"
               />
-              Have questions or ideas? Let’s talk!{" "}
+              Have questions or ideas? Let's talk!{" "}
               <img
                 src={rocket}
                 alt="rocket"
@@ -62,65 +62,79 @@ const Contact = () => {
         />
 
         <div className="flex justify-center mt-16">
-          <div className="w-full max-w-xl">
+          <div className="w-full max-w-max">
             <div className="flex-center bg-black/50 backdrop-blur-md card-border rounded-xl p-5 sm:p-8 md:p-10">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
-                className="w-full flex flex-col gap-7"
+                className="flex flex-col items-center text-sm"
               >
-                <div>
-                  <label htmlFor="name">Your name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    placeholder="What’s your good name?"
-                    required
-                    className="w-full mt-1 px-3 py-2 rounded border focus:outline-none"
-                  />
+                <div className="flex flex-col md:flex-row items-center gap-8 w-[350px] md:w-[700px]">
+                  <div className="w-full">
+                    <label className="text-white/70" htmlFor="name">
+                      Your Name
+                    </label>
+                    <input
+                      id="name"
+                      name="name"
+                      value={form.name}
+                      onChange={handleChange}
+                      className="h-12 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-indigo-300"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div className="w-full">
+                    <label className="text-white/70" htmlFor="email">
+                      Your Email
+                    </label>
+                    <input
+                      id="email"
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
+                      className="h-12 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-indigo-300"
+                      type="email"
+                      required
+                    />
+                  </div>
                 </div>
 
-                <div>
-                  <label htmlFor="email">Your Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    placeholder="What’s your email address?"
-                    required
-                    className="w-full mt-1 px-3 py-2 rounded border focus:outline-none"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message">Your Message</label>
+                <div className="mt-6 w-[350px] md:w-[700px]">
+                  <label className="text-white/70" htmlFor="message">
+                    Message
+                  </label>
                   <textarea
                     id="message"
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="How can I help you?"
-                    rows="5"
+                    className="w-full mt-2 p-2 h-40 border border-gray-500/30 rounded resize-none outline-none focus:border-indigo-300"
                     required
-                    className="w-full mt-1 px-3 py-2 rounded border focus:outline-none"
                   />
                 </div>
 
-                <button type="submit" className="w-full">
-                  <div className="cta-button group">
-                    <div className="bg-circle" />
-                    <p className="text">
-                      {loading ? "Sending..." : "Send Message"}
-                    </p>
-                    <div className="arrow-wrapper">
-                      <img src="/images/arrow-down.svg" alt="arrow" />
-                    </div>
-                  </div>
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="flex items-center justify-center gap-1 mt-5 bg-indigo-500 hover:bg-indigo-600 disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-2.5 w-56 rounded-full transition"
+                >
+                  {loading ? "Sending..." : "Send Message"}
+                  {!loading && (
+                    <svg
+                      className="mt-0.5"
+                      width="21"
+                      height="20"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m18.038 10.663-5.625 5.625a.94.94 0 0 1-1.328-1.328l4.024-4.023H3.625a.938.938 0 0 1 0-1.875h11.484l-4.022-4.025a.94.94 0 0 1 1.328-1.328l5.625 5.625a.935.935 0 0 1-.002 1.33"
+                        fill="#fff"
+                      />
+                    </svg>
+                  )}
                 </button>
               </form>
             </div>

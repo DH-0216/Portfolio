@@ -12,15 +12,8 @@ const Home = () => {
   });
 
   return (
-    <div className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-between p-4 overflow-hidden">
+    <div className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-between p-4 overflow-hidden bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/green-gradient-bg.svg)]">
       {/* Background Layer */}
-      <div
-        className="absolute inset-0 -z-50 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/images/bg.jpg')",
-          filter: "brightness(0.5)",
-        }}
-      ></div>
 
       {/* Content Layer */}
       <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">

@@ -100,7 +100,7 @@ const Testimonials = () => {
         </motion.div>
 
         {/* First marquee row */}
-        <div className="marquee-row w-full mx-auto max-w-5xl overflow-hidden relative mt-16">
+        <div className="marquee-row w-full mx-auto max-w-[90%] overflow-hidden relative mt-16">
           <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none"></div>
           <div className="marquee-inner flex transform-gpu min-w-[200%] pb-5">
             {[...cardsData, ...cardsData].map((card, index) => (
@@ -111,7 +111,7 @@ const Testimonials = () => {
         </div>
 
         {/* Second reverse marquee row */}
-        <div className="marquee-row w-full mx-auto max-w-5xl overflow-hidden relative pt-8">
+        <div className="marquee-row w-full mx-auto max-w-[90%] overflow-hidden relative pt-8">
           <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r"></div>
           <div className="marquee-inner marquee-reverse flex transform-gpu min-w-[200%] pb-5">
             {[...cardsData, ...cardsData].map((card, index) => (
@@ -122,24 +122,6 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <style>{`
-        @keyframes marqueeScroll {
-          0% { transform: translateX(0%); }
-          100% { transform: translateX(-50%); }
-        }
-
-        .marquee-inner {
-          animation: marqueeScroll 25s linear infinite;
-        }
-
-        .marquee-row:hover .marquee-inner {
-          animation-play-state: paused;
-        }
-
-        .marquee-reverse {
-          animation-direction: reverse;
-        }
-      `}</style>
     </section>
   );
 };

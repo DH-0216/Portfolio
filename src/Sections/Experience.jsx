@@ -65,9 +65,9 @@ const Experience = () => {
     <motion.section
       id="experience"
       className="relative mt-32"
-      variants={staggerContainer(0.15, 0)}
+      variants={staggerContainer(0.15, 0.5)}
       initial="hidden"
-      whileInView="show"
+      whileInView="visible"
       viewport={{ once: true, amount: 0.25 }}
     >
       <TitleHeader

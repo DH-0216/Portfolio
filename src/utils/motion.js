@@ -1,3 +1,13 @@
+export const staggerContainer = (staggerChildren = 0.1, delayChildren = 0) => ({
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren,
+      delayChildren,
+    },
+  },
+});
+
 export const textVariant = (delay) => {
   return {
     hidden: {
@@ -29,8 +39,6 @@ export const fadeInUp = () => {
     },
   };
 };
-
-
 
 export const fadeIn = (direction, type, delay, duration) => {
   return {
@@ -90,19 +98,6 @@ export const slideIn = (direction, type, delay, duration) => {
     },
   };
 };
-
-
-export const staggerContainer = (staggerChildren = 0.1, delayChildren = 0) => ({
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren,
-      delayChildren,
-    },
-  },
-});
-
-
 
 export const containerVariants = {
   hidden: { opacity: 0, y: 40 },

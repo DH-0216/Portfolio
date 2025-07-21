@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import TitleHeader from "../components/TitleHeader";
 import { question, rocket, bg3 } from "../assets";
+import { motion } from "motion/react";
+import { fadeInUp, staggerContainer } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -60,9 +62,18 @@ const Contact = () => {
             }
           />
 
-          <div className="flex flex-col lg:flex-row gap-12 mt-20 justify-between items-start">
+          <motion.div
+            variants={staggerContainer(0.15, 0.5)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex flex-col lg:flex-row gap-12 mt-20 justify-between items-start"
+          >
             {/* Left Section */}
-            <div className="flex-1 text-center lg:text-left max-w-xl">
+            <motion.div
+              variants={fadeInUp()}
+              className="flex-1 text-center lg:text-left max-w-xl"
+            >
               <h1 className="text-4xl font-bold text-white">
                 Let's Hear From You
               </h1>
@@ -83,10 +94,13 @@ const Contact = () => {
                 about your project, timeline, or specific requirements. The more
                 information you provide, the better I can assist you.
               </p>
-            </div>
+            </motion.div>
 
             {/* Form Section */}
-            <div className="flex-1 bg-black/60 backdrop-blur-md border border-white/10 rounded-xl p-6 sm:p-8 md:p-10 w-full max-w-xl shadow-2xl">
+            <motion.div
+              variants={fadeInUp()}
+              className="flex-1 bg-black/60 backdrop-blur-md border border-white/10 rounded-xl p-6 sm:p-8 md:p-10 w-full max-w-xl shadow-2xl"
+            >
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
@@ -167,8 +181,8 @@ const Contact = () => {
                   )}
                 </button>
               </form>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>

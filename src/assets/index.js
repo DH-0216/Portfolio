@@ -61,6 +61,9 @@ import Spring from "./tech/springio.svg";
 import PHP from "./tech/php.svg";
 import external_link from "./external-link.png";
 
+import bg2 from "./bg2.jpg";
+import bg3 from "./bg3.jpeg";
+
 
 export {
   logo,
@@ -122,4 +125,6 @@ export {
   PHP,
   external_link,
   fullstack,
+  bg2,
+  bg3,
 };

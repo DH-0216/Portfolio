@@ -2,12 +2,13 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
-import { medal } from "../assets"; 
-import "react-vertical-timeline-component/style.min.css";
+import { motion } from "motion/react";
+import { medal } from "../assets";
 import { experiences } from "../utils/index";
 import TitleHeader from "../components/TitleHeader";
-import GlowCard from "../components/GlowCard"; // <-- Add this import
+import GlowCard from "../components/GlowCard";
+import { staggerContainer } from "../utils/motion";
+import "react-vertical-timeline-component/style.min.css";
 
 const ExperienceCard = ({ experience, index }) => {
   return (
@@ -61,7 +62,14 @@ const ExperienceCard = ({ experience, index }) => {
 
 const Experience = () => {
   return (
-    <section id="experience" className="relative mt-32">
+    <motion.section
+      id="experience"
+      className="relative mt-32"
+      variants={staggerContainer(0.15, 0)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+    >
       <TitleHeader
         title="What I have done so far"
         sub={
@@ -89,7 +97,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

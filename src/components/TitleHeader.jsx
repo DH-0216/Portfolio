@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { containerVariants, titleVariants, subVariants } from "../utils/motion";
 
-const TitleHeader = ({ title, sub }) => {
+const TitleHeader = ({ title, sub, onAnimationComplete }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: false,
@@ -17,6 +17,9 @@ const TitleHeader = ({ title, sub }) => {
       controls.start("hidden");
     }
   }, [inView, controls]);
+
+  // Call onAnimationComplete after the last character animates
+  const lastCharIdx = title.length - 1;
 
   return (
     <motion.div
@@ -50,6 +53,11 @@ const TitleHeader = ({ title, sub }) => {
                 },
               }}
               style={{ display: "inline-block" }}
+              onAnimationComplete={
+                idx === lastCharIdx && onAnimationComplete
+                  ? onAnimationComplete
+                  : undefined
+              }
             >
               {char === " " ? "\u00A0" : char}
             </motion.span>

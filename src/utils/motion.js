@@ -91,17 +91,17 @@ export const slideIn = (direction, type, delay, duration) => {
   };
 };
 
-export const staggerContainer = (staggerChildren, delayChildren) => {
-  return {
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: staggerChildren,
-        delayChildren: delayChildren || 0,
-      },
+
+export const staggerContainer = (staggerChildren = 0.1, delayChildren = 0) => ({
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren,
+      delayChildren,
     },
-  };
-};
+  },
+});
+
 
 
 export const containerVariants = {

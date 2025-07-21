@@ -42,17 +42,13 @@ const Contact = () => {
         style={{
           backgroundImage: `url(${bg3})`,
           backgroundAttachment: "fixed",
-          filter: "grayscale(100%)",
+          filter: "grayscale(100%) brightness(0.5)",
         }}
       />
 
-      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]" />
-
-      {/* Content */}
       <div className="relative z-10 px-5 py-20 flex items-center justify-center min-h-screen">
         <div className="w-full max-w-6xl">
-          {/* Header */}
           <TitleHeader
             title="Get in Touch – Let's Connect"
             sub={

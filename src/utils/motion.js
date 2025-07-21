@@ -102,3 +102,27 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
     },
   };
 };
+
+
+export const containerVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: "easeOut" },
+  },
+};
+
+export const subVariants = {
+  hidden: { scale: 0.8, opacity: 0 },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: { delay: 0.2, duration: 0.5 },
+  },
+};
+
+export const titleVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { delay: 0.4, duration: 0.6 } },
+};

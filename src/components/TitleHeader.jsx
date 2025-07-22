@@ -5,7 +5,7 @@ const TitleHeader = ({ title, sub }) => {
         <p className="text-[#EEF7FF]">{sub}</p>
       </div>
       <div>
-        <h1 className="font-semibold mt-3 md:text-5xl text-3xl text-center bg-gradient-to-r from-[#888888] via-[#aaaaaa] to-[#cccccc] bg-clip-text text-transparent">
+        <h1 className="font-semibold mt-1 md:text-5xl text-3xl text-center bg-gradient-to-r from-[#888888] via-[#aaaaaa] to-[#cccccc] bg-clip-text text-transparent">
           {title}
         </h1>
       </div>

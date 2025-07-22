@@ -15,10 +15,7 @@ const Testimonials = () => {
 
     return (
       <motion.div
-        className="p-4 rounded-lg mx-4 shadow hover:shadow-lg transition-all duration-200 w-72 overflow-hidden shrink-0"
-        animate={{
-          maxHeight: isHovered ? "1000px" : "240px",
-        }}
+        className="p-4 rounded-lg mx-2 shadow hover:shadow-lg transition-all duration-200 w-72 overflow-hidden shrink-0"
         transition={{ duration: 0.5 }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -53,7 +50,16 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          <p className="text-sm py-4 text-gray-400">{card.review}</p>
+          <motion.p
+            className="text-sm py-4 text-gray-400 overflow-hidden"
+            animate={{
+              maxHeight: isHovered ? 1000 : 80,
+              opacity: isHovered ? 1 : 0.85
+            }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
+          >
+            {card.review}
+          </motion.p>
           <div className="flex items-center justify-between text-slate-500 text-xs">
             <div className="flex items-center gap-1">
               <span>Posted on</span>
@@ -115,7 +121,7 @@ const Testimonials = () => {
         </div>
 
         {/* Second reverse marquee row */}
-        <div className="marquee-row w-full mx-auto max-w-[90%] overflow-hidden relative pt-8">
+        <div className="marquee-row w-full mx-auto max-w-[90%] overflow-hidden relative">
           <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r"></div>
           <div className="marquee-inner marquee-reverse flex transform-gpu min-w-[200%] pb-5">
             {[...cardsData, ...cardsData].map((card, index) => (

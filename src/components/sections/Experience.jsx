@@ -96,6 +96,7 @@ const Experience = () => {
                 alt=""
                 width={24}
                 height={24}
+                unoptimized
                 className="size-6 inline-block drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
               />
               My Career Overview

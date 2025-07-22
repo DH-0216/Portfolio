@@ -34,6 +34,7 @@ const About = () => {
                   alt="wave hello"
                   width={24}
                   height={24}
+                  unoptimized
                   className="size-6 inline-block"
                 />
                 About Me

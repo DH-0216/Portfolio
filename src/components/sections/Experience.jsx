@@ -13,7 +13,7 @@ import { staggerContainer } from "@/utils/motion";
 import "react-vertical-timeline-component/style.min.css";
 import Image from "next/image";
 
-const MotionImage = motion(Image);
+const MotionImage = motion.create(Image);
 
 const ExperienceCard = ({ experience, index }) => {
   return (

@@ -8,7 +8,7 @@ import { fadeInUp } from "@/utils/motion";
 import Image from "next/image";
 
 const Skills = () => {
-  const MotionImage = motion(Image);
+  const MotionImage = motion.create(Image);
   return (
     <motion.div
       initial="hidden"

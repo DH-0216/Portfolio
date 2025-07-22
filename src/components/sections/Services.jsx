@@ -8,7 +8,7 @@ import { Service } from "@/assets";
 import Image from "next/image";
 
 const Services = () => {
-  const MotionImage = motion(Image);
+  const MotionImage = motion.create(Image);
   return (
     <div className="relative mt-10 ">
       <div className="max-w-[90%] mx-auto px-4 md:px-8">

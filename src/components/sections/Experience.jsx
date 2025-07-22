@@ -71,7 +71,7 @@ const Experience = () => {
   return (
     <motion.section
       id="experience"
-      className="relative mt-32 "
+      className="relative mt-32  pt-10"
       variants={staggerContainer(0.15, 0.5)}
       initial="hidden"
       whileInView="visible"

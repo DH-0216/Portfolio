@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Built-in metadata (partial only, rest go in <Head>)
+// Metadata for SEO and previews
 export const metadata = {
   title: "Dulaj Hashmika | Portfolio",
   description:
@@ -21,50 +21,43 @@ export const metadata = {
   keywords:
     "Dulaj Hashmika, full stack developer, web developer, React, Node.js, portfolio",
   authors: [{ name: "Dulaj Hashmika" }],
+  metadataBase: new URL("https://dulajhashmika.vercel.app"),
+  openGraph: {
+    title: "Dulaj Hashmika | Full Stack Developer",
+    description: "Explore the portfolio and projects of Dulaj Hashmika.",
+    url: "https://dulajhashmika.vercel.app",
+    images: [
+      {
+        url: "/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Dulaj Hashmika Portfolio Preview",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dulaj Hashmika | Full Stack Developer",
+    description: "Explore the portfolio and projects of Dulaj Hashmika.",
+    images: ["/preview.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Open Graph Meta Tags */}
-        <meta
-          property="og:title"
-          content="Dulaj Hashmika | Full Stack Developer"
-        />
-        <meta
-          property="og:description"
-          content="Explore the portfolio and projects of Dulaj Hashmika."
-        />
-        <meta property="og:url" content="https://dulajhashmika.vercel.app/" />
-        <meta
-          property="og:image"
-          content="https://dulajhashmika.vercel.app/preview.png"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Meta Tags */}
-        <meta
-          name="twitter:title"
-          content="Dulaj Hashmika | Full Stack Developer"
-        />
-        <meta
-          name="twitter:description"
-          content="Explore the portfolio and projects of Dulaj Hashmika."
-        />
-        <meta
-          name="twitter:image"
-          content="https://dulajhashmika.vercel.app/preview.png"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-
         {/* Google site verification */}
         <meta
           name="google-site-verification"
           content="TtbO5yzgzIF9SChF8gDLUcO_llcDclrrTRo5p9sKCrc"
         />
 
-        {/* Structured Data */}
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

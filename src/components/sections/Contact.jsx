@@ -46,7 +46,7 @@ const Contact = () => {
         style={{
           backgroundImage: 'url("/images/bg3.png")',
           backgroundAttachment: "fixed",
-          filter: "grayscale(100%) brightness(0.5)",
+          filter: "grayscale(90%) brightness(0.5)",
         }}
       />
 

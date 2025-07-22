@@ -19,7 +19,7 @@ const ExperienceCard = ({ experience, index }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "transparent", // Changed from "#1d1836"
+        background: "transparent",
         color: "#fff",
         boxShadow: "none",
         padding: 0,
@@ -71,40 +71,49 @@ const Experience = () => {
   return (
     <motion.section
       id="experience"
-      className="relative mt-32"
+      className="relative mt-32 "
       variants={staggerContainer(0.15, 0.5)}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.25 }}
     >
-      <TitleHeader
-        title="What I have done so far"
-        sub={
-          <span className="flex items-center gap-1 justify-center">
-            <MotionImage
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.6 }}
-              src={medal}
-              alt=""
-              width={24}
-              height={24}
-              className="size-6 inline-block drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
-            />
-            My Career Overview
-          </span>
-        }
-      />
+      <div
+        className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url(/images/bg2.jpg)",
+          filter: "grayscale(90%) brightness(0.5)",
+        }}
+      ></div>
+      <div className="relative z-10">
+        <TitleHeader
+          title="What I have done so far"
+          sub={
+            <span className="flex items-center gap-1 justify-center">
+              <MotionImage
+                whileHover={{ rotate: 360 }}
+                transition={{ duration: 0.6 }}
+                src={medal}
+                alt=""
+                width={24}
+                height={24}
+                className="size-6 inline-block drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
+              />
+              My Career Overview
+            </span>
+          }
+        />
 
-      <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-              index={index}
-            />
-          ))}
-        </VerticalTimeline>
+        <div className="mt-20 flex flex-col">
+          <VerticalTimeline>
+            {experiences.map((experience, index) => (
+              <ExperienceCard
+                key={`experience-${index}`}
+                experience={experience}
+                index={index}
+              />
+            ))}
+          </VerticalTimeline>
+        </div>
       </div>
     </motion.section>
   );

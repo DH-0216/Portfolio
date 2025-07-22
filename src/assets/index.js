@@ -27,7 +27,6 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import AutoTradingBot from "./auto-trading-bot.mp4";
 import TrendFusion from "./TrendFusion.png";
 import Pizza from "./Pizza.png";
 import Library from "./Library.png";
@@ -94,7 +93,6 @@ export {
   carrent,
   jobit,
   tripguide,
-  AutoTradingBot,
   TrendFusion,
   Pizza,
   Library,

@@ -1,6 +1,7 @@
+"use client";
 import { useRef } from "react";
 
-const GlowCard = ({ card, index, children }) => {
+const GlowCard = ({ index, children }) => {
   // refs for all the cards
   const cardRefs = useRef([]);
 

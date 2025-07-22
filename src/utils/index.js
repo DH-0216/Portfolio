@@ -483,7 +483,7 @@ const social = [
   {
     name: "whatsapp",
     img: "/images/whatsapp.png",
-    link: "https://wa.me/1234567890",
+    link: "https://wa.me/94784340852",
     className: "w-8 h-8",
   },
 ];

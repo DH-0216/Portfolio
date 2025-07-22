@@ -101,7 +101,7 @@ const Contact = () => {
             {/* Form Section */}
             <motion.div
               variants={fadeInUp()}
-              className="flex-1 bg-black/60 backdrop-blur-md border border-white/10 rounded-xl p-6 sm:p-8 md:p-10 w-full max-w-xl shadow-2xl"
+              className="flex-1 bg-black/60 backdrop-blur-md border border-white/20 rounded-xl p-6 sm:p-8 md:p-10 w-full max-w-xl shadow-2xl"
             >
               <form
                 ref={formRef}

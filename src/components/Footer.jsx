@@ -35,13 +35,16 @@ const Footer = () => {
               Email:{" "}
               <a
                 href="mailto:dulajhashmia075@email.com"
-                className="underline hover:text-white"
+                className="underline-none hover:text-white"
               >
                 dulajhashmia075@email.com
               </a>
             </p>
             <p className="text-sm text-gray-400">
-              Phone: <span className="hover:text-white">+94 78 434 0852</span>
+              Phone:{" "}
+              <a href="tel:+94784340852" className="underline-none hover:text-white">
+                +94 78 434 0852
+              </a>
             </p>
             <p className="text-sm text-gray-400">
               Location: Colombo, Sri Lanka

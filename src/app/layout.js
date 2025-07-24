@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Dulaj Hashmika | Portfolio",
   description:
-    "Portfolio of Dulaj Hashmika - Full Stack Developer skilled in React, Node.js, Java, and more.",
+    "Portfolio of Dulaj Hashmika - Full Stack Developer skilled in React, NEXT.js, Node.js, Java, and more.",
   keywords:
     "Dulaj Hashmika, full stack developer, web developer, React, Node.js, portfolio",
   authors: [{ name: "Dulaj Hashmika" }],

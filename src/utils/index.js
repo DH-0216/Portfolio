@@ -1,4 +1,3 @@
-
 import {
   mobile,
   backend,
@@ -125,7 +124,6 @@ const experiences = [
     ],
   },
 ];
-
 
 const skills = [
   {
@@ -273,16 +271,17 @@ const works = [
         color: "pink-text-gradient",
       },
       {
+        name: "express",
+        color: "blue-text-gradient",
+      },
+      {
         name: "mongodb",
         color: "green-text-gradient",
       },
+
       {
         name: "stripe",
         color: "purple-text-gradient",
-      },
-      {
-        name: "express",
-        color: "blue-text-gradient",
       },
       {
         name: "clerk",
@@ -294,8 +293,7 @@ const works = [
       },
     ],
     image: Seatify,
-    source_code_link:
-      "https://",
+    source_code_link: "https://",
     url: "https://",
   },
 
@@ -328,8 +326,8 @@ const works = [
       },
       {
         name: "PyQt6",
-        color: "purple-text-gradient"
-      }
+        color: "purple-text-gradient",
+      },
     ],
     image: ChatBot,
     source_code_link:

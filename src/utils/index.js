@@ -295,7 +295,7 @@ const works = [
     ],
     image: Seatify,
     source_code_link:
-      "https://github.com/DH-0216/Seatify-Movie-Ticket-Booking-System.git",
+      "https://",
     url: "https://",
   },
 

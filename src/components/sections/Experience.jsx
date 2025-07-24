@@ -4,7 +4,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import { medal } from "@/assets";
 import { experiences } from "@/utils/index";
 import TitleHeader from "@/components/TitleHeader";
@@ -20,13 +20,17 @@ const ExperienceCard = ({ experience, index }) => {
     <VerticalTimelineElement
       contentStyle={{
         background: "transparent",
-        color: "#fff",
+        color: "rgba(255,255,255,0.8)",
         boxShadow: "none",
         padding: 0,
       }}
       contentArrowStyle={{ borderRight: "7px solid #374151" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      iconStyle={{
+        background: experience.iconBg,
+        backgroundColor: "rgba(255, 255, 255, 0.7)",
+        boxShadow: "0 0 5px rgba(56, 189, 248, 0.5)",
+      }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <Image
@@ -34,14 +38,14 @@ const ExperienceCard = ({ experience, index }) => {
             alt={experience.company_name}
             width={40}
             height={40}
-            className="w-[60%] h-[60%] object-contain"
+            className="w-[70%] h-[70%] object-contain"
           />
         </div>
       }
     >
       <GlowCard card={experience} index={index}>
         <div>
-          <h3 className="text-white text-[24px] font-bold">
+          <h3 className="text-white/80 text-[24px] font-bold">
             {experience.title}
           </h3>
           <p
@@ -105,7 +109,9 @@ const Experience = () => {
         />
 
         <div className="mt-20 flex flex-col">
-          <VerticalTimeline>
+          <VerticalTimeline
+            lineColor="linear-gradient(0deg, rgba(69,222,196,0) 0%, #62e0ff 25%, #52aeff 37.51%, #fd5c79 62.83%, #6d45ce 92.91%)"
+          >
             {experiences.map((experience, index) => (
               <ExperienceCard
                 key={`experience-${index}`}

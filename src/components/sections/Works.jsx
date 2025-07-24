@@ -47,8 +47,8 @@ const WorkCard = ({
       viewport={forceShow ? undefined : { once: true, amount: 0 }}
     >
       <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className="bg-tertiary/80   sm:p-5  w-full max-w-[320px] sm:max-w-[360px] mx-auto hover:bg-tertiary/90 hover:border-white/20 group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-          <div className="relative w-full h-[230px]">
+        <div className="bg-tertiary/80 sm:p-5 w-full max-w-[320px] sm:max-w-[360px] max-h-[380px] hover:max-h-max overflow-hidden mx-auto hover:bg-tertiary/90 hover:border-white/20 group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
+          <div className="relative w-full h-[200px]">
             {video ? (
               <video
                 ref={videoRef}
@@ -87,10 +87,10 @@ const WorkCard = ({
           </div>
 
           <div className="mt-5">
-            <h3 className="text-[#F8F8FF] font-bold text-[24px] group-hover:text-cyan-400 transition-colors">
+            <h3 className="text-[#F8F8FF] font-bold text-[22px] group-hover:text-cyan-400 transition-colors">
               {name}
             </h3>
-            <p className="mt-2 text-secondary text-[14px] leading-relaxed">
+            <p className="mt-2 text-secondary text-[13px] leading-relaxed">
               {description}
             </p>
           </div>

@@ -33,6 +33,7 @@ import {
   PHP,
   github,
   fullstack,
+  Seatify,
 } from "../assets";
 
 const navLinks = [
@@ -255,6 +256,45 @@ const works = [
     image: Pizza,
     source_code_link:
       "https://github.com/DH-0216/pizza-order-delivery-system.git",
+    url: "https://",
+  },
+  {
+    name: "Seatify - Movie Ticket Booking System",
+    description:
+      "A web application that allows users to book movie tickets online, view showtimes, and manage their accounts, providing a seamless and convenient movie ticket booking experience.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ingest",
+        color: "green-text-gradient",
+      },
+    ],
+    image: Seatify,
+    source_code_link:
+      "https://github.com/DH-0216/Seatify-Movie-Ticket-Booking-System.git",
     url: "https://",
   },
 

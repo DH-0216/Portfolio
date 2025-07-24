@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import fullstack from "./full-stack-developer-icon-vector.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -20,31 +21,6 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
-import fullstack from "./full-stack-developer-icon-vector.png";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import TrendFusion from "./TrendFusion.png";
-import Pizza from "./Pizza.png";
-import Library from "./Library.png";
-import ChatBot from "./ChatBot.png";
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import coding from "./coding.gif";
-import WaveHello from "./Wave Hello.gif";
-import Arrow from "./arrow.gif";
-import about_me from "./about_me.png";
-import LifeLink from "./LifeLink.gif";
-import question from "./question.gif";
-import bulb from "./bulb.gif";
-import rocket from "./rocket.gif";
-import star from "./star.gif";
-import medal from "./medal.gif";
-import Ecommerce_App from "./Ecommerce_App.jpg";
 import Arduino from "./tech/arduino.svg";
 import Service from "./Service.gif";
 import C from "./tech/c.svg";
@@ -59,6 +35,24 @@ import MySql from "./tech/mysql.svg";
 import Spring from "./tech/springio.svg";
 import PHP from "./tech/php.svg";
 import external_link from "./external-link.png";
+
+import Pizza from "./works/Pizza.png";
+import Seatify from "./works/Seatify.png";
+import Library from "./works/Library.png";
+import TrendFusion from "./works/TrendFusion.png";
+import ChatBot from "./works/ChatBot.png";
+import Ecommerce_App from "./works/Ecommerce_App.jpg";
+
+import coding from "./coding.gif";
+import WaveHello from "./Wave Hello.gif";
+import Arrow from "./arrow.gif";
+import about_me from "./about_me.png";
+import LifeLink from "./LifeLink.gif";
+import question from "./question.gif";
+import bulb from "./bulb.gif";
+import rocket from "./rocket.gif";
+import star from "./star.gif";
+import medal from "./medal.gif";
 
 import bg2 from "./bg2.jpg";
 import bg3 from "./bg3.jpeg";
@@ -86,15 +80,12 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
   TrendFusion,
   Pizza,
+  Seatify,
   Library,
   ChatBot,
   coding,

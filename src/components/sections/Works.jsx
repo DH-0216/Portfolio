@@ -44,87 +44,98 @@ const WorkCard = ({
       initial="hidden"
       animate={forceShow ? "show" : undefined}
       whileInView={forceShow ? undefined : "show"}
-      viewport={forceShow ? undefined : { once: true, amount: 0 }}
+      viewport={forceShow ? undefined : { once: false, amount: 0 }}
     >
-      <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className="bg-tertiary/80 sm:p-5 w-full max-w-[320px] sm:max-w-[360px] max-h-[380px] hover:max-h-max overflow-hidden mx-auto hover:bg-tertiary/90 hover:border-white/20 group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-          <div className="relative w-full h-[200px]">
-            {video ? (
+      <motion.div
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        layout
+        initial={{ maxHeight: 380 }}
+        animate={{ maxHeight: hovered ? 1000 : 380 }}
+        transition={{ type: "spring", duration: 0.1 }}
+        className="bg-tertiary/80 sm:p-3 w-full max-w-[320px] sm:max-w-[360px] overflow-hidden mx-auto hover:bg-tertiary/90 hover:border-white/20 group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20"
+      >
+        <div className="relative w-full h-[200px]">
+          <div className="w-full h-full">
+            <Image
+              src={image}
+              alt="project_image"
+              className="w-full h-full object-cover rounded-2xl"
+            />
+            {video && hovered && (
               <video
                 ref={videoRef}
                 src={video}
-                className="w-full h-full object-cover rounded-2xl"
+                className="w-full h-full object-cover rounded-2xl absolute top-0 left-0"
                 poster={image || ""}
                 muted
                 loop
                 playsInline
                 preload="metadata"
                 style={{ objectFit: "cover" }}
-              />
-            ) : (
-              <Image
-                src={image}
-                alt="project_image"
-                className="w-full h-full object-cover rounded-2xl"
+                autoPlay
               />
             )}
-            {hovered && (
-              <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-5">
-                {source_code_link && (
-                  <div
-                    onClick={() => window.open(source_code_link, "_blank")}
-                    className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform duration-200"
-                  >
-                    <Image
-                      src={github}
-                      alt="source code"
-                      className="w-1/2 h-1/2 object-contain"
-                    />
-                  </div>
-                )}
-              </div>
-            )}
           </div>
-
-          <div className="mt-5">
-            <h3 className="text-[#F8F8FF] font-bold text-[22px] group-hover:text-cyan-400 transition-colors">
-              {name}
-            </h3>
-            <p className="mt-2 text-secondary text-[13px] leading-relaxed">
-              {description}
-            </p>
-          </div>
-
-          <div className="mt-5 flex items-center gap-2">
-            <div className="max-w-3/4 flex flex-wrap gap-1">
-              {tags.map((tag) => (
-                <p
-                  key={`${name}-${tag.name}`}
-                  className={`text-[14px] px-2 py-1 rounded-full bg-white/5 border border-white/10 ${tag.color} hover:bg-white/10 transition-colors`}
+          {hovered && (
+            <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-5">
+              {source_code_link && (
+                <div
+                  onClick={() => window.open(source_code_link, "_blank")}
+                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform duration-200"
                 >
-                  #{tag.name}
-                </p>
-              ))}
+                  <Image
+                    src={github}
+                    alt="source code"
+                    className="w-1/2 h-1/2 object-contain"
+                  />
+                </div>
+              )}
             </div>
-
-            {url && (
-              <a
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-auto py-1 px-3 text-sm font-medium text-white bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 rounded-lg flex items-center gap-1 hover:from-cyan-500/30 hover:to-blue-500/30 hover:border-cyan-400/50 transition-all duration-200 hover:scale-105"
-              >
-                Visit
-                <Image
-                  src={external_link}
-                  alt="external link"
-                  className="w-4 h-4"
-                />
-              </a>
-            )}
-          </div>
+          )}
         </div>
-      </div>
+
+        <div className="mt-5 ">
+          <h3 className="text-[#F8F8FF] font-bold text-[22px] group-hover:text-cyan-400 transition-colors">
+            {name}
+          </h3>
+          <p className="mt-3 text-secondary text-[13px] leading-relaxed">
+            {description}
+          </p>
+        </div>
+
+
+        {hovered && (
+        <div className="mt-5 flex items-center gap-2">
+          <div className="max-w-3/4 flex flex-wrap gap-1">
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] px-2 py-1 rounded-full bg-white/5 border border-white/10 ${tag.color} hover:bg-white/10 transition-colors`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+
+          {url && (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-auto py-1 px-3 text-sm font-medium text-white bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 rounded-lg flex items-center gap-1 hover:from-cyan-500/30 hover:to-blue-500/30 hover:border-cyan-400/50 transition-all duration-200 hover:scale-105"
+            >
+              Visit
+              <Image
+                src={external_link}
+                alt="external link"
+                className="w-4 h-4"
+              />
+            </a>
+          )}
+        </div>
+        )}
+      </motion.div>
     </motion.div>
   );
 };

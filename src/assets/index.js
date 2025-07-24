@@ -40,6 +40,7 @@ import Pizza from "./works/Pizza.png";
 import Seatify from "./works/Seatify.png";
 import Library from "./works/Library.png";
 import TrendFusion from "./works/TrendFusion.png";
+import AutoTradingBot from "./works/AutoTradingBot.jpg";
 import ChatBot from "./works/ChatBot.png";
 import Ecommerce_App from "./works/Ecommerce_App.jpg";
 
@@ -99,6 +100,7 @@ export {
   star,
   medal,
   Ecommerce_App,
+  AutoTradingBot,
   Arduino,
   Service,
   C,

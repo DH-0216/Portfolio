@@ -34,6 +34,7 @@ import {
   github,
   fullstack,
   Seatify,
+  AutoTradingBot,
 } from "../assets";
 
 const navLinks = [
@@ -309,7 +310,6 @@ const works = [
       },
     ],
     image: TrendFusion,
-    source_code_link: "",
     url: "https://",
   },
   {
@@ -353,8 +353,8 @@ const works = [
         color: "pink-text-gradient",
       },
     ],
+    image: AutoTradingBot,
     video: "/videos/AutoTradingBot.mp4",
-    source_code_link: "",
     url: "https://",
   },
   {

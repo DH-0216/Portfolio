@@ -30,7 +30,7 @@ export const metadata = {
     siteName: "Dulaj Hashmika Portfolio",
     images: [
       {
-        url: "https://dulajhashmika.vercel.app/profile.jpg",
+        url: "https://dulajhashmika.vercel.app/preview.png",
         width: 1200,
         height: 630,
         alt: "Dulaj Hashmika - Full Stack Developer",

@@ -19,7 +19,7 @@ export const metadata = {
   description:
     "Portfolio of Dulaj Hashmika - Full Stack Developer skilled in React, NEXT.js, Node.js, Java, and more.",
   keywords:
-    "Dulaj Hashmika, full stack developer, web developer, React, Node.js, portfolio",
+    "Dulaj Hashmika, full stack developer, web developer, React, Node.js, portfolio, Next.js, Java, developer",
   authors: [{ name: "Dulaj Hashmika" }],
   metadataBase: new URL("https://dulajhashmika.vercel.app"),
   openGraph: {
@@ -27,6 +27,7 @@ export const metadata = {
     description: "Portfolio and work of Dulaj Hashmika.",
     url: "https://dulajhashmika.vercel.app",
     type: "website",
+    siteName: "Dulaj Hashmika Portfolio",
     images: [
       {
         url: "https://dulajhashmika.vercel.app/profile.jpg",
@@ -51,6 +52,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://dulajhashmika.vercel.app" />
+
+        {/* Robots */}
+        <meta name="robots" content="index, follow" />
+
         {/* Google site verification */}
         <meta
           name="google-site-verification"

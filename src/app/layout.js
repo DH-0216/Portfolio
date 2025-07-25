@@ -24,23 +24,23 @@ export const metadata = {
   metadataBase: new URL("https://dulajhashmika.vercel.app"),
   openGraph: {
     title: "Dulaj Hashmika | Full Stack Developer",
-    description: "Explore the portfolio and projects of Dulaj Hashmika.",
+    description: "Portfolio and work of Dulaj Hashmika.",
     url: "https://dulajhashmika.vercel.app",
+    type: "website",
     images: [
       {
-        url: "/preview.png",
+        url: "https://dulajhashmika.vercel.app/profile.jpg",
         width: 1200,
         height: 630,
-        alt: "Dulaj Hashmika Portfolio Preview",
+        alt: "Dulaj Hashmika - Full Stack Developer",
       },
     ],
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dulaj Hashmika | Full Stack Developer",
-    description: "Explore the portfolio and projects of Dulaj Hashmika.",
-    images: ["/preview.png"],
+    title: "Dulaj Hashmika",
+    description: "Portfolio of Dulaj Hashmika.",
+    images: ["https://dulajhashmika.vercel.app/your-photo.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -66,9 +66,11 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               name: "Dulaj Hashmika",
               url: "https://dulajhashmika.vercel.app",
+              image: "https://dulajhashmika.vercel.app/your-photo.jpg",
+              jobTitle: "Full Stack Developer",
               sameAs: [
+                "https://www.linkedin.com/in/dulaj-hashmika/",
                 "https://github.com/DH-0216",
-                "https://www.linkedin.com/in/dulaj-hashmika",
               ],
             }),
           }}

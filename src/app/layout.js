@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Dulaj Hashmika",
     description: "Portfolio of Dulaj Hashmika.",
-    images: ["https://dulajhashmika.vercel.app/your-photo.jpg"],
+    images: ["https://dulajhashmika.vercel.app/preview.png"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               name: "Dulaj Hashmika",
               url: "https://dulajhashmika.vercel.app",
-              image: "https://dulajhashmika.vercel.app/your-photo.jpg",
+              image: "https://dulajhashmika.vercel.app/preview.png",
               jobTitle: "Full Stack Developer",
               sameAs: [
                 "https://www.linkedin.com/in/dulaj-hashmika/",

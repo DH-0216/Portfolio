@@ -6,6 +6,7 @@ import GlowCard from "@/components/GlowCard";
 import { star } from "@/assets";
 import { useState } from "react";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const Testimonials = () => {
   const cardsData = testimonials;
@@ -110,25 +111,32 @@ const Testimonials = () => {
         </motion.div>
 
         {/* First marquee row */}
-        <div className="marquee-row w-full mx-auto max-w-[90%] overflow-hidden relative mt-16">
-          <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none"></div>
-          <div className="marquee-inner flex transform-gpu min-w-[200%] pb-5">
-            {[...cardsData, ...cardsData].map((card, index) => (
+        <div className="mt-16">
+          <Marquee
+            speed={40}
+            gradient={true}
+            gradientColor={[17, 24, 39]}
+            gradientWidth={80}
+          >
+            {cardsData.map((card, index) => (
               <CreateCard key={`${card.name || index}-${index}`} card={card} />
             ))}
-          </div>
-          <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l"></div>
+          </Marquee>
         </div>
 
         {/* Second reverse marquee row */}
-        <div className="marquee-row w-full mx-auto max-w-[90%] overflow-hidden relative">
-          <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r"></div>
-          <div className="marquee-inner marquee-reverse flex transform-gpu min-w-[200%] pb-5">
-            {[...cardsData, ...cardsData].map((card, index) => (
-              <CreateCard key={`${card.name || index}-${index}`} card={card} />
+        <div>
+          <Marquee
+            speed={40}
+            direction="right"
+            gradient={true}
+            gradientColor={[17, 24, 39]}
+            gradientWidth={80}
+          >
+            {cardsData.map((card, index) => (
+              <CreateCard key={`${card.name || index}-reverse-${index}`} card={card} />
             ))}
-          </div>
-          <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l"></div>
+          </Marquee>
         </div>
       </div>
     </section>

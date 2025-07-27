@@ -146,7 +146,7 @@ const Works = () => {
   const displayedWorks = showAll ? works : works.slice(0, 3);
 
   return (
-    <div id="work" className="relative min-h-screen  overflow-hidden">
+    <div id="work" className="relative min-h-screen overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
 
       {/* Content */}

@@ -72,26 +72,7 @@ section {
   animation: rotate 4s linear infinite;
 }
 
-@keyframes marqueeScroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
-.marquee-inner {
-  animation: marqueeScroll 25s linear infinite;
-}
-
-.marquee-row:hover .marquee-inner {
-  animation-play-state: paused;
-}
-
-.marquee-reverse {
-  animation-direction: reverse;
-}
 
 @theme {
   --font-sans: "Mona Sans", sans-serif;

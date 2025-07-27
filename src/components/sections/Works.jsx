@@ -53,7 +53,7 @@ const WorkCard = ({
         initial={{ maxHeight: 380 }}
         animate={{ maxHeight: hovered ? 1000 : 380 }}
         transition={{ type: "spring", duration: 0.1 }}
-        className="bg-tertiary/80 sm:p-3 w-full max-w-[320px] sm:max-w-[360px] overflow-hidden mx-auto hover:bg-tertiary/90 hover:border-white/20 group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20"
+        className="bg-tertiary/80 sm:p-3 w-full max-w-[320px] sm:max-w-[360px] overflow-hidden mx-auto hover:bg-tertiary/90 hover:border-white/20 group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20"
       >
         <div className="relative w-full h-[200px]">
           <div className="w-full h-full">

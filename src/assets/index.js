@@ -16,7 +16,8 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
+import react from "./tech/reactjs.png";
+import nextjs from "./tech/nextjs.svg";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
@@ -28,7 +29,7 @@ import Cpp from "./tech/cpp.svg";
 import Csharp from "./tech/csharp.svg";
 import Python from "./tech/python.svg";
 import Java from "./tech/java.svg";
-import Dart from "./tech/dart.svg";
+import reactnative from "./tech/react-native.svg";
 import Flutter from "./tech/flutter.svg";
 import Express from "./tech/express.svg";
 import MySql from "./tech/mysql.svg";
@@ -76,7 +77,8 @@ export {
   javascript,
   mongodb,
   nodejs,
-  reactjs,
+  react,
+  nextjs,
   redux,
   tailwind,
   typescript,
@@ -105,7 +107,7 @@ export {
   Csharp,
   Python,
   Java,
-  Dart,
+  reactnative,
   Flutter,
   Express,
   MySql,

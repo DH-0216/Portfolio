@@ -5,7 +5,8 @@ import {
   javascript,
   html,
   css,
-  reactjs,
+  react,
+  nextjs,
   redux,
   tailwind,
   nodejs,
@@ -24,7 +25,7 @@ import {
   Csharp,
   Python,
   Java,
-  Dart,
+  reactnative,
   Flutter,
   Express,
   MySql,
@@ -74,7 +75,7 @@ const experiences = [
   {
     title: "Undergraduate Student",
     company_name: "University",
-    icon: reactjs,
+    icon: react,
     iconBg: "#383E56",
     date: "2023 - Present",
     points: [
@@ -87,7 +88,7 @@ const experiences = [
   {
     title: "React.js Developer (Personal Projects)",
     company_name: "University",
-    icon: reactjs,
+    icon: react,
     iconBg: "#E6DEDD",
     date: "2024 - Present",
     points: [
@@ -100,7 +101,7 @@ const experiences = [
   {
     title: "React Native Developer (Personal Projects)",
     company_name: "University",
-    icon: reactjs,
+    icon: react,
     iconBg: "#383E56",
     date: "2024 - Present",
     points: [
@@ -130,49 +131,50 @@ const skills = [
   {
     category: "Programming Languages",
     skills: [
-      { src: C, alt: "c", proficiency: 85, description: "System programming, embedded development" },
-      { src: Cpp, alt: "cplusplus", proficiency: 80, description: "Object-oriented programming, algorithms" },
-      { src: Csharp, alt: "csharp", proficiency: 75, description: "Windows applications, .NET development" },
-      { src: Python, alt: "python", proficiency: 90, description: "Data analysis, automation, AI/ML" },
-      { src: Java, alt: "java", proficiency: 85, description: "Enterprise applications, Android development" },
+      { src: C, alt: "C", proficiency: 50, description: "System programming, embedded development" },
+      { src: Cpp, alt: "C++", proficiency: 30, description: "Object-oriented programming, algorithms" },
+      { src: Csharp, alt: "C#", proficiency: 25, description: "Windows applications, .NET development" },
+      { src: Python, alt: "Python", proficiency: 40, description: "Data analysis, automation, AI/ML" },
+      { src: Java, alt: "Java", proficiency: 70, description: "Enterprise applications, Android development" },
     ]
   },
   {
     category: "Web Development",
     skills: [
-      { src: html, alt: "html5", proficiency: 95, description: "Semantic HTML, accessibility" },
-      { src: css, alt: "css3", proficiency: 90, description: "Responsive design, animations" },
-      { src: javascript, alt: "javascript", proficiency: 88, description: "ES6+, DOM manipulation, APIs" },
-      { src: reactjs, alt: "react", proficiency: 92, description: "Hooks, state management, performance" },
-      { src: redux, alt: "redux", proficiency: 85, description: "State management, Redux Toolkit" },
-      { src: threejs, alt: "threejs", proficiency: 70, description: "3D graphics, WebGL" },
+      { src: html, alt: "HTML5", proficiency: 95, description: "Semantic HTML, accessibility" },
+      { src: css, alt: "CSS3", proficiency: 90, description: "Responsive design, animations" },
+      { src: javascript, alt: "JavaScript", proficiency: 75, description: "ES6+, DOM manipulation, APIs" },
+      { src: react, alt: "React", proficiency: 80, description: "Hooks, state management, performance" },
+      { src: nextjs, alt: "Next.js", proficiency: 80, description: "Server-side rendering, API routing" },
+      { src: redux, alt: "Redux", proficiency: 60, description: "State management, Redux Toolkit" },
+      { src: threejs, alt: "Three.js", proficiency: 30, description: "3D graphics, WebGL" },
     ]
   },
   {
     category: "Mobile & Cross-Platform",
     skills: [
-      { src: Dart, alt: "dart", proficiency: 80, description: "Flutter development, UI/UX" },
-      { src: Flutter, alt: "flutter", proficiency: 85, description: "Cross-platform mobile apps" },
+      { src: Flutter, alt: "Flutter", proficiency: 30, description: "Cross-platform mobile apps" },
+      { src: reactnative, alt: "React Native", proficiency: 50, description: "Cross-platform mobile apps" },
     ]
   },
   {
     category: "Backend & Database",
     skills: [
-      { src: nodejs, alt: "nodejs", proficiency: 88, description: "Server-side JavaScript, APIs" },
-      { src: Express, alt: "express", proficiency: 85, description: "RESTful APIs, middleware", className: "bg-white rounded-full p-1" },
-      { src: mongodb, alt: "mongodb", proficiency: 82, description: "NoSQL database, aggregation" },
-      { src: MySql, alt: "mysql", proficiency: 80, description: "Relational databases, SQL" },
-      { src: PHP, alt: "php", proficiency: 75, description: "Server-side scripting, CMS" },
-      { src: Spring, alt: "spring", proficiency: 70, description: "Java Spring framework" },
+      { src: nodejs, alt: "Node.js", proficiency: 70, description: "Server-side JavaScript, APIs" },
+      { src: Express, alt: "Express", proficiency: 60, description: "RESTful APIs, middleware", className: "bg-white rounded-full p-1" },
+      { src: mongodb, alt: "MongoDB", proficiency: 80, description: "NoSQL database, aggregation" },
+      { src: MySql, alt: "MySQL", proficiency: 70, description: "Relational databases, SQL" },
+      { src: PHP, alt: "PHP", proficiency: 75, description: "Server-side scripting, CMS" },
+      { src: Spring, alt: "Spring", proficiency: 70, description: "Java Spring framework" },
     ]
   },
   {
     category: "Tools & Design",
     skills: [
-      { src: git, alt: "git", proficiency: 90, description: "Version control, collaboration" },
-      { src: figma, alt: "figma", proficiency: 75, description: "UI/UX design, prototyping" },
-      { src: tailwind, alt: "tailwind", proficiency: 92, description: "Utility-first CSS framework" },
-      { src: Arduino, alt: "arduino", proficiency: 70, description: "IoT projects, hardware integration" },
+      { src: git, alt: "Git", proficiency: 90, description: "Version control, collaboration" },
+      { src: figma, alt: "Figma", proficiency: 75, description: "UI/UX design, prototyping" },
+      { src: tailwind, alt: "Tailwind", proficiency: 92, description: "Utility-first CSS framework" },
+      { src: Arduino, alt: "Arduino", proficiency: 70, description: "IoT projects, hardware integration" },
     ]
   }
 ];
@@ -215,7 +217,7 @@ const works = [
     status: "completed",
     complexity: "hard",
     developmentTime: "4-5 months",
-    teamSize: "Solo",
+    teamSize: "group",
   },
   {
     name: "Seatify - Movie Ticket Booking System",
@@ -258,7 +260,7 @@ const works = [
     status: "completed",
     complexity: "hard",
     developmentTime: "3-4 months",
-    teamSize: "Solo",
+    teamSize: "group",
   },
 
   {
@@ -273,7 +275,7 @@ const works = [
     ],
     image: TrendFusion,
     url: "https://",
-    status: "live",
+    status: "maintenance",
     complexity: "medium",
     developmentTime: "2-3 months",
     teamSize: "Solo",
@@ -302,7 +304,7 @@ const works = [
       "https://github.com/DH-0216/AI-Powered-Programming-ChatBot.git",
     status: "completed",
     complexity: "medium",
-    developmentTime: "1-2 months",
+    developmentTime: "1 week",
     teamSize: "Solo",
   },
   {
@@ -326,7 +328,7 @@ const works = [
     image: AutoTradingBot,
     video: "/videos/AutoTradingBot.mp4",
     url: "https://",
-    status: "live",
+    status: "maintenance",
     complexity: "hard",
     developmentTime: "3-4 months",
     teamSize: "Solo",
@@ -364,7 +366,7 @@ const works = [
     status: "completed",
     complexity: "medium",
     developmentTime: "2-3 months",
-    teamSize: "Solo",
+    teamSize: "group",
   },
   {
     name: "Arduino Home Security System",
@@ -390,7 +392,7 @@ const works = [
     status: "completed",
     complexity: "medium",
     developmentTime: "1-2 months",
-    teamSize: "Solo",
+    teamSize: "group",
   },
   {
     name: "E-commerce Mobile App",
@@ -448,6 +450,7 @@ const projectStatus = {
   live: { label: "Live", color: "bg-green-500/20 text-green-400 border-green-500/30" },
   inProgress: { label: "In Progress", color: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30" },
   completed: { label: "Completed", color: "bg-blue-500/20 text-blue-400 border-blue-500/30" },
+  maintenance: { label: "Maintenance", color: "bg-gray-500/20 text-gray-400 border-gray-500/30" },
 };
 
 // Category keywords for filtering

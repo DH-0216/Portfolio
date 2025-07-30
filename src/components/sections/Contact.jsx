@@ -40,17 +40,16 @@ const Contact = () => {
       id="contact"
       className="w-full min-h-screen relative overflow-hidden"
     >
-      {/* Parallax Background */}
+      {/* Optimized Background */}
       <div
-        className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'url("/images/bg3.png")',
-          backgroundAttachment: "fixed",
-          filter: "grayscale(90%) brightness(0.5)",
+          filter: "grayscale(50%) brightness(0.3)",
         }}
       />
 
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]" />
+      <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 px-5 py-20 flex items-center justify-center min-h-screen">
         <div className="w-full max-w-6xl">
           <TitleHeader
@@ -65,10 +64,10 @@ const Contact = () => {
           />
 
           <motion.div
-            variants={staggerContainer(0.75, 0.5)}
+            variants={staggerContainer(0.3, 0.2)}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex flex-col lg:flex-row gap-12 mt-20 justify-between items-start"
           >
             {/* Left Section */}
@@ -101,7 +100,7 @@ const Contact = () => {
             {/* Form Section */}
             <motion.div
               variants={fadeInUp()}
-              className="flex-1 bg-black/60 backdrop-blur-md border border-white/20 rounded-xl p-6 sm:p-8 md:p-10 w-full max-w-xl shadow-2xl"
+              className="flex-1 bg-black/50 border border-white/20 rounded-xl p-6 sm:p-8 md:p-10 w-full max-w-xl shadow-2xl"
             >
               <form
                 ref={formRef}

@@ -28,7 +28,7 @@ const Skills = () => {
   return (
     <motion.div
       initial="visible"
-      className="mt-32 px-10"
+      className="py-20 px-10 glowbg"
     >
       <TitleHeader
         title="Tools that drive my work"

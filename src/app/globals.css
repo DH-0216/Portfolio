@@ -63,6 +63,13 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.glowbg{
+  background-image: url("/images/glow.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} 
+
 /* Section transition gradients */
 .section-top-gradient::after {
   content: "";

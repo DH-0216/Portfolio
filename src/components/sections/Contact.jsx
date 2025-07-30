@@ -45,7 +45,7 @@ const Contact = () => {
         className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'url("/images/bg3.png")',
-          filter: "grayscale(50%) brightness(0.3)",
+          filter: "grayscale(50%) brightness(0.8)",
         }}
       />
 

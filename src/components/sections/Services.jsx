@@ -10,7 +10,7 @@ import Image from "next/image";
 const Services = () => {
   const MotionImage = motion.create(Image);
   return (
-    <div className="relative mt-10">
+    <div className="relative pt-32 pb-20 section-top-gradient">
       <div className="max-w-[90%] mx-auto px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

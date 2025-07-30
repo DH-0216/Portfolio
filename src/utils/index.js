@@ -221,6 +221,58 @@ const skills = [
   },
 ];
 
+// Enhanced skills data with categories and proficiency levels
+const enhancedSkills = [
+  {
+    category: "Programming Languages",
+    skills: [
+      { src: C, alt: "c", proficiency: 85, description: "System programming, embedded development" },
+      { src: Cpp, alt: "cplusplus", proficiency: 80, description: "Object-oriented programming, algorithms" },
+      { src: Csharp, alt: "csharp", proficiency: 75, description: "Windows applications, .NET development" },
+      { src: Python, alt: "python", proficiency: 90, description: "Data analysis, automation, AI/ML" },
+      { src: Java, alt: "java", proficiency: 85, description: "Enterprise applications, Android development" },
+    ]
+  },
+  {
+    category: "Web Development",
+    skills: [
+      { src: html, alt: "html5", proficiency: 95, description: "Semantic HTML, accessibility" },
+      { src: css, alt: "css3", proficiency: 90, description: "Responsive design, animations" },
+      { src: javascript, alt: "javascript", proficiency: 88, description: "ES6+, DOM manipulation, APIs" },
+      { src: reactjs, alt: "react", proficiency: 92, description: "Hooks, state management, performance" },
+      { src: redux, alt: "redux", proficiency: 85, description: "State management, Redux Toolkit" },
+      { src: threejs, alt: "threejs", proficiency: 70, description: "3D graphics, WebGL" },
+    ]
+  },
+  {
+    category: "Mobile & Cross-Platform",
+    skills: [
+      { src: Dart, alt: "dart", proficiency: 80, description: "Flutter development, UI/UX" },
+      { src: Flutter, alt: "flutter", proficiency: 85, description: "Cross-platform mobile apps" },
+    ]
+  },
+  {
+    category: "Backend & Database",
+    skills: [
+      { src: nodejs, alt: "nodejs", proficiency: 88, description: "Server-side JavaScript, APIs" },
+      { src: Express, alt: "express", proficiency: 85, description: "RESTful APIs, middleware", className: "bg-white rounded-full p-1" },
+      { src: mongodb, alt: "mongodb", proficiency: 82, description: "NoSQL database, aggregation" },
+      { src: MySql, alt: "mysql", proficiency: 80, description: "Relational databases, SQL" },
+      { src: PHP, alt: "php", proficiency: 75, description: "Server-side scripting, CMS" },
+      { src: Spring, alt: "spring", proficiency: 70, description: "Java Spring framework" },
+    ]
+  },
+  {
+    category: "Tools & Design",
+    skills: [
+      { src: git, alt: "git", proficiency: 90, description: "Version control, collaboration" },
+      { src: figma, alt: "figma", proficiency: 75, description: "UI/UX design, prototyping" },
+      { src: tailwind, alt: "tailwind", proficiency: 92, description: "Utility-first CSS framework" },
+      { src: Arduino, alt: "arduino", proficiency: 70, description: "IoT projects, hardware integration" },
+    ]
+  }
+];
+
 const works = [
   {
     name: "Pizza Delivery System",
@@ -530,6 +582,7 @@ export {
   navLinks,
   words,
   skills,
+  enhancedSkills,
   works,
   services,
   testimonials,

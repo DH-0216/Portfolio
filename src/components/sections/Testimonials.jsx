@@ -91,7 +91,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="relative mt-24">
+    <section id="testimonials" className="relative mt-24 glowbg">
       <div className="max-w-[90%] mx-auto px-4 md:px-8 ">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

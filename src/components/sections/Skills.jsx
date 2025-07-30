@@ -3,7 +3,7 @@
 import TitleHeader from "@/components/TitleHeader";
 import { motion } from "framer-motion";
 import { bulb } from "@/assets";
-import { enhancedSkills } from "@/utils";
+import { skills } from "@/utils";
 import { fadeInUp } from "@/utils/motion";
 import Image from "next/image";
 import { useState } from "react";
@@ -41,7 +41,7 @@ const Skills = () => {
       />
 
       <div className="mt-16 space-y-12">
-        {enhancedSkills.map((category, categoryIdx) => (
+        {skills.map((category, categoryIdx) => (
           <motion.div
             key={category.category}
             initial={{ opacity: 1, y: 0 }}

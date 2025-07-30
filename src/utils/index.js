@@ -125,104 +125,8 @@ const experiences = [
   },
 ];
 
-const skills = [
-  {
-    src: C,
-    alt: "c",
-  },
-  {
-    src: Cpp,
-    alt: "cplusplus",
-  },
-  {
-    src: Csharp,
-    alt: "csharp",
-  },
-  {
-    src: Python,
-    alt: "python",
-  },
-  {
-    src: Java,
-    alt: "java",
-  },
-  {
-    src: Dart,
-    alt: "dart",
-  },
-  {
-    src: Flutter,
-    alt: "flutter",
-  },
-  {
-    src: html,
-    alt: "html5",
-  },
-  {
-    src: css,
-    alt: "css3",
-  },
-  {
-    src: tailwind,
-    alt: "tailwind",
-  },
-  {
-    src: javascript,
-    alt: "javascript",
-  },
-  {
-    src: reactjs,
-    alt: "react",
-  },
-  {
-    src: redux,
-    alt: "redux",
-  },
-  {
-    src: threejs,
-    alt: "threejs",
-  },
-  {
-    src: nodejs,
-    alt: "nodejs",
-  },
-  {
-    src: figma,
-    alt: "figma",
-  },
-  {
-    src: git,
-    alt: "git",
-  },
-  {
-    src: PHP,
-    alt: "php",
-  },
-  {
-    src: Spring,
-    alt: "spring",
-  },
-  {
-    src: Express,
-    alt: "express",
-    className: "bg-white rounded-full p-1",
-  },
-  {
-    src: mongodb,
-    alt: "mongodb",
-  },
-  {
-    src: MySql,
-    alt: "mysql",
-  },
-  {
-    src: Arduino,
-    alt: "arduino",
-  },
-];
-
 // Enhanced skills data with categories and proficiency levels
-const enhancedSkills = [
+const skills = [
   {
     category: "Programming Languages",
     skills: [
@@ -308,6 +212,10 @@ const works = [
     source_code_link:
       "https://github.com/DH-0216/pizza-order-delivery-system.git",
     url: "https://",
+    status: "completed",
+    complexity: "hard",
+    developmentTime: "4-5 months",
+    teamSize: "Solo",
   },
   {
     name: "Seatify - Movie Ticket Booking System",
@@ -347,6 +255,10 @@ const works = [
     image: Seatify,
     source_code_link: "https://",
     url: "https://",
+    status: "completed",
+    complexity: "hard",
+    developmentTime: "3-4 months",
+    teamSize: "Solo",
   },
 
   {
@@ -361,6 +273,10 @@ const works = [
     ],
     image: TrendFusion,
     url: "https://",
+    status: "live",
+    complexity: "medium",
+    developmentTime: "2-3 months",
+    teamSize: "Solo",
   },
   {
     name: "AI Powered Chatbot",
@@ -384,6 +300,10 @@ const works = [
     image: ChatBot,
     source_code_link:
       "https://github.com/DH-0216/AI-Powered-Programming-ChatBot.git",
+    status: "completed",
+    complexity: "medium",
+    developmentTime: "1-2 months",
+    teamSize: "Solo",
   },
   {
     name: "Auto Trading Bot",
@@ -406,6 +326,10 @@ const works = [
     image: AutoTradingBot,
     video: "/videos/AutoTradingBot.mp4",
     url: "https://",
+    status: "live",
+    complexity: "hard",
+    developmentTime: "3-4 months",
+    teamSize: "Solo",
   },
   {
     name: "Library Management System",
@@ -437,6 +361,10 @@ const works = [
     source_code_link:
       "https://github.com/DH-0216/Library-Management-System.git",
     url: "https://",
+    status: "completed",
+    complexity: "medium",
+    developmentTime: "2-3 months",
+    teamSize: "Solo",
   },
   {
     name: "Arduino Home Security System",
@@ -459,6 +387,10 @@ const works = [
     image: Arduino,
     source_code_link:
       "https://github.com/DH-0216/Arduino-Home-Security-Systems-Project.git",
+    status: "completed",
+    complexity: "medium",
+    developmentTime: "1-2 months",
+    teamSize: "Solo",
   },
   {
     name: "E-commerce Mobile App",
@@ -473,6 +405,10 @@ const works = [
 
     image: Ecommerce_App,
     source_code_link: "https://github.com/DH-0216/E-Commerce-App.git",
+    status: "inProgress",
+    complexity: "hard",
+    developmentTime: "4-5 months",
+    teamSize: "Solo",
   },
 ];
 
@@ -496,6 +432,32 @@ const services = [
       "Developing scalable server-side applications, RESTful APIs, and database architectures. Implementing authentication, security, and data management solutions for reliable backend systems.",
   },
 ];
+
+// Project categories for filtering
+const projectCategories = [
+  { id: "all", name: "All Projects", color: "from-cyan-500 to-blue-500" },
+  { id: "web", name: "Web Apps", color: "from-purple-500 to-pink-500" },
+  { id: "mobile", name: "Mobile Apps", color: "from-green-500 to-teal-500" },
+  { id: "ai", name: "AI/ML", color: "from-orange-500 to-red-500" },
+  { id: "iot", name: "IoT", color: "from-indigo-500 to-purple-500" },
+  { id: "trading", name: "Trading", color: "from-yellow-500 to-orange-500" },
+];
+
+// Project status options
+const projectStatus = {
+  live: { label: "Live", color: "bg-green-500/20 text-green-400 border-green-500/30" },
+  inProgress: { label: "In Progress", color: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30" },
+  completed: { label: "Completed", color: "bg-blue-500/20 text-blue-400 border-blue-500/30" },
+};
+
+// Category keywords for filtering
+const categoryKeywords = {
+  web: ["react", "nextjs", "html", "css", "javascript", "tailwind", "bootstrap", "spring", "express", "php"],
+  mobile: ["flutter", "react native", "mobile"],
+  ai: ["python", "flask", "ai", "ml", "chatbot"],
+  iot: ["arduino", "iot", "c++"],
+  trading: ["pinescript", "trading", "bot", "telegram"]
+};
 
 const testimonials = [
   {
@@ -582,10 +544,12 @@ export {
   navLinks,
   words,
   skills,
-  enhancedSkills,
   works,
   services,
   testimonials,
   social,
   experiences,
+  projectCategories,
+  projectStatus,
+  categoryKeywords,
 };

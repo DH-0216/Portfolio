@@ -65,7 +65,7 @@ const Contact = () => {
           />
 
           <motion.div
-            variants={staggerContainer(0.15, 0.5)}
+            variants={staggerContainer(0.75, 0.5)}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }}

@@ -15,7 +15,7 @@ const Skills = () => {
       whileInView="visible"
       viewport={{ once: false, amount: 0.3 }}
       variants={fadeInUp()}
-      className="mt-32 px-10 section-top-gradient"
+      className="mt-32 px-10"
     >
       <TitleHeader
         title="Tools that drive my work"

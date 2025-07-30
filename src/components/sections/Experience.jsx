@@ -109,9 +109,7 @@ const Experience = () => {
         />
 
         <div className="mt-20 flex flex-col">
-          <VerticalTimeline
-            lineColor="linear-gradient(0deg, rgba(69,222,196,0) 0%, #62e0ff 25%, #52aeff 37.51%, #fd5c79 62.83%, #6d45ce 92.91%)"
-          >
+          <VerticalTimeline lineColor="linear-gradient(0deg, rgba(69,222,196,0) 0%, #62e0ff 25%, #52aeff 37.51%, #fd5c79 62.83%, #6d45ce 92.91%)">
             {experiences.map((experience, index) => (
               <ExperienceCard
                 key={`experience-${index}`}

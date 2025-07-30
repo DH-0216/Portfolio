@@ -106,34 +106,34 @@ const WorkCard = ({
 
 
         {hovered && (
-        <div className="mt-5 flex items-center gap-2">
-          <div className="max-w-3/4 flex flex-wrap gap-1">
-            {tags.map((tag) => (
-              <p
-                key={`${name}-${tag.name}`}
-                className={`text-[14px] px-2 py-1 rounded-full bg-white/5 border border-white/10 ${tag.color} hover:bg-white/10 transition-colors`}
-              >
-                #{tag.name}
-              </p>
-            ))}
-          </div>
+          <div className="mt-5 flex items-center gap-2">
+            <div className="max-w-3/4 flex flex-wrap gap-1">
+              {tags.map((tag) => (
+                <p
+                  key={`${name}-${tag.name}`}
+                  className={`text-[14px] px-2 py-1 rounded-full bg-white/5 border border-white/10 ${tag.color} hover:bg-white/10 transition-colors`}
+                >
+                  #{tag.name}
+                </p>
+              ))}
+            </div>
 
-          {url && (
-            <a
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-auto py-1 px-3 text-sm font-medium text-white bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 rounded-lg flex items-center gap-1 hover:from-cyan-500/30 hover:to-blue-500/30 hover:border-cyan-400/50 transition-all duration-200 hover:scale-105"
-            >
-              Visit
-              <Image
-                src={external_link}
-                alt="external link"
-                className="w-4 h-4"
-              />
-            </a>
-          )}
-        </div>
+            {url && (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-auto py-1 px-3 text-sm font-medium text-white bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 rounded-lg flex items-center gap-1 hover:from-cyan-500/30 hover:to-blue-500/30 hover:border-cyan-400/50 transition-all duration-200 hover:scale-105"
+              >
+                Visit
+                <Image
+                  src={external_link}
+                  alt="external link"
+                  className="w-4 h-4"
+                />
+              </a>
+            )}
+          </div>
         )}
       </motion.div>
     </motion.div>
@@ -146,7 +146,7 @@ const Works = () => {
   const displayedWorks = showAll ? works : works.slice(0, 3);
 
   return (
-    <div id="work" className="relative min-h-screen overflow-hidden">
+    <div id="work" className="relative min-h-screen overflow-hidden section-top-gradient">
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
 
       {/* Content */}
@@ -226,9 +226,8 @@ const Works = () => {
               <Image
                 src={Arrow}
                 alt="arrow"
-                className={`w-8 h-8 inline-block transition-transform duration-300 ${
-                  showAll ? "rotate-180" : ""
-                }`}
+                className={`w-8 h-8 inline-block transition-transform duration-300 ${showAll ? "rotate-180" : ""
+                  }`}
               />
             </button>
           </div>

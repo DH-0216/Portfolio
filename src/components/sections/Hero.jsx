@@ -14,9 +14,8 @@ const Hero = () => {
   });
 
   return (
-    <div className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-between p-4 overflow-hidden bg-[url(https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/green-gradient-bg.svg)]">
-      {/* Background Layer */}
-
+    <div className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-between px-4 overflow-hidden ">
+      
       {/* Content Layer */}
       <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
         <div className="sm:px-16 px-6 absolute inset-0 top-[120px] md:top-[180px] mx-10 flex flex-row items-start gap-5">
@@ -64,7 +63,7 @@ const Hero = () => {
       </header>
 
       {/* RIGHT: Hero Image */}
-      <div className="relative w-full md:w-1/2 flex justify-center md:justify-start top-[-60px] md:top-[-60px] lg:top-10">
+      <div className="relative w-full md:w-1/2 flex justify-center md:justify-start top-[-60px] md:top-[-60px] lg:top-15">
         <Image
           src={about_me}
           alt="about me"

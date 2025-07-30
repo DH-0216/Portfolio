@@ -38,11 +38,11 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full min-h-screen relative overflow-hidden"
+      className="w-full min-h-screen relative overflow-hidden section-top-gradient"
     >
       {/* Optimized Background */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'url("/images/bg3.png")',
           filter: "grayscale(50%) brightness(0.3)",
@@ -100,7 +100,7 @@ const Contact = () => {
             {/* Form Section */}
             <motion.div
               variants={fadeInUp()}
-              className="flex-1 bg-black/50 border border-white/20 rounded-xl p-6 sm:p-8 md:p-10 w-full max-w-xl shadow-2xl"
+              className="flex-1 bg-black/50 border border-white/20 hover:border-[#22d3ee] transition-all duration-300 rounded-xl p-6 sm:p-8 md:p-10 w-full max-w-xl shadow-2xl"
             >
               <form
                 ref={formRef}

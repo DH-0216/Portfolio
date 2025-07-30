@@ -4,7 +4,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { medal } from "@/assets";
 import { experiences } from "@/utils/index";
 import TitleHeader from "@/components/TitleHeader";
@@ -75,27 +75,27 @@ const Experience = () => {
   return (
     <motion.section
       id="experience"
-      className="relative mt-32  pt-10"
-      variants={staggerContainer(0.15, 0.5)}
+      className="relative pt-32 section-top-gradient"
+      variants={staggerContainer(0.1, 0.3)}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <div
         className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url(/images/bg2.jpg)",
-          filter: "grayscale(90%) brightness(0.3) blur(2px)",
+          filter: "grayscale(90%) brightness(0.15)",
         }}
       ></div>
-      <div className="relative z-10">
+      <div className="relative z-20">
         <TitleHeader
           title="What I have done so far"
           sub={
             <span className="flex items-center gap-1 justify-center">
               <MotionImage
                 whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
                 src={medal}
                 alt=""
                 width={24}

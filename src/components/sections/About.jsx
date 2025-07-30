@@ -13,7 +13,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
-        className="relative overflow-hidden flex flex-col items-center justify-center pt-20 px-6 md:px-20  rounded-2xl shadow-2xl bg-black/70"
+        className="relative max-w-screen overflow-hidden flex flex-col items-center justify-center py-20 md:px-20 bg-black/50 rounded-t-4xl shadow-2xl"
       >
         {/* Background Glow */}
         <div className="absolute inset-0 flex justify-center items-center -z-10">

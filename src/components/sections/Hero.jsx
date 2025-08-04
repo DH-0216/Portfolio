@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { words } from "@/utils/index";
 import { about_me } from "@/assets";
 import Image from "next/image";
+import { motion } from "framer-motion";
 const Hero = () => {
   useGSAP(() => {
     gsap.fromTo(
@@ -72,6 +73,16 @@ const Hero = () => {
           className="w-[180px] sm:w-[280px] md:w-[240px] lg:w-[400px] object-contain"
         />
       </div>
+
+      <motion.div
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-bounce" />
+        </div>
+      </motion.div>
     </div>
   );
 };

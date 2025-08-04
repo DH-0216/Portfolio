@@ -20,7 +20,7 @@ export const metadata = {
   description:
     "Portfolio of Dulaj Hashmika - Full Stack Developer skilled in React, NEXT.js, Node.js, Java, and more.",
   keywords:
-    "Dulaj Hashmika, full stack developer, web developer, React, Node.js, portfolio, Next.js, Java, developer",
+    "Dulaj, Dulaj Hashmika, full stack developer, web developer, React, Node.js, portfolio, Next.js, Java, developer",
   authors: [{ name: "Dulaj Hashmika" }],
   metadataBase: new URL("https://dulajhashmika.vercel.app"),
   openGraph: {

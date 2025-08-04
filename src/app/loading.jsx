@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion';
 
-export default function Loading() {
+export default function Loading({ isFullScreen = false }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
+    <div className={`${isFullScreen ? 'fixed inset-0 z-50' : 'w-full h-64'} flex items-center justify-center bg-black`}>
       <div className="text-center">
         {/* Logo/Name */}
         <motion.div

@@ -85,7 +85,7 @@ const Experience = () => {
         className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url(/images/bg2.jpg)",
-          filter: "grayscale(90%) brightness(0.15)",
+          filter: "brightness(0.3) blur(2px)",
         }}
       ></div>
       <div className="relative z-20">

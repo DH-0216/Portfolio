@@ -1,6 +1,7 @@
 import About from "@/components/sections/About";
 import dynamic from "next/dynamic";
 import Hero from "@/components/sections/Hero";
+import Loading from "./loading";
 
 const Experience = dynamic(() => import("@/components/sections/Experience"), {
   suspense: true,
@@ -32,17 +33,13 @@ export default function Home() {
           className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url("/images/bghero2.jpg")',
-            filter: "grayscale(50%) brightness(0.2)",
+            filter: "grayscale(30%) brightness(0.4)",
           }}
         />
         <Hero />
         <About />
       </div>
-      <Suspense
-        fallback={
-          <div className="text-center py-10 text-gray-400">Loading...</div>
-        }
-      >
+      <Suspense fallback={<Loading />}>
         <Experience />
         <Skills />
         <div className="relative">

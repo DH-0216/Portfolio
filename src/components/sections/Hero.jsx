@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <div className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-between px-4 overflow-hidden ">
-      
+
       {/* Content Layer */}
       <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
         <div className="sm:px-16 px-6 absolute inset-0 top-[120px] md:top-[180px] mx-10 flex flex-row items-start gap-5">

@@ -2,7 +2,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { words } from "@/utils/index";
-import { about_me } from "@/assets";
+import { about_me, bghero2 } from "@/assets";
 import Image from "next/image";
 import { motion } from "framer-motion";
 const Hero = () => {
@@ -16,6 +16,16 @@ const Hero = () => {
 
   return (
     <div className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-between px-4 overflow-hidden ">
+      
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src={bghero2}
+          alt="about me"
+          fill
+          className="object-cover rounded-2xl opacity-50"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent rounded-2xl"></div>
+      </div>
 
       {/* Content Layer */}
       <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">

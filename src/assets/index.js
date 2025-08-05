@@ -57,6 +57,10 @@ import bulb from "./bulb.gif";
 import rocket from "./rocket.gif";
 import star from "./star.gif";
 import medal from "./medal.gif";
+import bghero from "./bghero.jpg";
+import bghero2 from "./bghero2.jpg";
+import bghero3 from "./bghero3.jpeg";
+
 
 import bg2 from "./bg2.jpg";
 import bg3 from "./bg3.jpeg";
@@ -121,4 +125,7 @@ export {
   bg3,
   whatsapp,
   linkedin,
+  bghero,
+  bghero2,
+  bghero3,
 };

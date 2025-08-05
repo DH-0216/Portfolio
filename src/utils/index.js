@@ -131,52 +131,173 @@ const skills = [
   {
     category: "Programming Languages",
     skills: [
-      { src: C, alt: "C", proficiency: 50, description: "System programming, embedded development" },
-      { src: Cpp, alt: "C++", proficiency: 30, description: "Object-oriented programming, algorithms" },
-      { src: Csharp, alt: "C#", proficiency: 25, description: "Windows applications, .NET development" },
-      { src: Python, alt: "Python", proficiency: 40, description: "Data analysis, automation, AI/ML" },
-      { src: Java, alt: "Java", proficiency: 70, description: "Enterprise applications, Android development" },
-    ]
+      {
+        src: C,
+        alt: "C",
+        proficiency: 50,
+        description: "System programming, embedded development",
+      },
+      {
+        src: Cpp,
+        alt: "C++",
+        proficiency: 30,
+        description: "Object-oriented programming, algorithms",
+      },
+      {
+        src: Csharp,
+        alt: "C#",
+        proficiency: 25,
+        description: "Windows applications, .NET development",
+      },
+      {
+        src: Python,
+        alt: "Python",
+        proficiency: 40,
+        description: "Data analysis, automation, AI/ML",
+      },
+      {
+        src: Java,
+        alt: "Java",
+        proficiency: 70,
+        description: "Enterprise applications, Android development",
+      },
+    ],
   },
   {
     category: "Web Development",
     skills: [
-      { src: html, alt: "HTML5", proficiency: 95, description: "Semantic HTML, accessibility" },
-      { src: css, alt: "CSS3", proficiency: 90, description: "Responsive design, animations" },
-      { src: javascript, alt: "JavaScript", proficiency: 75, description: "ES6+, DOM manipulation, APIs" },
-      { src: react, alt: "React", proficiency: 80, description: "Hooks, state management, performance" },
-      { src: nextjs, alt: "Next.js", proficiency: 80, description: "Server-side rendering, API routing" },
-      { src: redux, alt: "Redux", proficiency: 60, description: "State management, Redux Toolkit" },
-      { src: threejs, alt: "Three.js", proficiency: 30, description: "3D graphics, WebGL" },
-    ]
+      {
+        src: html,
+        alt: "HTML5",
+        proficiency: 95,
+        description: "Semantic HTML, accessibility",
+      },
+      {
+        src: css,
+        alt: "CSS3",
+        proficiency: 90,
+        description: "Responsive design, animations",
+      },
+      {
+        src: javascript,
+        alt: "JavaScript",
+        proficiency: 75,
+        description: "ES6+, DOM manipulation, APIs",
+      },
+      {
+        src: react,
+        alt: "React",
+        proficiency: 80,
+        description: "Hooks, state management, performance",
+      },
+      {
+        src: nextjs,
+        alt: "Next.js",
+        proficiency: 80,
+        description: "Server-side rendering, API routing",
+      },
+      {
+        src: redux,
+        alt: "Redux",
+        proficiency: 60,
+        description: "State management, Redux Toolkit",
+      },
+      {
+        src: threejs,
+        alt: "Three.js",
+        proficiency: 30,
+        description: "3D graphics, WebGL",
+      },
+    ],
   },
   {
     category: "Mobile & Cross-Platform",
     skills: [
-      { src: Flutter, alt: "Flutter", proficiency: 30, description: "Cross-platform mobile apps" },
-      { src: reactnative, alt: "React Native", proficiency: 50, description: "Cross-platform mobile apps" },
-    ]
+      {
+        src: Flutter,
+        alt: "Flutter",
+        proficiency: 30,
+        description: "Cross-platform mobile apps",
+      },
+      {
+        src: reactnative,
+        alt: "React Native",
+        proficiency: 50,
+        description: "Cross-platform mobile apps",
+      },
+    ],
   },
   {
     category: "Backend & Database",
     skills: [
-      { src: nodejs, alt: "Node.js", proficiency: 70, description: "Server-side JavaScript, APIs" },
-      { src: Express, alt: "Express", proficiency: 60, description: "RESTful APIs, middleware", className: "bg-white rounded-full p-1" },
-      { src: mongodb, alt: "MongoDB", proficiency: 80, description: "NoSQL database, aggregation" },
-      { src: MySql, alt: "MySQL", proficiency: 70, description: "Relational databases, SQL" },
-      { src: PHP, alt: "PHP", proficiency: 75, description: "Server-side scripting, CMS" },
-      { src: Spring, alt: "Spring", proficiency: 70, description: "Java Spring framework" },
-    ]
+      {
+        src: nodejs,
+        alt: "Node.js",
+        proficiency: 70,
+        description: "Server-side JavaScript, APIs",
+      },
+      {
+        src: Express,
+        alt: "Express",
+        proficiency: 60,
+        description: "RESTful APIs, middleware",
+        className: "bg-white rounded-full p-1",
+      },
+      {
+        src: mongodb,
+        alt: "MongoDB",
+        proficiency: 80,
+        description: "NoSQL database, aggregation",
+      },
+      {
+        src: MySql,
+        alt: "MySQL",
+        proficiency: 70,
+        description: "Relational databases, SQL",
+      },
+      {
+        src: PHP,
+        alt: "PHP",
+        proficiency: 75,
+        description: "Server-side scripting, CMS",
+      },
+      {
+        src: Spring,
+        alt: "Spring",
+        proficiency: 70,
+        description: "Java Spring framework",
+      },
+    ],
   },
   {
     category: "Tools & Design",
     skills: [
-      { src: git, alt: "Git", proficiency: 90, description: "Version control, collaboration" },
-      { src: figma, alt: "Figma", proficiency: 75, description: "UI/UX design, prototyping" },
-      { src: tailwind, alt: "Tailwind", proficiency: 92, description: "Utility-first CSS framework" },
-      { src: Arduino, alt: "Arduino", proficiency: 70, description: "IoT projects, hardware integration" },
-    ]
-  }
+      {
+        src: git,
+        alt: "Git",
+        proficiency: 90,
+        description: "Version control, collaboration",
+      },
+      {
+        src: figma,
+        alt: "Figma",
+        proficiency: 75,
+        description: "UI/UX design, prototyping",
+      },
+      {
+        src: tailwind,
+        alt: "Tailwind",
+        proficiency: 92,
+        description: "Utility-first CSS framework",
+      },
+      {
+        src: Arduino,
+        alt: "Arduino",
+        proficiency: 70,
+        description: "IoT projects, hardware integration",
+      },
+    ],
+  },
 ];
 
 const works = [
@@ -447,19 +568,42 @@ const projectCategories = [
 
 // Project status options
 const projectStatus = {
-  live: { label: "Live", color: "bg-green-500/20 text-green-400 border-green-500/30" },
-  inProgress: { label: "In Progress", color: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30" },
-  completed: { label: "Completed", color: "bg-blue-500/20 text-blue-400 border-blue-500/30" },
-  maintenance: { label: "Maintenance", color: "bg-gray-500/20 text-gray-400 border-gray-500/30" },
+  live: {
+    label: "Live",
+    color: "bg-green-500/20 text-green-400 border-green-500/30",
+  },
+  inProgress: {
+    label: "In Progress",
+    color: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+  },
+  completed: {
+    label: "Completed",
+    color: "bg-blue-500/20 text-blue-400 border-blue-500/30",
+  },
+  maintenance: {
+    label: "Maintenance",
+    color: "bg-gray-500/20 text-gray-400 border-gray-500/30",
+  },
 };
 
 // Category keywords for filtering
 const categoryKeywords = {
-  web: ["react", "nextjs", "html", "css", "javascript", "tailwind", "bootstrap", "spring", "express", "php"],
+  web: [
+    "react",
+    "nextjs",
+    "html",
+    "css",
+    "javascript",
+    "tailwind",
+    "bootstrap",
+    "spring",
+    "express",
+    "php",
+  ],
   mobile: ["flutter", "react native", "mobile"],
   ai: ["python", "flask", "ai", "ml", "chatbot"],
   iot: ["arduino", "iot", "c++"],
-  trading: ["pinescript", "trading", "bot", "telegram"]
+  trading: ["pinescript", "trading", "bot", "telegram"],
 };
 
 const testimonials = [

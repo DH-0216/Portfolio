@@ -28,17 +28,9 @@ import { Suspense } from "react";
 export default function Home() {
   return (
     <div className="relative z-10">
-      <div className="relative">
-        <div
-          className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url("/images/bghero2.jpg")',
-            filter: "grayscale(30%) brightness(0.4)",
-          }}
-        />
-        <Hero />
-        <About />
-      </div>
+      <Hero />
+      <About />
+
       <Suspense fallback={<Loading />}>
         <Experience />
         <Skills />

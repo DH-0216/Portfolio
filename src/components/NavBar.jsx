@@ -99,11 +99,12 @@ const Navbar = () => {
                       ? "text-[#888888]"
                       : "text-white"
                   } hover:text-white text-[18px] font-medium cursor-pointer transition-colors duration-200`}
-                onClick={() => {
+                onClick={(e) => {
                   setActive(item.title);
                   if (item.title === "Home") {
                     setActive("");
-                    window.scrollTo(0, 0);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                    e.preventDefault();
                   }
                 }}
               >

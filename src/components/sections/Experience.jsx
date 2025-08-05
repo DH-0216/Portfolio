@@ -5,7 +5,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-import { medal } from "@/assets";
+import { medal, exp_bg } from "@/assets";
 import { experiences } from "@/utils/index";
 import TitleHeader from "@/components/TitleHeader";
 import GlowCard from "@/components/GlowCard";
@@ -84,7 +84,7 @@ const Experience = () => {
       <div
         className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url(/images/bg2.jpg)",
+          backgroundImage: `url(${exp_bg.src})`,
           filter: "brightness(0.25) blur(2px)",
         }}
       ></div>

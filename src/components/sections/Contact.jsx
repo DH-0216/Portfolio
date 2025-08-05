@@ -2,7 +2,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { question, rocket } from "@/assets";
+  import { question, rocket, contact_bg } from "@/assets";
 import { fadeInUp, staggerContainer } from "@/utils/motion";
 import TitleHeader from "@/components/TitleHeader";
 import Image from "next/image";
@@ -44,10 +44,10 @@ const Contact = () => {
       <div
         className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("/images/bg3.png")',
-          filter: "grayscale(50%) brightness(0.8)",
+          backgroundImage: `url(${contact_bg.src})`,
+          filter: "brightness(0.3)",
         }}
-      />
+      ></div>
 
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 px-5 py-20 flex items-center justify-center min-h-screen">

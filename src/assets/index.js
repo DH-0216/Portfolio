@@ -60,10 +60,9 @@ import medal from "./medal.gif";
 import bghero from "./bghero.jpg";
 import bghero2 from "./bghero2.jpg";
 import bghero3 from "./bghero3.jpeg";
+import exp_bg from "./expbg.jpg";
+import contact_bg from "./contact_bg.jpeg";
 
-
-import bg2 from "./bg2.jpg";
-import bg3 from "./bg3.jpeg";
 
 
 export {
@@ -121,11 +120,11 @@ export {
   PHP,
   external_link,
   fullstack,
-  bg2,
-  bg3,
+  contact_bg,
   whatsapp,
   linkedin,
   bghero,
   bghero2,
   bghero3,
+  exp_bg,
 };

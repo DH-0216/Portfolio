@@ -30,7 +30,6 @@ export default function Home() {
     <div className="relative z-10">
       <Hero />
       <About />
-
       <Suspense fallback={<Loading />}>
         <Experience />
         <Skills />
@@ -45,7 +44,6 @@ export default function Home() {
           <Works />
           <Services />
         </div>
-
         <Testimonials />
         <Contact />
       </Suspense>

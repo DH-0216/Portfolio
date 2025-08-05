@@ -112,25 +112,7 @@ export default function LoadingScreen() {
                             </p>
                         </motion.div>
 
-                        {/* Loading Animation */}
-                        <motion.div
-                            initial={{ scale: 0 }}
-                            animate={{ scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.5 }}
-                            className="mb-8"
-                        >
-                            <div className="relative w-16 h-16 mx-auto">
-                                <div className="absolute inset-0 border-4 border-gray-800 rounded-full"></div>
-                                <motion.div
-                                    className="absolute inset-0 border-4 border-transparent border-t-blue-500 rounded-full"
-                                    animate={{ rotate: 360 }}
-                                    transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                                />
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                                </div>
-                            </div>
-                        </motion.div>
+                        
 
                         {/* Progress Bar */}
                         <motion.div

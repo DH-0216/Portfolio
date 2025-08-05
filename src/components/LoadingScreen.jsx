@@ -107,8 +107,8 @@ export default function LoadingScreen() {
                             <h1 className="text-4xl md:text-6xl font-bold text-white mb-2">
                                 Dulaj Hashmika
                             </h1>
-                            <p className="text-gray-400 text-lg md:text-xl">
-                                Full Stack Developer
+                            <p className="text-gray-400 text-lg md:text-2xl">
+                                Portfolio
                             </p>
                         </motion.div>
 

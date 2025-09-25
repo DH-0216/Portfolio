@@ -334,7 +334,7 @@ const works = [
     image: Pizza,
     source_code_link:
       "https://github.com/DH-0216/pizza-order-delivery-system.git",
-    url: "https://",
+    url: "https://redoven-client.vercel.app/",
     status: "completed",
     complexity: "hard",
     developmentTime: "4-5 months",
@@ -376,8 +376,9 @@ const works = [
       },
     ],
     image: Seatify,
-    source_code_link: "https://",
-    url: "https://",
+    source_code_link:
+      "https://github.com/DH-0216/Seatify-Movie-Ticket-Booking-System.git",
+    url: "https://seatify-client.vercel.app/",
     status: "completed",
     complexity: "hard",
     developmentTime: "3-4 months",

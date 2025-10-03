@@ -333,7 +333,7 @@ const works = [
         color: "blue-text-gradient",
       },
       {
-        name: "ingest",
+        name: "inngest",
         color: "green-text-gradient",
       },
     ],

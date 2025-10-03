@@ -302,43 +302,6 @@ const skills = [
 
 const works = [
   {
-    name: "Pizza Delivery System",
-    category: "web",
-    description:
-      "A web application that allows users to order pizza online, track their orders in real-time, and manage their accounts, providing a seamless and convenient pizza delivery experience.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "purple-text-gradient",
-      },
-      {
-        name: "spring",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "stripe",
-        color: "purple-text-gradient",
-      },
-    ],
-    image: Pizza,
-    source_code_link:
-      "https://github.com/DH-0216/pizza-order-delivery-system.git",
-    url: "https://redoven-client.vercel.app/",
-    status: "completed",
-  },
-  {
     name: "Seatify - Movie Ticket Booking System",
     category: "web",
     description:
@@ -380,6 +343,43 @@ const works = [
     url: "https://seatify-client.vercel.app/",
     status: "completed",
   },
+  {
+    name: "Pizza Delivery System",
+    category: "web",
+    description:
+      "A web application that allows users to order pizza online, track their orders in real-time, and manage their accounts, providing a seamless and convenient pizza delivery experience.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "spring",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: Pizza,
+    source_code_link:
+      "https://github.com/DH-0216/pizza-order-delivery-system.git",
+    url: "https://redoven-client.vercel.app/",
+    status: "completed",
+  },
 
   {
     name: "TrendFusion Trading Indicator",
@@ -393,7 +393,7 @@ const works = [
       },
     ],
     image: TrendFusion,
-   
+
     status: "maintenance",
     complexity: "medium",
     developmentTime: "2-3 months",
@@ -445,7 +445,7 @@ const works = [
     ],
     image: AutoTradingBot,
     video: "/videos/AutoTradingBot.mp4",
-   
+
     status: "maintenance",
   },
   {
@@ -478,7 +478,7 @@ const works = [
     image: Library,
     source_code_link:
       "https://github.com/DH-0216/Library-Management-System.git",
-   
+
     status: "completed",
   },
   {
@@ -573,7 +573,6 @@ const projectStatus = {
     color: "bg-gray-500/20 text-gray-400 border-gray-500/30",
   },
 };
-
 
 const testimonials = [
   {

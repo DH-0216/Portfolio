@@ -198,10 +198,10 @@ const WorkCard = ({
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full py-3 px-4 text-sm font-bold text-white backdrop-blur-xl rounded-2xl flex items-center justify-center gap-2 transition-all border border-white/30"
+                    className="w-full py-3 px-4 text-sm font-bold text-white backdrop-blur-xl rounded-lg flex items-center justify-center gap-2 transition-all border border-white/30"
                     style={{
                       boxShadow:
-                        "0 8px 24px rgba(100, 200, 255, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.4)",
+                        "0 2px 12px rgba(100, 200, 255, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.4)",
                     }}
                   >
                     View Project

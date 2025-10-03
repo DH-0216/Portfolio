@@ -667,5 +667,4 @@ export {
   experiences,
   projectCategories,
   projectStatus,
-  categoryKeywords,
 };

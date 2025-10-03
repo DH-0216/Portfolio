@@ -393,7 +393,7 @@ const works = [
       },
     ],
     image: TrendFusion,
-    url: "https://",
+   
     status: "maintenance",
     complexity: "medium",
     developmentTime: "2-3 months",
@@ -445,7 +445,7 @@ const works = [
     ],
     image: AutoTradingBot,
     video: "/videos/AutoTradingBot.mp4",
-    url: "https://",
+   
     status: "maintenance",
   },
   {
@@ -478,7 +478,7 @@ const works = [
     image: Library,
     source_code_link:
       "https://github.com/DH-0216/Library-Management-System.git",
-    url: "https://",
+   
     status: "completed",
   },
   {

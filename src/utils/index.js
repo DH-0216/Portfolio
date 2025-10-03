@@ -303,6 +303,7 @@ const skills = [
 const works = [
   {
     name: "Pizza Delivery System",
+    category: "web",
     description:
       "A web application that allows users to order pizza online, track their orders in real-time, and manage their accounts, providing a seamless and convenient pizza delivery experience.",
     tags: [
@@ -336,12 +337,10 @@ const works = [
       "https://github.com/DH-0216/pizza-order-delivery-system.git",
     url: "https://redoven-client.vercel.app/",
     status: "completed",
-    complexity: "hard",
-    developmentTime: "4-5 months",
-    teamSize: "group",
   },
   {
     name: "Seatify - Movie Ticket Booking System",
+    category: "web",
     description:
       "A web application that allows users to book movie tickets online, view showtimes, and manage their accounts, providing a seamless and convenient movie ticket booking experience.",
     tags: [
@@ -380,13 +379,11 @@ const works = [
       "https://github.com/DH-0216/Seatify-Movie-Ticket-Booking-System.git",
     url: "https://seatify-client.vercel.app/",
     status: "completed",
-    complexity: "hard",
-    developmentTime: "3-4 months",
-    teamSize: "group",
   },
 
   {
     name: "TrendFusion Trading Indicator",
+    category: "trading",
     description:
       "A full-stack trading indicator that provides technical analysis, customizable alerts, and more features to enhance trading strategies.",
     tags: [
@@ -404,6 +401,7 @@ const works = [
   },
   {
     name: "AI Powered Chatbot",
+    category: "ai",
     description:
       "An AI-powered chatbot that provides instant customer support, answers frequently asked questions, and assists users in navigating the website, enhancing user experience and engagement.",
     tags: [
@@ -425,12 +423,10 @@ const works = [
     source_code_link:
       "https://github.com/DH-0216/AI-Powered-Programming-ChatBot.git",
     status: "completed",
-    complexity: "medium",
-    developmentTime: "1 week",
-    teamSize: "Solo",
   },
   {
     name: "Auto Trading Bot",
+    category: "trading",
     description:
       "An automated trading bot that reads trade signals sent by an indicator to a Telegram channel and executes trades based on those messages, providing hands-free trading directly from Telegram alerts.",
     tags: [
@@ -451,12 +447,10 @@ const works = [
     video: "/videos/AutoTradingBot.mp4",
     url: "https://",
     status: "maintenance",
-    complexity: "hard",
-    developmentTime: "3-4 months",
-    teamSize: "Solo",
   },
   {
     name: "Library Management System",
+    category: "web",
     description:
       "A web application that allows users to search for books, manage their library accounts, and track borrowed books, providing a user-friendly interface for library management.",
     tags: [
@@ -486,12 +480,10 @@ const works = [
       "https://github.com/DH-0216/Library-Management-System.git",
     url: "https://",
     status: "completed",
-    complexity: "medium",
-    developmentTime: "2-3 months",
-    teamSize: "group",
   },
   {
     name: "Arduino Home Security System",
+    category: "iot",
     description:
       "A home security system built with Arduino that includes motion detection, remote control, and SMS notifications.",
     tags: [
@@ -512,12 +504,10 @@ const works = [
     source_code_link:
       "https://github.com/DH-0216/Arduino-Home-Security-Systems-Project.git",
     status: "completed",
-    complexity: "medium",
-    developmentTime: "1-2 months",
-    teamSize: "group",
   },
   {
     name: "E-commerce Mobile App",
+    category: "mobile",
     description:
       "A  e-commerce application that allows users to browse products, add them to their cart, and make purchases, providing a complete online shopping experience.",
     tags: [
@@ -530,9 +520,6 @@ const works = [
     image: Ecommerce_App,
     source_code_link: "https://github.com/DH-0216/E-Commerce-App.git",
     status: "inProgress",
-    complexity: "hard",
-    developmentTime: "4-5 months",
-    teamSize: "Solo",
   },
 ];
 
@@ -587,25 +574,6 @@ const projectStatus = {
   },
 };
 
-// Category keywords for filtering
-const categoryKeywords = {
-  web: [
-    "react",
-    "nextjs",
-    "html",
-    "css",
-    "javascript",
-    "tailwind",
-    "bootstrap",
-    "spring",
-    "express",
-    "php",
-  ],
-  mobile: ["flutter", "react native", "mobile"],
-  ai: ["python", "flask", "ai", "ml", "chatbot"],
-  iot: ["arduino", "iot", "c++"],
-  trading: ["pinescript", "trading", "bot", "telegram"],
-};
 
 const testimonials = [
   {

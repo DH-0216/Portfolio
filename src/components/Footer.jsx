@@ -1,6 +1,7 @@
 import { logo } from "@/assets";
 import { social } from "@/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -9,14 +10,15 @@ const Footer = () => {
         {/* Top section */}
         <div className="flex flex-col md:flex-row md:justify-between items-center md:items-start gap-2 md:gap-10">
           {/* Logo & Info */}
-          <div className="text-center md:text-left flex flex-col items-center md:items-start gap-3">
+          <Link
+            href="/"
+            className="text-center md:text-left flex flex-col items-center md:items-start gap-3 cursor-pointer">
             <Image
               src={logo}
               alt="Logo"
-              width={50}
-              height={50}
               className="h-10 sm:h-12 md:h-12 w-auto object-contain"
             />
+
             <p className="text-lg font-semibold tracking-wide">
               Dulaj Hashmika
             </p>
@@ -26,7 +28,7 @@ const Footer = () => {
               <span className="text-blue-400 font-medium">React</span> &amp;{" "}
               <span className="text-teal-400 font-medium">Tailwind CSS</span>
             </p>
-          </div>
+          </Link>
 
           {/* Contact Info */}
           <div className="flex flex-col text-center md:text-left gap-2 py-10 md:py-10">

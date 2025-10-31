@@ -60,9 +60,9 @@ const WorkCard = ({
       >
         {/* Glass Card */}
         <div
-          className={`relative bg-gradient-to-br from-white/10 via-white/5 to-white/[0.02] backdrop-blur-2xl rounded-[0.5rem] overflow-hidden border border-white/20 shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] transition-all duration-500 flex flex-col ${
+          className={`relative bg-gradient-to-br from-white/10 via-white/5 to-white/[0.02] backdrop-blur-2xl rounded-[0.5rem] overflow-hidden border border-white/20 transition-all duration-500 flex flex-col ${
             hovered
-              ? "scale-105 shadow-[0_12px_48px_0_rgba(255,255,255,0.2)] z-10"
+              ? "scale-105 shadow-[0_4px_12px_0_rgba(255,255,255,0.2)] z-10"
               : ""
           }`}
         >
@@ -199,10 +199,7 @@ const WorkCard = ({
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     className="w-full py-3 px-4 text-sm font-bold text-white backdrop-blur-xl rounded-lg flex items-center justify-center gap-2 transition-all border border-white/30"
-                    style={{
-                      boxShadow:
-                        "0 2px 12px rgba(100, 200, 255, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.4)",
-                    }}
+                   
                   >
                     View Project
                     <svg

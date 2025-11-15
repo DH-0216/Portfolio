@@ -2,9 +2,15 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { words } from "@/utils/index";
-import { about_me, about_me2, about_me3, bghero2, bghero4, bghero6 } from "@/assets";
+import {
+  about_me,
+  about_me2,
+  about_me3,
+  bghero6,
+} from "@/assets";
 import Image from "next/image";
 import { motion } from "framer-motion";
+
 const Hero = () => {
   useGSAP(() => {
     gsap.fromTo(
@@ -15,8 +21,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-between px-4 overflow-hidden ">
-      
+    <div className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-between px-4 overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
           src={bghero6}
@@ -41,7 +46,6 @@ const Hero = () => {
               I develop modern web <br className="sm:block hidden" />
               experiences and applications.
             </p>
-
             <div className="hero-text text-[#F8F8FF] mt-10 md:mt-15">
               <h1>
                 Shaping
@@ -72,15 +76,18 @@ const Hero = () => {
         </div>
       </header>
 
-      {/* RIGHT: Hero Image */}
+      {/* RIGHT: Hero Image - Fixed with responsive scaling */}
       <div className="relative w-full md:w-1/2 flex justify-center md:justify-start top-[-60px] md:top-[-60px] lg:top-15">
-        <Image
-          src={about_me3}
-          alt="about me"
-          width={400}
-          height={400}
-          className="w-[180px] sm:w-[280px] md:w-[240px] lg:w-[400px] object-contain"
-        />
+        <div className="relative w-[60vw] md:w-[45vw] lg:w-[40vw] xl:w-[35vw] 2xl:w-[600px] max-w-[700px] min-w-[220px] aspect-square">
+          <Image
+            src={about_me3}
+            alt="about me"
+            fill
+            className="object-contain"
+            sizes="(max-width: 640px) 60vw, (max-width: 768px) 45vw, (max-width: 1024px) 40vw, (max-width: 1280px) 35vw, 600px"
+            priority
+          />
+        </div>
       </div>
 
       <motion.div

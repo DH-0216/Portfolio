@@ -28,13 +28,12 @@ const Skills = () => {
   return (
     <motion.section
       id="experience"
-      className="relative pt-32 section-top-gradient overflow-hidden"
+      className="relative  pt-32 section-top-gradient overflow-hidden "
       variants={staggerContainer(0.1, 0.3)}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
     >
-     
       <div
         className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat -z-10"
         style={{
@@ -44,7 +43,7 @@ const Skills = () => {
       />
 
       {/* MAIN CONTENT */}
-      <div className="relative z-10">
+      <div className="relative mx-16 z-10">
         <TitleHeader
           title="Tools that drive my work"
           sub={

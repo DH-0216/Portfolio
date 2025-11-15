@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about section-top-gradient" className="relative pt-16 ">
       <motion.div
         variants={staggerContainer(0.15, 0)}
         initial="hidden"
@@ -20,7 +20,7 @@ const About = () => {
             src={bghero9}
             alt=""
             fill
-            className="object-cover rounded-2xl opacity-50"
+            className="object-cover rounded-2xl opacity-30"
           />
         </div>
 

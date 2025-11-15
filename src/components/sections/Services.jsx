@@ -4,13 +4,22 @@ import TitleHeader from "@/components/TitleHeader";
 import { motion } from "framer-motion";
 import { staggerContainer } from "@/utils/motion";
 import { services } from "@/utils";
-import { Service } from "@/assets";
+import { bghero4, Service } from "@/assets";
 import Image from "next/image";
 
 const Services = () => {
   const MotionImage = motion.create(Image);
   return (
-    <div className="relative pt-32 pb-20 section-top-gradient">
+    <div className="relative pt-32 pb-20 ">
+
+      <div className="absolute inset-0">
+              <Image
+                src={bghero4}
+                alt=""
+                fill
+                className="object-cover rounded-2xl opacity-20 "
+              />
+            </div>
       <div className="max-w-[90%] mx-auto px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

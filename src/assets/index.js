@@ -67,6 +67,7 @@ import bghero5 from "./bghero5.jpg";
 import bghero6 from "./bghero6.jpg";
 import bghero7 from "./bghero7.jpg";
 import bghero8 from "./bghero8.jpg";
+import bghero9 from "./bghero9.jpg";
 import exp_bg from "./expbg.jpg";
 import contact_bg from "./contact_bg.jpeg";
 
@@ -140,5 +141,6 @@ export {
   bghero6,
   bghero7,
   bghero8,
+  bghero9,
   exp_bg,
 };

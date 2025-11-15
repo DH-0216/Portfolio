@@ -531,10 +531,10 @@ const services = [
       "Designing and developing responsive, high-performance websites using modern frameworks and best practices. Ensuring cross-browser compatibility, accessibility, and seamless user experiences.",
   },
   {
-    title: "React Native Developer",
+    title: "Mobile App Developer",
     img: mobile,
     description:
-      "Building robust, cross-platform mobile applications with React Native. Integrating APIs, optimizing performance, and delivering intuitive interfaces for both iOS and Android devices.",
+      "Building robust, cross-platform mobile applications with React Native and Flutter. Integrating APIs, optimizing performance, and delivering intuitive interfaces for both iOS and Android devices.",
   },
   {
     title: "Backend Developer",

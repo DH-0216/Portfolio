@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { staggerContainer, fadeInUp } from "@/utils/motion";
 import TitleHeader from "@/components/TitleHeader";
-import { bghero4, WaveHello } from "@/assets";
+import { bghero4, bghero9, WaveHello } from "@/assets";
 import Image from "next/image";
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
       >
         <div className="absolute inset-0 -z-10">
           <Image
-            src={bghero4}
+            src={bghero9}
             alt=""
             fill
             className="object-cover rounded-2xl opacity-50"

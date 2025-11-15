@@ -51,6 +51,8 @@ import coding from "./coding.gif";
 import WaveHello from "./Wave Hello.gif";
 import Arrow from "./arrow.gif";
 import about_me from "./about_me.png";
+import about_me2 from "./about_me2.png";
+import about_me3 from "./about_me3.png";
 import LifeLink from "./LifeLink.gif";
 import question from "./question.gif";
 import bulb from "./bulb.gif";
@@ -60,6 +62,11 @@ import medal from "./medal.gif";
 import bghero from "./bghero.jpg";
 import bghero2 from "./bghero2.jpg";
 import bghero3 from "./bghero3.jpeg";
+import bghero4 from "./bghero4.jpg";
+import bghero5 from "./bghero5.jpg";
+import bghero6 from "./bghero6.jpg";
+import bghero7 from "./bghero7.jpg";
+import bghero8 from "./bghero8.jpg";
 import exp_bg from "./expbg.jpg";
 import contact_bg from "./contact_bg.jpeg";
 
@@ -97,6 +104,8 @@ export {
   WaveHello,
   Arrow,
   about_me,
+  about_me2,
+  about_me3,
   LifeLink,
   question,
   bulb,
@@ -126,5 +135,10 @@ export {
   bghero,
   bghero2,
   bghero3,
+  bghero4,
+  bghero5,
+  bghero6,
+  bghero7,
+  bghero8,
   exp_bg,
 };

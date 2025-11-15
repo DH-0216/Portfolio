@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { staggerContainer, fadeInUp } from "@/utils/motion";
 import TitleHeader from "@/components/TitleHeader";
-import { WaveHello } from "@/assets";
+import { bghero4, WaveHello } from "@/assets";
 import Image from "next/image";
 
 const About = () => {
@@ -15,9 +15,13 @@ const About = () => {
         viewport={{ once: false, amount: 0.3 }}
         className="relative max-w-screen overflow-hidden flex flex-col items-center justify-center py-20 md:px-20 bg-black/50 rounded-t-4xl shadow-2xl"
       >
-        {/* Background Glow */}
-        <div className="absolute inset-0 flex justify-center items-center -z-10">
-          <div className="w-96 h-96 bg-[#888888] opacity-20 blur-[120px] rounded-full animate-pulse" />
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src={bghero4}
+            alt=""
+            fill
+            className="object-cover rounded-2xl opacity-50"
+          />
         </div>
 
         {/* Text Content */}

@@ -24,6 +24,7 @@ const Contact = dynamic(() => import("@/components/sections/Contact"), {
 });
 
 import { Suspense } from "react";
+import { bghero7 } from "@/assets";
 
 export default function Home() {
   return (
@@ -33,17 +34,8 @@ export default function Home() {
       <Suspense fallback={<Loading />}>
         <Experience />
         <Skills />
-        <div className="relative">
-          <div
-            className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: 'url("/images/workbg.jpg")',
-              filter: "grayscale(50%) brightness(0.1)",
-            }}
-          />
-          <Works />
-          <Services />
-        </div>
+        <Works />
+        <Services />
         <Testimonials />
         <Contact />
       </Suspense>

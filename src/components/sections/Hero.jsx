@@ -2,7 +2,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { words } from "@/utils/index";
-import { about_me, bghero2 } from "@/assets";
+import { about_me, about_me2, about_me3, bghero2, bghero4, bghero6 } from "@/assets";
 import Image from "next/image";
 import { motion } from "framer-motion";
 const Hero = () => {
@@ -19,12 +19,11 @@ const Hero = () => {
       
       <div className="absolute inset-0 -z-10">
         <Image
-          src={bghero2}
+          src={bghero6}
           alt="about me"
           fill
-          className="object-cover rounded-2xl opacity-50"
+          className="object-cover rounded-2xl opacity-60"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent rounded-2xl"></div>
       </div>
 
       {/* Content Layer */}
@@ -76,7 +75,7 @@ const Hero = () => {
       {/* RIGHT: Hero Image */}
       <div className="relative w-full md:w-1/2 flex justify-center md:justify-start top-[-60px] md:top-[-60px] lg:top-15">
         <Image
-          src={about_me}
+          src={about_me3}
           alt="about me"
           width={400}
           height={400}

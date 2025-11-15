@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { testimonials } from "@/utils/index";
 import TitleHeader from "@/components/TitleHeader";
 import GlowCard from "@/components/GlowCard";
-import { star } from "@/assets";
+import { bghero6, star } from "@/assets";
 import { useState } from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
@@ -91,7 +91,15 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="relative pt-20 glowbg">
+    <section id="testimonials" className="relative pt-20">
+      <div className="absolute inset-0">
+        <Image
+          src={bghero6}
+          alt=""
+          fill
+          className="object-cover rounded-2xl opacity-20 "
+        />
+      </div>
       <div className="max-w-[90%] mx-auto px-4 md:px-8 ">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -103,7 +111,13 @@ const Testimonials = () => {
             title="What People Say About Me?"
             sub={
               <span className="flex items-center gap-1 justify-center">
-                <Image src={star} alt="" width={24} height={24} className="size-6 inline-block" />
+                <Image
+                  src={star}
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="size-6 inline-block"
+                />
                 Customer feedback highlights
               </span>
             }
@@ -134,7 +148,10 @@ const Testimonials = () => {
             gradientWidth={80}
           >
             {cardsData.map((card, index) => (
-              <CreateCard key={`${card.name || index}-reverse-${index}`} card={card} />
+              <CreateCard
+                key={`${card.name || index}-reverse-${index}`}
+                card={card}
+              />
             ))}
           </Marquee>
         </div>

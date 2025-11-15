@@ -5,7 +5,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-import { medal, exp_bg } from "@/assets";
+import { medal, exp_bg, bghero5 } from "@/assets";
 import { experiences } from "@/utils/index";
 import TitleHeader from "@/components/TitleHeader";
 import GlowCard from "@/components/GlowCard";
@@ -28,7 +28,7 @@ const ExperienceCard = ({ experience, index }) => {
       date={experience.date}
       iconStyle={{
         background: experience.iconBg,
-        backgroundColor: "rgba(255, 255, 255, 0.7)",
+        backgroundColor: "rgba(255, 255, 255, 0.1)",
         boxShadow: "0 0 5px rgba(56, 189, 248, 0.5)",
       }}
       icon={
@@ -84,10 +84,10 @@ const Experience = () => {
       <div
         className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${exp_bg.src})`,
-          filter: "brightness(0.25) blur(2px)",
+          backgroundImage: `url(${bghero5.src})`,
+          filter: "brightness(0.5) blur(2px)",
         }}
-      ></div>
+      />
       <div className="relative z-20">
         <TitleHeader
           title="What I have done so far"

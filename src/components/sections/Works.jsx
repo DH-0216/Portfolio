@@ -3,7 +3,7 @@
 import { useState, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import TitleHeader from "@/components/TitleHeader";
-import { coding, Arrow } from "@/assets";
+import { coding, Arrow, bghero8 } from "@/assets";
 import {
   works,
   projectCategories,
@@ -263,6 +263,14 @@ const Works = () => {
       id="work"
       className="relative min-h-screen overflow-hidden section-top-gradient"
     >
+      <div className="absolute inset-0">
+        <Image
+          src={bghero8}
+          alt=""
+          fill
+          className="object-cover rounded-2xl opacity-30 "
+        />
+      </div>
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-20">
         <motion.div variants={textVariant()}>

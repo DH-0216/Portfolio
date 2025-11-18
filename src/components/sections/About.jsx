@@ -20,14 +20,14 @@ const About = () => {
             src={bghero9}
             alt=""
             fill
-            className="object-cover rounded-2xl opacity-30"
+            className="object-cover rounded-2xl opacity-40"
           />
         </div>
 
         {/* Text Content */}
         <motion.div
           variants={fadeInUp()}
-          className="text-[#F8F8FF] text-sm tracking-widest mb-2"
+          className="text-[#F8F8FF] text-sm tracking-widest mb-2 z-10"
         >
           <TitleHeader
             title="Transforming Ideas Into Scalable Solutions"

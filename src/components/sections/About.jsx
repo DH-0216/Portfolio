@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section id="about section-top-gradient" className="relative pt-16 ">
+    <section id="about" className="relative pt-16 section-top-gradient">
       <motion.div
         variants={staggerContainer(0.15, 0)}
         initial="hidden"

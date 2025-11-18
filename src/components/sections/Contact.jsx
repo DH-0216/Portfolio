@@ -56,9 +56,21 @@ const Contact = () => {
             title="Get in Touch – Let's Connect"
             sub={
               <span className="flex items-center gap-1 justify-center">
-                <Image src={question} alt="question" width={24} height={24} className="size-6" />
+                <Image
+                  src={question}
+                  alt="question"
+                  width={24}
+                  height={24}
+                  className="size-6"
+                />
                 Have questions or ideas? Let's talk!
-                <Image src={rocket} alt="rocket" width={20} height={20} className="size-5 ml-1" />
+                <Image
+                  src={rocket}
+                  alt="rocket"
+                  width={20}
+                  height={20}
+                  className="size-5 ml-1"
+                />
               </span>
             }
           />
@@ -162,7 +174,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="flex items-center justify-center gap-2 mt-2 bg-gradient-to-r bg-[#101a2b]/90 hover:bg-[#101a2b] disabled:from-gray-500 disabled:to-gray-600 disabled:cursor-not-allowed text-white py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg"
+                  className="flex items-center justify-center gap-2 mt-2 bg-gradient-to-r bg-[#050d1a]/90 hover:bg-[#101a2b]/90 disabled:from-gray-500 disabled:to-gray-600 disabled:cursor-not-allowed text-white py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg"
                 >
                   {loading ? "Sending..." : "Send Message"}
                   {!loading && (

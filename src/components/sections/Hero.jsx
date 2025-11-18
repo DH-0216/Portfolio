@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
           <div>
             <h1 className="font-black lg:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] lg:leading-[80px] mt-2 text-[#F8F8FF]">
-              Hi, I'm <span className="text-[#888888]">Dulaj Hashmika</span>
+              <span className="text-[#888888]">Hi, I'm</span> Dulaj Hashmika
             </h1>
             <p className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-5">
               I develop modern web <br className="sm:block hidden" />
